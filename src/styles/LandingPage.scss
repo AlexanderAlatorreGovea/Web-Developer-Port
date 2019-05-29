@@ -1,0 +1,119 @@
+
+.LandingPage{
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+}
+
+.LandingPage-title{
+    padding-top: 266px;
+    padding-left: 11%;
+    color: white;
+    .presentation-name{
+        font-size: 1.8rem;
+        line-height: 1.21429em;
+        letter-spacing: -.03571em;
+        font-family: Helvetica,Arial,sans-serif;
+        font-weight: 700;
+        margin: 0;
+        word-break: break-word;
+        font-weight: 900;
+        padding-bottom: 6px;
+        color: white;
+    }
+    .presentation-landing-page{
+        max-width: 17.27273rem;
+        height: 3.63636rem;
+        font-size: 5rem;
+        font-weight: 800;
+        color: white;
+    }
+}
+
+
+a {
+    color: white;
+    :hover {
+        color: white;
+        border-bottom: 1px solid red;
+    }
+}
+
+
+
+.landing-page-nav{
+    color: white;
+}
+
+.sideways-nav{
+    color: white;
+}
+
+
+.scroll-down{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 89%;
+    left: 12%;
+    .alternate {
+        align-self: flex-end;
+    }
+    
+    .scroll{
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-left: 3px;
+    }
+}
+
+.sideways-nav{
+    transform: rotate(-90deg);
+    height: 1.59091rem;
+    position: absolute;
+    right: -132px;
+    .navigation{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 400px;
+    .navigation-home{
+
+    }
+    .navigation-projects{
+
+    }
+    .navigation-testimonials{
+
+    }
+    .navigation-contacts{
+
+    }
+    .navigation-resume{
+
+    }
+    }
+
+}
+
+.animated .down{
+    animation-duration: 1.3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+
+  
+
+
+

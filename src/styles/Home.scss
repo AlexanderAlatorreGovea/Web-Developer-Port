@@ -6,7 +6,9 @@
     box-sizing: border-box;
 }
 
-
+a {
+    color: black;
+}
 /*
 .Home{
     overflow: hidden;
@@ -102,12 +104,12 @@
     visibility: visible;
 }
 
-a{
+.lis{
     color: #46e0b4;
 }
 
 
-a:hover{
+.lis:hover{
     color: white;
     border-bottom: solid 1px #E3545f;
 }
@@ -255,21 +257,22 @@ li {
 }
 
 .img {
-    width: 350px;
     margin: 64px;
-    height: 51%;
+    height: 51%;width: 350;
+    height: 465;
 }
 
 .activeImg {
     border-radius: 1rem;
     align-self: center;
-    width: 100%;
     top: 24.6%;
     left: 26%;
     z-index: 0;
     transform: translate3d(-90%, 0px, 0px);
     transition: transform .4s ease-in;
     position: relative;
+    width: 350;
+    height: 465;
     ::after{
         content: "";
         left: 0;
@@ -282,10 +285,12 @@ li {
     }
 }
 
-img{
+#img{
     opacity: 0;
     animation: reveal-text 1s linear forwards;
     animation-delay: 1.4s;
+    width: 350;
+    height: 465;
 }
 
 .image-container{
@@ -293,6 +298,8 @@ img{
     width: 350px;
     position: fixed;
     left: 28%;
+    width: 350;
+    height: 465;
 }
 
 
@@ -307,6 +314,8 @@ img{
     width: 100%;
     transform: translate3d(0%, 0px, 0px);
     transition: transform .4s ease-in-out .1s;
+    width: 350;
+    height: 465;
 }
 
 .image-div {

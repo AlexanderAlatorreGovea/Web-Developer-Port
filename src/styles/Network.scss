@@ -1,0 +1,236 @@
+/*
+.Network{
+    position: fixed;
+     top: 0;
+     left: 0;
+     margin: 0;
+     width: 100%;
+     height: 100vh;
+     background-color: white;
+     background-attachment: fixed;
+    }
+*/
+
+
+
+ .sideways-nav{
+    transform: rotate(-90deg);
+    height: 1.59091rem;
+    position: fixed;
+    right: -132px;
+    top: 391px;
+    .navigation{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 400px;
+    .navigation-home{
+
+    }
+    .navigation-projects{
+
+    }
+    .navigation-testimonials{
+
+    }
+    .navigation-contacts{
+
+    }
+    .navigation-resume{
+
+    }
+    }
+
+}
+
+
+.number{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-content: space-between;
+    .line{
+        border: .5px solid black;
+        width: 40px;
+        justify-self: center;
+    }
+    .line-number-four{
+        margin-top: 0px;
+        padding-left: 15px;
+    }
+}
+
+
+.static-nav{
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    padding-top: 55px;
+    padding-bottom: 60px;
+    .social-media-icons {
+        display: flex;
+        padding-left: 43px;
+    }
+    .page-four{
+        padding-right: 35px;
+    }
+}
+
+
+
+.network-boxes-top {
+    display: flex;
+    .network-boxes-top-row-one{
+        width: 205px;
+        height: 205px;
+    }
+    .network-boxes-top-row-two{
+        width: 205px;
+        height: 205px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-right: 132px;
+        padding-top: 75px;
+    }
+    .network-boxes-top-row-three{
+        width: 205px;
+        height: 205px;
+    }
+    .network-boxes-top-row-four{
+        width: 205px;
+        height: 205px;
+        background-color: #aef0d2;
+    }
+    .network-boxes-top-row-five{
+        width: 205px;
+        height: 205px;
+    }
+
+}
+                        
+
+
+
+.network-boxes-middle {
+    display: flex;
+    .network-boxes-middle-row-one{
+        width: 205px;
+        height: 205px;
+    }
+    .network-boxes-middle-row-two{
+        width: 205px;
+        height: 205px;
+    }
+    .network-boxes-middle-row-three{
+        width: 205px;
+        height: 205px;
+        background-color: #f9cbd1;
+    }
+    .network-boxes-middle-row-four{
+        width: 205px;
+        height: 205px;
+    }
+    .network-boxes-middle-row-five{
+        width: 205px;
+        height: 205px;
+    }
+}
+
+
+
+
+.network-boxes-bottom {
+    display: flex;
+    .network-boxes-bottom-row-one{
+        width: 205px;
+        height: 205px;
+        background-color: #f9cbd1;
+    }
+    .network-boxes-bottom-row-two{
+        width: 205px;
+        height: 205px;
+    }
+    .network-boxes-bottom-row-three{
+        width: 205px;
+        height: 205px;
+    }
+    .network-boxes-bottom-row-four{
+        width: 205px;
+        height: 205px;
+        background-color: #91a8b1;
+    }
+    .network-boxes-bottom-row-five{
+        width: 205px;
+        height: 205px;
+        background-color: #91a8b1;
+  }
+}
+
+.network-title{
+    font-size: 72px;
+    margin-left: -106px;
+}
+           
+
+i.big.arrow.alternate.circle.up.outline.icon {
+    padding-bottom: 45px;
+}
+
+               
+
+/////////////////////////////
+/////////////////////////////SECTION 5 PARALAX////////////////////////
+
+.bottom-parallax-nav{
+    margin-left: 100px;
+}
+
+.bottom-section-parallax{
+    background: #000;
+}
+
+.number-five{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-content: space-between;
+    color: white;
+    .line-five{
+        border: .5px solid white;
+        width: 40px;
+        justify-self: center;
+    }
+    .line-number-five{
+        margin-top: 0px;
+        padding-left: 15px;
+    }
+}
+/*
+.parallax {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: visible;
+    overflow-y: visible;
+  }
+  .parallax__layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .parallax__layer--base {
+    transform: translateZ(0);
+  }
+  .parallax__layer--back {
+    transform: translateZ(-1px);
+  }
+
+*/
+
+
+

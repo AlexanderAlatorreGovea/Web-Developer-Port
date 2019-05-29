@@ -1,7 +1,12 @@
 import React from 'react';
 import '/Users/test/test/src/styles/_.variable.css';
-import './Home.scss';
-//import { useSpring, animated } from "react-spring";
+import '/Users/test/test/src/styles/Home.scss';
+import {
+    BrowserRouter as Router,
+    Route,
+    Link
+} from 'react-router-dom'
+import Preloader from './Preloader'
 
 
 const styles = {
@@ -15,8 +20,7 @@ class Home extends React.Component {
     
         this.state = {
             visible: false,
-            isClicked: false,
-            activeTab: [0, 1, 2, 3, 4, 5]
+            isClicked: false
         }
         this.handleToggleNav = this.handleToggleNav.bind(this);
         this.toggleMenu = this.toggleMenu.bind(this);
@@ -64,7 +68,7 @@ class Home extends React.Component {
 
 
     render() { 
-        const  idx = [0, 1, 2, 3, 4, 5];
+ 
 
         return (
              <div className="Home">
@@ -89,13 +93,23 @@ class Home extends React.Component {
                                     className={`${this.state.visible ? 'tog-active animated fadeIn' : 'tog-inactive'}`} 
                                     ref={this.ulRef}
                                     >
-                                    <li ref={this.listRef} onClick={this.mouseO} className={`${this.state.visible ? 'about animated fadeInDown li' : ''}`}  onClick={this.toggleImg}  ><a key={idx[0]} className={`${this.state.activeTab == idx[0] ? 'tog-active-li' : ''}`} onClick={this.toggleActiveTab.bind(this, 0)} >About</a></li>
-                                    <li  className={`${this.state.visible ? 'projects-li animated fadeInDown li' : ''}`}   ><a key={idx[1]} className={`${this.state.activeTab == idx[0] ? 'tog-active-li' : ''}`} onClick={this.toggleActiveTab.bind(this, 1)} >Projects</a></li>
-                                    <li  className={`${this.state.visible ? 'testimonials-li animated fadeInDown li' : ''}`}  ><a>Testimonials</a></li>
-                                    <li  className={`${this.state.visible ? 'contact-li animated fadeInDown li' : ''}`}  
-                                    ><a>Contact</a></li>
-                                    <li  className={`${this.state.visible ? 'resume-li animated fadeInDown li' : ''}`}
-                                    onClick={this.setActiveList}><a>Resume</a></li> 
+                                        <Link to="/Home">
+                                        <li ref={this.listRef} onClick={this.mouseO} className={`lis ${this.state.visible ? 'about animated fadeInDown li' : ''}`}  onClick={this.toggleImg}  > About</li>
+                                        </Link>
+                                        <Link to="/Network">
+                                        <li  className={`lis ${this.state.visible ? 'projects-li animated fadeInDown li' : ''}`}   >Projects</li>
+                                        </Link>
+                                        <Link to="/Network">
+                                        <li  className={`lis ${this.state.visible ? 'testimonials-li animated fadeInDown li' : ''}`}  >Testimonials</li>
+                                        </Link>
+                                        <Link to="/Network">
+                                        <li  className={`lis ${this.state.visible ? 'contact-li animated fadeInDown li' : ''}`}  
+                                        >Contact</li>
+                                        </Link>
+                                        <Link to="/Network">
+                                        <li  className={`lis ${this.state.visible ? 'resume-li animated fadeInDown li' : ''}`}
+                                        onClick={this.setActiveList}>Resume</li>
+                                        </Link>
                                     </ul>
                         </div>
                     </div>
@@ -104,7 +118,7 @@ class Home extends React.Component {
                     <div className="image-container">
                                 <div
                                 >
-                                    <img
+                                    <img id="img"
                                     className={`${this.state.isClicked ? 'activeImg' : 'image'}`}
                                     alt="Jordy Baan by Michael Epps." ref={this.imageRef}  
                                         src="https://i.pinimg.com/564x/67/97/6f/67976fe1b5958701f09ed747c158b19a.jpg"/>
@@ -153,8 +167,12 @@ class Home extends React.Component {
                     <i class="big inverted white envelope outline icon "></i>
                 </div>
                 <div className="arr">
+                    <Link to="/LandingPage" style={{textDecoration: 'none'}}>
                     <i id="arrow-left" class="big inverted white arrow left icon"></i>
+                    </Link>
+                    <Link to="/Network" style={{textDecoration: 'none'}}>
                     <i id="arrow-right"class="big inverted white arrow right icon" ></i>
+                    </Link>
                 </div>
                 </div>
                 </div>

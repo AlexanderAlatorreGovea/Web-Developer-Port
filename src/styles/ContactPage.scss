@@ -1,0 +1,178 @@
+.bottom-parallax-nav{
+    margin-left: 100px;
+    //margin-top: 45px;
+}
+
+.bottom-section-parallax{
+    background: #000;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+   bottom: 0;
+}
+
+.number-five{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-content: space-between;
+    color: white;
+    .line-five{
+        border: .5px solid white;
+        width: 40px;
+        justify-self: center;
+    }
+    .line-number-five{
+        margin-top: 0px;
+        padding-left: 15px;
+    }
+}
+
+
+.bottom-section{
+    display: flex;
+    flex-direction: column;
+    margin-left: 53px;
+}
+.contact-top{
+    .contact-h-top{
+        color: white;
+        font-size: 4.5rem;
+        line-height: 1.20455em;
+        letter-spacing: -.03409em;
+        font-weight: 900;
+    }
+}
+.get-in-touch-div{
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    .get-in{
+        margin-left: 10px;
+        margin-left: 10px;
+    }
+    .get-in-touch {
+        color: #000;
+        background: #aef0d2;
+        min-width: 2.5rem;
+        padding-right: 1.88636rem;
+        padding-left: 1.88636rem;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-size: 1.12rem;
+    }
+    .get-in-touch-phone {
+        background: #aef0d2;
+        width: 2.5rem;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-right: 5px;
+        padding-left: 5px;
+        .phone .icon{
+            background: #aef0d2;
+        }
+    }
+    .get-in-touch-map {
+        background: #aef0d2;
+        width: 2.5rem;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-right: 5px;
+        padding-left: 5px;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        .map {
+            //background: #fff;
+        }
+    }
+}
+    
+ 
+
+.get-in-touch-paragraph{
+    .contact-info{
+        color: #fff;
+        padding-top: 20px;
+    }
+}
+   
+
+
+
+.bottom-section-middle{
+     margin-top: 45px;
+     margin-left: 154px;
+     width: 238px;
+     margin-top: 60px;
+     display: flex;
+     flex-direction: column;
+}
+
+.contact-top-middle{
+    
+}
+.contact-h-middle{
+    color: white;
+}
+.contact-h-middle-discover {
+    color: white;
+    margin-top: -11px;
+    font-weight: 100;
+}
+
+.get-in-touch-div-middle{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+    .get-in-touch-github {
+
+    }
+    
+    .get-in-touch-linkedin{
+        .linkedin{
+            color: #aef0d2;
+        }
+    }
+    .get-in-touch-google{
+        .google{
+            color: #aef0d2;
+        }
+    } 
+
+.sign-up{
+    color: white;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid white;
+    padding-top: 30px;
+    border-bottom-width: 1px;
+    width: 238px;
+
+    .alternate{
+
+    }
+}
+
+i.icon.github:before {
+    content: "\f09b";
+    color: #aef0d2;
+}
+                                
+.copyright {
+    color: white;
+    font-size: 10px;
+    padding-top: 280px;
+}
+
+.get-padding{
+    padding-left: 15px;
+}
+
+  

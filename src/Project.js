@@ -1,6 +1,6 @@
 import React from 'react';
 import '/Users/test/test/src/styles/_.variable.css';
-import './Project.scss';
+//import './Project.scss';
 
 class Project extends React.Component {
     constructor(props) {
@@ -23,7 +23,6 @@ class Project extends React.Component {
         }
         this.handleToggleNav = this.handleToggleNav.bind(this);
         this.toggleMenu = this.toggleMenu.bind(this);
-        //this.handleUrl = this.handleUrl.bind(this)
 
         this.movies= React.createRef();
         this.product = React.createRef();
