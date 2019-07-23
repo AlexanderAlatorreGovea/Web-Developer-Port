@@ -1,18 +1,13 @@
 import React from 'react';
-import '/Users/test/test/src/styles/_.variable.css';
+import './styles/variables.scss';
 import '/Users/test/test/src/styles/Home.scss';
 import {
     BrowserRouter as Router,
     Route,
     Link
-} from 'react-router-dom'
-import Preloader from './Preloader'
-
-
-const styles = {
-    color: 'white',
-    borderBottom: 'solid 1px #E3545f'
-}
+} from 'react-router-dom';
+import Preloader from './Preloader';
+import './styles/variables.scss';
 
 class Home extends React.Component {
     constructor(props) {
@@ -46,7 +41,7 @@ class Home extends React.Component {
 
       componentDidMount() {
         document.querySelector('.right').classList.add('animated', 'fadeInLeft', 'delay-2s')
-        document.querySelector('.left').classList.add('animated', 'fadeInRight', 'delay-2s')
+        document.querySelector('.left').classList.add('animated', 'fadeInRight')
         document.querySelector('.account-h').classList.add('animated', 'fadeInLeft', 'delay-3s');
         document.querySelector('.year').classList.add('animated', 'fadeInRight', 'delay-2s')
         document.querySelector('.connect-h').classList.add('animated', 'fadeInLeft', 'delay-2s')
@@ -68,15 +63,13 @@ class Home extends React.Component {
 
 
     render() { 
- 
-
         return (
              <div className="Home">
                 <nav className="header">
                     <div className="navbar">
                         <div className="main-nav">
                             <div className="account">
-                                <i className="inverted white big user icon"></i>
+                                <i style={{color: 'black'}} className="inverted big user icon"></i>
                                 <div id="account" className="account-div">
                                      <h1 className="account-h" >Account</h1>
                                 </div>
@@ -118,9 +111,7 @@ class Home extends React.Component {
                     <div className="image-container">
                                 <div
                                 >
-                                    <img id="img"
-                                    className={`${this.state.isClicked ? 'activeImg' : 'image'}`}
-                                    alt="Jordy Baan by Michael Epps." ref={this.imageRef}  
+                                    <img id="img" className={`${this.state.isClicked ? 'activeImg' : 'image'}`} alt="Jordy Baan by Michael Epps." ref={this.imageRef}  
                                         src="https://i.pinimg.com/564x/67/97/6f/67976fe1b5958701f09ed747c158b19a.jpg"/>
                                 </div>
                             <div className={`title ${ this.state.isClicked ? 'activeTitle' : 'title-return'}`}>
@@ -140,7 +131,7 @@ class Home extends React.Component {
 
                             <div id="projects"className="projects">
                                 <div>
-                                <h3  className={`animated fadeInDown ${this.state.isClicked ? 'animated fadeInUp' : ''}`}>{this.state.isClicked ? 'About' : 'Projects'}</h3>
+                                    <h3  className={`animated fadeInDown ${this.state.isClicked ? 'animated fadeInUp' : ''}`}>{this.state.isClicked ? 'About' : 'Projects'}</h3>
                                 </div>
                                 <div className="line"><div className="main-line"></div></div>
                             </div>
@@ -149,29 +140,27 @@ class Home extends React.Component {
                     
                                 <div className={`${this.state.isClicked ? 'about-active-p' : 'about-paragraph'}`}>
                                     <p className= {` ${this.state.isClicked ? 'about-text animated fadeIn delay-1s ' : ''}`}> 
-                                    {`
-                                    Lorem ipsum dolor amet blue bottle shaman subway tile listicle ramps cardigan. Cronut pok pok chambray hot chicken, +1 synth YOLO four dollar toast locavore helvetica shoreditch. Farm-to-table shaman DIY organic, 
+                                    {`Lorem ipsum dolor amet blue bottle shaman subway tile listicle ramps cardigan. Cronut pok pok chambray hot chicken, +1 synth YOLO four dollar toast locavore helvetica shoreditch. Farm-to-table shaman DIY organic, 
                                     forage la croix selvage ugh typewriter everyday carry bitters gastropub man bun. Occupy flexitarian locavore, brooklyn affogato quinoa polaroid. Blue bottle VHS shabby chic, 
-                                    tumeric you probably haven't heard of them swag williamsburg wolf. Affogato cold-pressed live-edge microdosing trust fund wolf kogi brooklyn man braid cornhole chartreuse.
-                                    `}
+                                    tumeric you probably haven't heard of them swag williamsburg wolf. Affogato cold-pressed live-edge microdosing trust fund wolf kogi brooklyn man braid cornhole chartreuse.`}
                                     </p>
                                 </div>
                       
                         </div>
 
                          </div>
-                <div>
+                <div> 
                 <div className="ic animated fadeInUp delay-2.2s">
-                    <i class="big inverted white github alternate icon"></i>
-                    <i class="big inverted white linkedin in icon "></i> 
-                    <i class="big inverted white envelope outline icon "></i>
+                    <i style={{color: 'black'}} class="big inverted github alternate icon"></i>
+                    <i  style={{color: 'black'}} class="big inverted linkedin in icon "></i> 
+                    <i style={{color: 'black'}} class="big black inverted envelope outline icon "></i>
                 </div>
                 <div className="arr">
                     <Link to="/LandingPage" style={{textDecoration: 'none'}}>
-                    <i id="arrow-left" class="big inverted white arrow left icon"></i>
+                        <i id="arrow-left" style={{color: 'black'}} class="big inverted arrow left icon"></i>
                     </Link>
                     <Link to="/Network" style={{textDecoration: 'none'}}>
-                    <i id="arrow-right"class="big inverted white arrow right icon" ></i>
+                        <i id="arrow-right" style={{color: 'black'}} class="big inverted arrow right icon" ></i>
                     </Link>
                 </div>
                 </div>

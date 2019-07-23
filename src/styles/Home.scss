@@ -1,19 +1,16 @@
 @import '/Users/test/test/src/styles/_hamburgerButton.scss';
+@import './variables.scss';
 
 
-
-*{
-    box-sizing: border-box;
+.Home{
+    background: white;
 }
 
-a {
+.github,
+.linkedin,
+.envelope {
     color: black;
 }
-/*
-.Home{
-    overflow: hidden;
-}*/
-
 
 .toggle-nav{
     display: flex;
@@ -29,7 +26,7 @@ a {
 
 .account-div {
     padding-left: 7%;
-    color:white;
+    color: $black;
     h1{
         font-family: "charm"
     }
@@ -47,19 +44,19 @@ a {
     flex-direction: row;
     top: -19%;
     left: 35%;
-    color: white;
+    color: $black;
     h3{
         padding-right: 27px;
-        color: white;
+        color: $black;
     }
 
-.line{
-    background: white;
-    width: 223px;
-    height: 1px;
-    align-self: center;
-    opacity: 1;
-}
+    .line{
+        background: #000;
+        width: 223px;
+        height: 1px;
+        align-self: center;
+        opacity: 1;
+    }
 }
 
 #projects {
@@ -110,12 +107,12 @@ a {
 
 
 .lis:hover{
-    color: white;
+    color: $black;
     border-bottom: solid 1px #E3545f;
 }
 
 .tog-active-li {
-    color: white;
+    color: $black;
     border-bottom: solid 1px #E3545f;
 }
 
@@ -137,7 +134,7 @@ li{
 
 
 
-
+/*
 .title {
     font-size: 72px;
     font-family: "charm";
@@ -165,6 +162,7 @@ li{
         animation-delay: 2s;
     }
 }
+*/
 
 .title-return {
     font-size: 72px;
@@ -173,7 +171,7 @@ li{
     color: #EBD6A3;
     z-index: 100;
     top: 12%;
-    left: 71%;
+    left: 65%;
     position: absolute;
     transform: translate3d(0, 0, 0);
     transition: transform .4s ease-out;
@@ -187,7 +185,7 @@ li{
     color: #EBD6A3;
     z-index: 100;
     top: 12%;
-    left: 71%;
+    left: 65%;
     position: absolute;
     transform: translate3d(2000px, 0, 0);
     transition: transform .4s ease-out;
@@ -227,108 +225,11 @@ li{
     margin: 12px;
 }
 
-.arr{
-    display: flex;
-    position: fixed;
-    left: 20px;
-    top: 90%;
-    padding: 5px 5px;
-    i .arrow-left{
-        transform: scale(1.2);
-    }
-    i .arrow-rigth{
-        transform: scale(1.2);
-    }
-}
 
-
-.hamburger--elastic .hamburger-inner::before,
-span .hamburger-inner,
-span .hamburger-inner::after
-{
-    background-color: white;
-    &:active {
-        color: #B25500;
-    }
-}
 
 li { 
     cursor: pointer;
 }
-
-.img {
-    margin: 64px;
-    height: 51%;width: 350;
-    height: 465;
-}
-
-.activeImg {
-    border-radius: 1rem;
-    align-self: center;
-    top: 24.6%;
-    left: 26%;
-    z-index: 0;
-    transform: translate3d(-90%, 0px, 0px);
-    transition: transform .4s ease-in;
-    position: relative;
-    width: 350;
-    height: 465;
-    ::after{
-        content: "";
-        left: 0;
-        width: 0;
-        position: absolute;
-        animation: reveal-animation 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-        animation-delay: 1s;
-        opacity: 1;
-        background: #B25500;
-    }
-}
-
-#img{
-    opacity: 0;
-    animation: reveal-text 1s linear forwards;
-    animation-delay: 1.4s;
-    width: 350;
-    height: 465;
-}
-
-.image-container{
-    content: "";
-    width: 350px;
-    position: fixed;
-    left: 28%;
-    width: 350;
-    height: 465;
-}
-
-
-
-
-  .image {
-    border-radius: 1rem;
-    align-self: center;
-    z-index: 0;
-    top: 24.6%;
-    left: 26%;
-    width: 100%;
-    transform: translate3d(0%, 0px, 0px);
-    transition: transform .4s ease-in-out .1s;
-    width: 350;
-    height: 465;
-}
-
-.image-div {
-    border-radius: 1rem;
-    align-self: center;
-    z-index: 1;
-    top: 24.6%;
-    left: 26%;
-    width: 100%;
-    background: white;
-    animation: reveal-image 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-    animation-delay: 1s;
-    }
 
 .github:hover,
 .linkedin:hover,
@@ -345,7 +246,7 @@ li {
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   -webkit-animation-iteration-count: infinite;
-  color: white;
+  color: $black;
 }
 
 @keyframes bounce {
@@ -418,7 +319,8 @@ li {
 }
 
 
-i.icon.arrow.right {
+
+#arrow-right{
     padding-left: 90px;
 }
 
@@ -428,27 +330,26 @@ i #arrow-right .arrow .right:hover {
     transform: scale(1.2);
 }
 
-
-i.icon.arrow.left:before{
-    content: "\f060";
-    color: #EBD6A3;
-    :hover{
+.arr{
+    display: flex;
+    position: fixed;
+    left: 20px;
+    top: 90%;
+    padding: 5px 5px;
+    i .arrow-left{
+        transform: scale(1.2);
+    }
+    i .arrow-rigth{
         transform: scale(1.2);
     }
 }
 
-i.icon.arrow.right:before {
-    content: "\f061";
-    color: #EBD6A3;
-    :hover{
-        transform: scale(1.2);
-    }
-}
 
 
+/*
 .discover {
     position: absolute;
-    color: white;
+    color: $black;
     left: 84%;
     &:hover{
         color: #46e0b4;
@@ -472,7 +373,7 @@ i.icon.arrow.right:before {
         animation-delay: 2.2s;
     }
 }
-
+*/
 
 .connect {
     padding: 10px 30px;
@@ -480,7 +381,7 @@ i.icon.arrow.right:before {
     left: -20px;
     top: 266px;
     transform: rotate(-90deg);
-    color: white;
+    color: black;
     font-family: sans-serif;
     h2{
         font-family: sans-serif;
@@ -492,42 +393,22 @@ i.icon.arrow.right:before {
     }
 }
 
+/*
 .year {
     position: fixed;
-    color: white;
+    color: $black;
     right: 80%;
     top: 80%;
 }
+*/
 
 
-.hamburger--elastic .hamburger-inner {
-top: 2px;
-transition-duration: 0.275s;
-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); }
-.hamburger--elastic .hamburger-inner::before {
-    top: 10px;
-    transition: opacity 0.125s 0.275s ease; }
-.hamburger--elastic .hamburger-inner::after {
-    top: 20px;
-    transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
 
-.hamburger--elastic.is-active .hamburger-inner {
-transform: translate3d(0, 10px, 0) rotate(135deg);
-transition-delay: 0.075s; }
-.hamburger--elastic.is-active .hamburger-inner::before {
-    transition-delay: 0s;
-    opacity: 0; }
-.hamburger--elastic.is-active .hamburger-inner::after {
-    transform: translate3d(0, -20px, 0) rotate(-270deg);
-    transition-delay: 0.075s; }
 
-.hamburger{
-    position: relative;
-    right: 20px;
-}
 //////ANIMATIONS////////////////////////////////////
 ///////////////////////////////////////////////////
 
+/*
 
 @keyframes reveal-animation {
     0%{
@@ -569,3 +450,4 @@ transition-delay: 0.075s; }
     }
 }
 
+*/

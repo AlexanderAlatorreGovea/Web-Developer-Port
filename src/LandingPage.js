@@ -12,18 +12,21 @@ class LandingPage extends React.Component{
 
     componentDidMount() {
         document.querySelector('.presentation-landing-page').classList.add('animated', 'fadeInUpBig', 'delay-1s');
-        document.querySelector('.presentation-name').classList.add('animated', 'fadeInLeft', 'delay-2s')
-        document.querySelector('.scroll-down').classList.add('animated', 'fadeIn', 'delay-3s')
-        document.querySelector('.sideways-nav').classList.remove('animated', 'fadeIn', 'delay-2s')
+        document.querySelector('.presentation-name').classList.add('animated', 'fadeInUp')
+        document.querySelector('.scroll-down').classList.add('animated', 'fadeInUp', 'delay-5s')
+        document.querySelector('.sideways-nav-landing').classList.add('animated', 'fadeIn', 'delay-5s')
+        document.querySelector('.description-landing').classList.add('animated', 'fadeIn', 'delay-2s');
+
     }
 
       componentWillUnmount() {
         document.querySelector('.presentation-landing-page').classList.remove('animated', 'fadeInUpBig', 'delay-1s')
-        document.querySelector('.presentation-name').classList.remove('animated', 'fadeInLeft', 'delay-2s')
-        document.querySelector('.scroll-down').classList.remove('animated', 'fadeIn', 'delay-3s')
-        document.querySelector('.sideways-nav').classList.remove('animated', 'fadeIn', 'delay-2s')
+        document.querySelector('.presentation-name').classList.remove('animated', 'fadeInUp')
+        document.querySelector('.scroll-down').classList.remove('animated', 'fadeInUp', 'delay-5s')
+        document.querySelector('.sideways-nav-landing').classList.remove('animated', 'fadeIn', 'delay-5s')
+        document.querySelector('.description-landing').classList.remove('animated', 'fadeIn', 'delay-2s');
     }
-
+ 
 
     render() {
         return(
@@ -33,38 +36,66 @@ class LandingPage extends React.Component{
                 <div className="LandingPage-title">
                     <h1 className="presentation-name">hi, my name is </h1>
                     <br />
-                    <span className="presentation-landing-page">alexander.</span>
-
-                    <div className="sideways-nav" >
-                    <ul className="navigation">
-                        <Link to="/Home" >
-                            <li className="navigation-home">home</li>
+                    <div class="typewriter">
+                        <span  className="presentation-landing-page typewriter-text">alexander.</span>
+                    </div>
+                    {/*Begining of description */}
+                    <h2 className="description-landing">
+                        and I am a 
+                        <div class="words">
+                            <span>creative</span>
+                            <span>hard working</span>
+                            <span>reliable</span>
+                            <span>web dev</span>
+                            <span>creative</span>
+                            <span>hard working</span>
+                            <span>reliable</span>
+                            <span>web dev</span>
+                            <span>creative</span>
+                            <span>hard working</span>
+                            <span>reliable</span>
+                            <span>web dev</span>
+                            <span>creative</span>
+                            <span>hard working</span>
+                            <span>reliable</span>
+                            <span>web dev</span>
+                            <span>creative</span>
+                            <span>hard working</span>
+                            <span>reliable</span>
+                            <span>web dev</span>
+                            <span>creative</span>
+                            <span>hard working</span>
+                            <span>reliable</span>
+                            <span>web dev</span>
+                        </div>
+                    </h2>
+                    {/*End of description */}
+                <div className="sideways-nav-landing" >
+                    <ul className="navigation-landing">
+                        <Link className="navigation-link" to="/Home" >
+                            <li className="navigation-home-landing">home</li>
                         </Link>
-                        <Link to="/Network" >
-                            <li className="navigation-projects">projects</li>
+                        <Link className="navigation-link" to="/Projects" >
+                            <li className="navigation-home-landing">all projects</li>
                         </Link>
-                        <Link to="/Network" className="navigation-testimonials">
-                            <li className="navigation-testimonials">testimonials</li> 
+                        <Link className="navigation-link" to="/Network">
+                            <li className="navigation-home-landing">discover more</li> 
                         </Link>
-                        <Link to="/Network" >
-                             <li className="navigation-contacts">contact</li>
-                        </Link>
-                        <Link to="/Network" >
-                            <li className="navigation-resume">resume</li> 
+                        <Link className="navigation-link" to="/Network">
+                            <li className="navigation-home-landing">contact</li> 
                         </Link>
                     </ul>  
                 </div>
 
                 </div>             
                 </section>
-                <Link to="/Home">
-                    <div className="scroll-down">
-                    <i class="animated infinite fadeInDown  small long arrow alternate down icon"></i>
-                    <h5 className="scroll">scroll down</h5>
+                <Link to="/Network">
+                <div className="scroll-down">
+                    <i class="animated infinite fadeInDown long arrow alternate down icon"></i>
+                    <div style={{ color: 'white' }} className="scroll-title">scroll down</div>
                 </div>
                 </Link>
             </div>
-            <Preloader />
         </div>
     )
     }

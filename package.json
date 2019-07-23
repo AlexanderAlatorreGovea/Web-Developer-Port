@@ -10,7 +10,7 @@
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.0",
-    "react-scroll": "^1.7.11",
+    "react-scroll": "^1.7.12",
     "react-spring": "^9.0.0-beta.6",
     "react-transition-group": "^4.0.0",
     "smooth-scroll": "^16.0.3",

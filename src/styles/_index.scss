@@ -1,0 +1,129 @@
+@import './variables.scss';
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+ }
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; 
+}
+
+body {
+  line-height: 1; 
+  color: $black;
+  background: white;
+}
+
+ol, ul {
+  list-style: none;
+ }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote {
+  &:before, &:after {
+    content: '';
+    content: none; 
+  }
+   }
+
+q {
+  &:before, &:after {
+    content: '';
+    content: none; 
+  } 
+  }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; 
+}
+
+*,
+*::before,
+*::after {
+margin: 0;
+padding: 0;
+box-sizing: inherit; 
+}
+
+a{
+transition: all .5s ease-in-out;
+cursor: pointer;
+&:hover {
+  color: $red;
+}
+}
+
+
+.cursor {
+  width: 40px;
+  height: 40px;
+  border: 1.5px solid #ef3f4a;
+  border-radius: 50%;
+  position: absolute;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  animation: cursorAnim .5s infinite alternate;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.cursor--small {
+  width: 5px;
+  height: 5px;
+  left: -2.5px;
+  top: -2.5px;
+  border-radius: 50%;
+  z-index: 15551000;
+  background: #ef3f4a;
+}
+
+@keyframes cursorAnim {
+  from {
+      transform: scale(1);
+  }
+  to {
+      transform: scale(.7);
+  }
+}
+
+@keyframes cursorAnim2 {
+  from {
+      transform: scale(1);
+  }
+  to {
+      transform: scale(.4);
+  }
+}
+
+@keyframes cursorAnim3 {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.5);
+  }
+  100% {
+      transform: scale(1);
+      opacity: 0;
+  }
+}
+
+.expand {
+  animation: cursorAnim3 .5s forwards;
+  border: .2px solid red;
+}
+

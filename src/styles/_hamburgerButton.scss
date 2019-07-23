@@ -39,7 +39,7 @@ $hamburger-types: (
       filter: $hamburger-hover-filter;
     }
     @else {
-      opacity: $hamburger-hover-opacity;
+      //opacity: $hamburger-hover-opacity;
     }
   }
 }

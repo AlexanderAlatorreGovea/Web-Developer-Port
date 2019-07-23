@@ -1,12 +1,3 @@
-/*
-.main-container{
-    width: 100%;
-    height: 100vh;
-    background: white;
-    margin-left: 10%;
-}
-*/
-
 .main-container{
     margin-left: 10%;
 }
@@ -35,8 +26,11 @@
 }
 
 .bottom-container{
-    width: 100%;
     height: 50vh;
+    max-width: 1000px;
+    padding: 0 1.5rem;
+    margin: auto;
+    overflow: hidden;
     .arrow{
         display: flex;
         flex-direction: column;
@@ -62,17 +56,27 @@
         color: black;
         text-shadow: none;
         background-image: none;
+        transition: all .2s ease-in .1s;
+        margin-top: 48px;
+        margin-left: 126px;
+        width: 12rem;
+        &:hover{
+            background: #f9cbd1;
+            color: #000;
+        }
     }
     .ui.button{
         border-radius: none;
     }
 }
-
-.button {
+/*
+    .button {
     margin-top: 48px;
     padding-left: 126px;
     width: 59%;
 }
+*/
+
 
 .number{
     display: flex;
@@ -107,10 +111,11 @@
 .carousel__list.unwrap{
 	flex-wrap: nowrap;
 }
+
 .carousel__item{
-	flex: 1 0 250px;
+	flex: 1 0 300px;
     height: 200px;
-    max-width: 300px;
+    width: 350px;
 	background-color: #ccc;
 	text-align: center;
 	line-height: 100px;
@@ -126,21 +131,17 @@
     width: 741;
 }
 
-.titles{
-    width: 741;
-}
 
 
 .titles {
     display: flex;
     flex-direction: row;
+    width: 741;
     //overflow: hidden;
     margin-left: 57px;
     .general-title{
-        flex: 1 0 300px;
+        flex: 1 0 400px;
         padding-top: 33px;
-        max-width: 300px;
-       // position: relative;
     }
     h4{
         margin-top: 0px;
@@ -169,4 +170,79 @@ i.icon.arrow.alternate.circle.right.outline:before {
 
 .carousel__list {
     animation-delay: 6s;
-  }
+}
+
+////////////////////////CAROUSELOVERLAY/////////////////////////////
+/////////////////////////////////////////////////////////////////////
+
+.project-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .project-box{
+        position: relative;
+        padding: 30px;
+        transition: all .3s ease-in-out;
+        background-size: contain;
+        .grey-bg{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background: #efefef;
+            transition: all .3s ease-in-out;
+            opacity: 0;
+            overflow: hidden;
+            .project-info{
+                position: absolute;
+                padding: 18px;
+                padding-left: 45px;
+                top: 7rem;
+                width: 100%;
+                .project-details{
+                    position: relative;
+                    font-size: 1rem;
+                    text-transform: capitalize;
+                    margin: 0 0 1rem;
+                    transform: translate3d(-400px, 0, 0);
+                    transition: all .3s ease-in;
+                }
+                ////animates after 2s
+                .project-title{
+                    font-size: 1.3rem;
+                    text-transform: uppercase;
+                    font-weight: 800;
+                    transition: all .3s ease-in .1s;
+                    transform: translate3d(-100px, 0, 0);
+                    opacity: 0;
+                }
+                .long {
+                    position: absolute;
+                    bottom: 15px;
+                    right: 13px;
+                    font-size: 2rem;
+                    color: #000;
+                    transform: translate3d(-30px, 0, 0);
+                    transition: all .1s ease-in-out;
+                }
+            }
+            &:hover{
+                opacity: .9;
+                .project-info{
+                    .project-details {
+                        transform: translate3d(0, 0, 0);
+                        opacity: 1;
+                    }
+                    .project-title {
+                        transform: translate3d(0, 0, 0);
+                        opacity: 1;
+                    }
+                    .long {
+                        transform: translate3d(0, 0, 0);
+                    }
+
+                }
+            }
+        }
+    }
+}

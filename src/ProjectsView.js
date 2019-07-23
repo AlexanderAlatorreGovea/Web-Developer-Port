@@ -1,38 +1,130 @@
-import '/Users/test/test/src/styles/ProjectsView.scss';
 import React from 'react';
 import ProjectViewTop from './ProjectViewTop';
-import LandingPage from './LandingPage'
 
+import '/Users/test/test/src/styles/ProjectsView.scss';
+import './styles/_item_grid.scss';
 
+import { Link } from 'react-router-dom';
 
+import globalState from './assets/globalState/globalState';
 
+import email from './assets/email.jpg';
+import emailbottom from  './assets/emailbottom.jpg';
+import menu from './assets/menu.jpg';
+import movies from './assets/movies.jpg';
+import listings from './assets/listings.jpg';
+import restaurantfront from  './assets/restaurantfront.jpg';
+import movie2 from './assets/movie2.jpg';
+import movies3 from './assets/movies3.jpg';
+import emailtwo from './assets/emailtwo.jpg';
+ 
 class ProjectsView extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
        allImgs: [
-        "https://cdn.dribbble.com/users/1343667/screenshots/5265526/showcase_2x.png",
-        "http://www.moneygossips.com/wp-content/uploads/2015/02/free-movie-sites-810x539.png",
-        "http://www.moneygossips.com/wp-content/uploads/2015/02/free-movie-sites-810x539.png",
-        "https://cdn.dribbble.com/users/903897/screenshots/6461891/shot.png",
-        "https://cdn.dribbble.com/users/515185/screenshots/6469560/shot-cropped-1557605297901.png"
-     
+        menu,
+        movies3,
+        restaurantfront,
+        listings,
+        movie2,
+        emailtwo,
+        restaurantfront,
+        listings,
+        movie2,
+        emailtwo,
+        movie2,
+        emailtwo,
+        restaurantfront,
+        listings,
+        movie2,
+        emailtwo 
       ],
+      allImgs : [
+        { 
+           title: 'The Movie Bonanza',
+           type: 'Movie Theater',
+           year: '2019',
+           img: movie2,
+           client: 'private',
+           technologies: 'react/redux'
+        },
+        { 
+          title: 'Nexter',
+          type: 'Real Estate',
+          year: '2019',
+          img: listings,
+          client: 'private',
+          technologies: 'react/sass'
+       },
+       { 
+          title: 'The Steak House',
+          type: 'Restaurant',
+          year: '2019',
+          img: restaurantfront,
+          client: 'private',
+          technologies: 'react'
+        },
+        { 
+          title: 'Hero Lets You',
+          type: 'Email',
+          year: '2019',
+          img: emailtwo,
+          client: 'private',
+          technologies: 'HTML email'
+       },
+       { 
+        title: 'The Movie Bonanza',
+        type: 'Movie Theater',
+        year: '2019',
+        img: movie2,
+        client: 'private',
+        technologies: 'react/redux'
+     },
+     { 
+       title: 'Nexter',
+       type: 'Real Estate',
+       year: '2019',
+       img: listings,
+       client: 'private',
+       technologies: 'react/sass'
+    },
+    { 
+       title: 'The Steak House',
+       type: 'Restaurant',
+       year: '2019',
+       img: restaurantfront,
+       client: 'private',
+       technologies: 'react'
+     },
+     { 
+       title: 'Hero Lets You',
+       type: 'Email',
+       year: '2019',
+       img: emailtwo,
+       client: 'private',
+       technologies: 'HTML email'
+    }
+    ],
       revealImage: false,
       translateValue: 0,
       index: 0
     }
-    this.imageRef = React.createRef();
   }
 
-  nextBtn = () => {
-    const carouselSibling = document.querySelector('.carousel__item ').nextElementSibling
-    const carousel = document.querySelector('.carousel__item')
-    const carouselChild = document.querySelectorAll('.carousel__item:nth-child(5)')
-    this.setState(prevState => ({
-      translateValue: prevState.translateValue - (this.slideWidth())
-    })) 
-    }
+      nextBtn = () => {
+        if(this.state.index === this.state.allImgs.length - 1) {
+          return this.setState({
+            index: 0,
+            translateValue: 0
+          })
+        }
+        
+        this.setState(prevState => ({
+          index: prevState.index + 1,
+          translateValue: prevState.translateValue + -(this.slideWidth())
+        }));
+      }
 
 
     prevBtn = () => {
@@ -41,33 +133,27 @@ class ProjectsView extends React.Component {
       this.setState(prevState => ({
         translateValue: prevState.translateValue + this.slideWidth()
       }))
-
-    if(this.state.index +  5) {
-      this.setState(prevState => ({
-        translateValue: 0
-      }))
-    }
+      if(this.state.index +  5) {
+        this.setState(prevState => ({
+          translateValue: 0
+        }))
+      }
   }
 
   slideWidth = () => {
-    return document.querySelector('.slide').clientWidth
+    return document.querySelector('.project-box').clientWidth
    }
 
    componentDidMount() {
      const carousel = document.querySelector('.js-carousel-list').children
      console.log(carousel)
-     const carouselSibling = document.querySelector('.carousel__item ').nextElementSibling
-     console.log(carouselSibling)
+  
     document.querySelector('.number-2').classList.add('animated', 'fadeInUp', 'delay-3s')
-   
-    document.querySelector('.ui').classList.add('animated', 'fadeInLeft', 'delay-5s');
     
 }
 
   componentWillUnmount() {
-    document.querySelector('.number-2').classList.remove('animated', 'fadeInUp', 'delay-3s')
-    
-    document.querySelector('.ui').classList.remove('animated', 'fadeInLeft', 'delay-5s');
+    document.querySelector('.number-2').classList.remove('animated', 'fadeInUp', 'delay-3s');
 }
 
   
@@ -86,35 +172,42 @@ class ProjectsView extends React.Component {
             <h1>projects.</h1>
               <div className="arrow">
                 <i onClick={this.prevBtn} class="green big arrow alternate circle left outline icon"></i>
-                <i onClick={this.nextBtn} class="green big arrow alternate circle right outline icon"></i>
+                <i onClick={this.nextBtn.bind(null, this.state.index)} class="green big arrow alternate circle right outline icon"></i>
           </div>
 
-             
+              
               <div class="carousel js-carousel">
                 <div class="carousel__container js-carousel-container animated fadeInRight "
                   >
-                  <div class="carousel__list js-carousel-list "
+                  <div class="carousel__list js-carousel-list"
                     style={{
                       transform: `translateX(${this.state.translateValue}px)`,
                       transition: 'transform ease-out 0.45s'
-                      }}
-                  >
+                    }}>
 
-                    <div class="carousel__item js-carousel-item slide" key={0}>
-                      <img className="imageView" src={"https://cdn.dribbble.com/users/1343667/screenshots/5265526/showcase_2x.png"} />
+                     {/*item 4*/}
+
+                    {this.state.allImgs.map((info, index) => {
+                      return(
+                      <div className="slide">
+                        <div className="project-section" >
+                          <div className="project-box" key={index} style={{background: `url("${info.img}") no-repeat`, width: '400px', height: '350px', backgroundSize: 'contain'}} >
+                            <div className="grey-bg">
+                              <div className="project-info">
+                                <div className="project-details">
+                                  Client: {info.client} Year: {info.year} Type: {info.type}
+                                </div>
+                                <div className="project-title">
+                                  {info.title}
+                                </div>
+                                <div><i class="long arrow alternate right icon"></i></div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
                     </div>
-                    <div class="carousel__item js-carousel-item slide" key='1' >
-                      <img className="imageView" src={"http://www.moneygossips.com/wp-content/uploads/2015/02/free-movie-sites-810x539.png"} />  
-                    </div>
-                    <div class="carousel__item js-carousel-item slide" key='2'>
-                       <img className="imageView" src={'https://cdn.dribbble.com/users/26407/screenshots/2180312/dribbble_movie_app.jpg'} />
-                    </div>
-                    <div class="carousel__item js-carousel-item slide" key='3'>
-                      <img className="imageView" src={"https://cdn.dribbble.com/users/903897/screenshots/6461891/shot.png"} />
-                    </div>
-                    <div class="carousel__item js-carousel-item slide" key='4'>
-                       <img className="imageView" src={"https://cdn.dribbble.com/users/515185/screenshots/6469560/shot-cropped-1557605297901.png"} />
-                    </div>
+                    )
+                    })}                  
                      </div>
                       </div>
                       </div>
@@ -129,7 +222,14 @@ class ProjectsView extends React.Component {
                             transition: 'transform ease-out 0.45s'
                             }}
                         >
-                
+                          {this.state.allImgs.map((info, index) => {
+                          return(
+                            <div className="project-title-one general-title">
+                              <h3 className="header-description">{info.title}</h3>
+                              <h4 className="header-description">{info.technologies}</h4>
+                            </div>
+                          )
+                          })} 
                         <div className="project-title-one general-title">
                             <h3 className="header-description">Movie Theater Website</h3>
                             <h4 className="header-description">created with react</h4>
@@ -153,16 +253,17 @@ class ProjectsView extends React.Component {
                           <div className="project-title-five general-title">
                             <h3 className="header-description">Movie Theater Website</h3>
                             <h4 className="header-description">created with react</h4>
-                      </div>
+                        </div>
                       </div>
                       </div>
 
                       </div>
-
-              <div className="button">
-              <button class="ui primary button">view all projects</button>
-              </div>
-
+ 
+                <div className="button">
+                  <Link to="/Projects" >
+                    <button class="ui primary button wow fadeInLeft">view all projects</button>
+                  </Link>
+                </div>
         </div>
       </div>
       </div>
@@ -170,43 +271,6 @@ class ProjectsView extends React.Component {
 }
 }
 
-  export default ProjectsView;
-
-  {/*
-    document.querySelector('.js-carousel-list ').classList.remove('animated', 'fadeInRight', 'delay-4s');
-  
-  last function that worked
-
-
-
-  
-    nextBtn = () => {
-  
-    if(this.state.index + 5 ){
-    this.setState(prevState => ({
-      translateValue: prevState.translateValue + - (this.slideWidth())
-    })) }  else if (this.state.index + 5 >  5) {
-      this.setState(prevState => ({
-        translateValue: -1
-      }))
-    }
-  }
-
-
-    prevBtn = () => {
-    const items = document.querySelector('.js-carousel-list')
-    
-      this.setState(prevState => ({
-        translateValue: prevState.translateValue + this.slideWidth()
-      }))
-    if(this.state.index +  5) {
-      this.setState(prevState => ({
-        translateValue: 0
-      }))
-    }
-  }
-  */}
-
-  
+export default ProjectsView;
 
 

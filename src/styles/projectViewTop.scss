@@ -1,32 +1,45 @@
-.top-container{
-    width: 100%;
-    height: 40vh;
+@import './variables.scss';
+
+.ProjectViewTop{
+    max-width: 1000px;
+    padding: 0 1.5rem;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 7rem;
+    font-family: $primary-font;
+    @media only screen and (max-width: 768px) {
+        padding-top: 0rem;
+    }
+
+    .top-container{
+        width: 100%;
+        height: 40vh;
+        @media only screen and (max-width: 768px) {
+            height: 31vh;
+        }
+    }
     .description{
         margin-left: 56px;
         padding-top: 25px;
+        .paragraph{
+            margin-top: 3%;
+            line-height: 1.5rem;
+            font-size: .9rem;
+            font-family: $primary-font;
+        }
+        .title-one {
+            font-size: 3rem;
+        }
+        .secondary-line{
+            border: .5px solid black;
+            display: flex;
+            width: 30px;
+        }
     }
 }
 
-.description{
-    margin-left: 56px;
-    padding-top: 25px;
 
-    .title-one {
-        font-size: 39px;
-    }
-    .secondary-line{
-        border: .5px solid black;
-        display: flex;
-        width: 30px;
-    }
-    .paragraph{
-        width: 43%;
-        margin-top: 3%;
-        font-weight: 600;
-        line-height: 1.5rem;
-        font-size: 2rem;
-    }
-}
+
 
 
 
