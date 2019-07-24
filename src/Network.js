@@ -124,10 +124,10 @@ class Network extends React.Component {
                             Curious Developer
                         </div>
                         <div className="intro-images-container" style={{ marginBottom: '7rem' }}>
-                            <div className="intro-images wow fadeIn" data-wow-delay="1s" style={{ background: `url("${this.state.img}") no-repeat center center` }}>
+                            <div className="intro-images wow fadeIn" data-wow-delay="1s" style={{ background: `url("https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80") no-repeat center center` }}>
                                    
                             </div>
-                            <div className="intro-images wow fadeIn" data-wow-delay="1s" style={{ background: `url("${this.state.img}") no-repeat center center` }}>
+                            <div className="intro-images wow fadeIn" data-wow-delay="1s" style={{ background: `url("https://images.unsplash.com/photo-1494783367193-149034c05e8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80") no-repeat center center` }}>
                             </div>
                         </div>
                 </section>
@@ -178,8 +178,6 @@ class Network extends React.Component {
                         <div className="network-boxes-bottom-row-five"><img className="network-boxes-bottom-row-five" src="https://images.unsplash.com/photo-1463062511209-f7aa591fa72f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"/></div>
                     </div>
                 </section>
-
-
                     <section >
                             <div>
                                 <div className="sideways-nav">

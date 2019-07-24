@@ -5,21 +5,16 @@ import Wrapper from './Wrapper';
 import './styles/Projects.scss';
 import './styles/_item_grid.scss';
 
-import globalState from './assets/globalState/globalState';
-
-import Logo from './assets/logo_transparent.png';
-
 import { Link, animateScroll as scroll } from "react-scroll";
 
-import email from './assets/email.jpg';
-import emailbottom from  './assets/emailbottom.jpg';
+import emailtwo from './assets/emailtwo.jpg';
+import email from  './assets/email.jpg';
 import menu from './assets/menu.jpg';
-import movies from './assets/movies.jpg';
 import listings from './assets/listings.jpg';
 import restaurantfront from  './assets/restaurantfront.jpg';
 import movie2 from './assets/movie2.jpg';
 import movies3 from './assets/movies3.jpg';
-import emailtwo from './assets/emailtwo.jpg';
+import dagency from './assets/dagency.png';
 
 
 class Projects extends Component {
@@ -41,6 +36,13 @@ class Projects extends Component {
                    date: 'April-May 2019',
                    tech: 'React, Javascript, React Router, Scss'
                 },
+                {  
+                    title: 'Digital Agency',
+                    description: 'This is layout designed with bootstrap designed to be used by clients for a digital agency in order to gain exposure and display the services that can be provided.',
+                    img: dagency,
+                    date: 'July 2019',
+                    tech: 'HTML, Bootstrap, CSS'
+                 },
                 { 
                    title: 'The Steak House',
                    description: 'Enjoy your favorite meals at your local Restaurant. This is a single page web application that I made using React. The purpose of this project was to create an aesthetically pleasing website that can be used by any local restaurant. This project is easily scaled and  a lot of detail was put into every single component.',
@@ -87,7 +89,7 @@ class Projects extends Component {
                         <div className="items">
                         <div class="item" style={{ boxShadow:' 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4)', width: '286px', height: '198px'}} >
                                 <div>
-                                    <img src={ emailbottom } style={{ width: '286px', height: '198px' }}  alt="" />
+                                    <img src={ emailtwo } style={{ width: '286px', height: '198px' }}  alt="" />
                                 </div>
                                 <div class="item-text">
                                     <div class="item-text-wrap">
@@ -96,7 +98,7 @@ class Projects extends Component {
                                             to="Hero Lets you"
                                             spy={true}
                                             smooth={true}
-                                            offset={-70}
+                                            offset={-70} 
                                             duration= {500}>
                                             <p class="item-text-category">Micro Services</p>
                                             <h2 class="item-text-title"> Email</h2>
@@ -125,6 +127,25 @@ class Projects extends Component {
                              </div>
                              <div class="item" style={{ width: '286px', height: '198px' }} >
                                 <div>
+                                    <img src={ dagency } style={{ width: '286px', height: '198px' }} alt="" />
+                                </div>
+                                <div class="item-text">
+                                    <div class="item-text-wrap">
+                                        <Link style={{ color: 'black' }}
+                                            activeClass="active"
+                                            to="Digital Agency"
+                                            spy={true}
+                                            smooth={true}
+                                            offset={-70}
+                                            duration= {500}>
+                                            <p class="item-text-category">Digital Agency</p>
+                                            <h2 class="item-text-title">Dagency</h2>
+                                        </Link>
+                                    </div>
+                                </div>
+                             </div>
+                             <div class="item" style={{ width: '286px', height: '198px' }} >
+                                <div>
                                     <img src={menu} style={{ width: '286px', height: '198px' }} alt="" />
                                 </div>
                                 <div class="item-text">
@@ -139,17 +160,6 @@ class Projects extends Component {
                                             <p class="item-text-category">Restaurant</p>
                                             <h2 class="item-text-title">Steak House</h2>
                                         </Link>
-                                    </div>
-                                </div>
-                             </div>
-                             <div class="item" style={{ width: '286px', height: '198px' }} >
-                                <div>
-                                    <img src={movie2} style={{ width: '286px', height: '198px' }} alt="" />
-                                </div>
-                                <div class="item-text">
-                                    <div class="item-text-wrap">
-                                        <p class="item-text-category">Movie Theater</p>
-                                        <h2 class="item-text-title">The Movie Bonanza</h2>
                                     </div>
                                 </div>
                              </div>

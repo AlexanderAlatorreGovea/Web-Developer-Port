@@ -6,49 +6,20 @@ import './styles/_item_grid.scss';
 
 import { Link } from 'react-router-dom';
 
-import globalState from './assets/globalState/globalState';
 
-import email from './assets/email.jpg';
-import emailbottom from  './assets/emailbottom.jpg';
-import menu from './assets/menu.jpg';
-import movies from './assets/movies.jpg';
+
 import listings from './assets/listings.jpg';
 import restaurantfront from  './assets/restaurantfront.jpg';
 import movie2 from './assets/movie2.jpg';
-import movies3 from './assets/movies3.jpg';
 import emailtwo from './assets/emailtwo.jpg';
+import dagency from './assets/dagency.png';
+
  
 class ProjectsView extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-       allImgs: [
-        menu,
-        movies3,
-        restaurantfront,
-        listings,
-        movie2,
-        emailtwo,
-        restaurantfront,
-        listings,
-        movie2,
-        emailtwo,
-        movie2,
-        emailtwo,
-        restaurantfront,
-        listings,
-        movie2,
-        emailtwo 
-      ],
       allImgs : [
-        { 
-           title: 'The Movie Bonanza',
-           type: 'Movie Theater',
-           year: '2019',
-           img: movie2,
-           client: 'private',
-           technologies: 'react/redux'
-        },
         { 
           title: 'Nexter',
           type: 'Real Estate',
@@ -57,6 +28,14 @@ class ProjectsView extends React.Component {
           client: 'private',
           technologies: 'react/sass'
        },
+       { 
+        title: 'The Movie Bonanza',
+        type: 'Movie Theater',
+        year: '2019',
+        img: movie2,
+        client: 'private',
+        technologies: 'react/redux'
+      },
        { 
           title: 'The Steak House',
           type: 'Restaurant',
@@ -72,6 +51,14 @@ class ProjectsView extends React.Component {
           img: emailtwo,
           client: 'private',
           technologies: 'HTML email'
+       },
+       { 
+        title: 'D Agency',
+        type: 'Digital Agency',
+        year: '2019',
+        img: dagency,
+        client: 'private',
+        technologies: 'HTML Bootsrap'
        },
        { 
         title: 'The Movie Bonanza',
@@ -104,7 +91,47 @@ class ProjectsView extends React.Component {
        img: emailtwo,
        client: 'private',
        technologies: 'HTML email'
-    }
+    },
+    { 
+      title: 'Nexter',
+      type: 'Real Estate',
+      year: '2019',
+      img: listings,
+      client: 'private',
+      technologies: 'react/sass'
+   },
+   { 
+    title: 'The Movie Bonanza',
+    type: 'Movie Theater',
+    year: '2019',
+    img: movie2,
+    client: 'private',
+    technologies: 'react/redux'
+  },
+   { 
+      title: 'The Steak House',
+      type: 'Restaurant',
+      year: '2019',
+      img: restaurantfront,
+      client: 'private',
+      technologies: 'react'
+    },
+    { 
+      title: 'Hero Lets You',
+      type: 'Email',
+      year: '2019',
+      img: emailtwo,
+      client: 'private',
+      technologies: 'HTML email'
+   },
+   { 
+    title: 'D Agency',
+    type: 'Digital Agency',
+    year: '2019',
+    img: dagency,
+    client: 'private',
+    technologies: 'HTML Bootsrap'
+   },
     ],
       revealImage: false,
       translateValue: 0,
@@ -173,7 +200,7 @@ class ProjectsView extends React.Component {
               <div className="arrow">
                 <i onClick={this.prevBtn} class="green big arrow alternate circle left outline icon"></i>
                 <i onClick={this.nextBtn.bind(null, this.state.index)} class="green big arrow alternate circle right outline icon"></i>
-          </div>
+              </div>
 
               
               <div class="carousel js-carousel">
@@ -230,30 +257,6 @@ class ProjectsView extends React.Component {
                             </div>
                           )
                           })} 
-                        <div className="project-title-one general-title">
-                            <h3 className="header-description">Movie Theater Website</h3>
-                            <h4 className="header-description">created with react</h4>
-                          </div>
-
-                          <div className="project-title-two general-title">
-                            <h3 className="header-description">Movie Theater Website</h3>
-                            <h4 className="header-description">created with react</h4>
-                          </div>
-
-                          <div className="project-title-three general-title">
-                            <h3 className="header-description">Movie Theater Website</h3>
-                            <h4 className="header-description">created with react</h4>
-                          </div>
-
-                          <div className="project-title-four general-title">
-                            <h3 className="header-description">Movie Theater Website</h3>
-                            <h4 className="header-description">created with react</h4>
-                          </div>
-
-                          <div className="project-title-five general-title">
-                            <h3 className="header-description">Movie Theater Website</h3>
-                            <h4 className="header-description">created with react</h4>
-                        </div>
                       </div>
                       </div>
 

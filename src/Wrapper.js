@@ -43,8 +43,8 @@ class Wrapper extends Component {
                 </div>
                 <ul className="wrapper-menu">
                     <Link  to="/" style={{color: 'black', textTransform: 'lowercase' }}><li className="wrapper-menu-item">Home</li></Link>
-                    <Link  to="/Network" style={{color: 'black', textTransform: 'lowercase' }}><li className="wrapper-menu-item">Work</li></Link>
-                    <Link  to="/Projects" style={{color: 'black', textTransform: 'lowercase' }}><li className="wrapper-menu-item">Discover More.</li></Link>
+                    <Link  to="/Projects" style={{color: 'black', textTransform: 'lowercase' }}><li className="wrapper-menu-item">Work</li></Link>
+                    <Link  to="/Network" style={{color: 'black', textTransform: 'lowercase' }}><li className="wrapper-menu-item">Discover More.</li></Link>
                 </ul>
                 <button onClick={this.toggleMenu} style={{ marginBottom: '5rem', zIndex: '10000000'}} className={`main-nav-toggle-button hamburger hamburger--elastic${this.state.visibleMenu ? ' is-active' : ''}`} type="button">
                     <span className="hamburger-box">
