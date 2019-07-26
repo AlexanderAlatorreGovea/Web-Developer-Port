@@ -7,12 +7,16 @@
 .top-container{
     width: 100%;
     height: 40vh;
+    @media only screen and (min-width: 1440px) {
+        height: 26vh;
+    }
     .description{
         margin-left: 56px;
         padding-top: 25px;
-    }
-    .title-one{
-        
+        @media only screen and (max-width: 425px) {
+            margin-left: 0;
+            padding-top: 0;
+        }
     }
     .secondary-line{
         border: .5px solid black;
@@ -31,10 +35,25 @@
     padding: 0 1.5rem;
     margin: auto;
     overflow: hidden;
+    @media only screen and (min-width: 1440px) {
+        max-width: 1440px;
+        padding-left: 4rem;
+    }
+    @media only screen and (max-width: 425px) {
+        padding: 0;
+    }
     .arrow{
         display: flex;
         flex-direction: column;
-        cursor: pointer; 
+        cursor: pointer;
+        @media only screen and (min-width: 1440px) {
+            z-index: 300;
+            color: teal;
+        }
+        @media only screen and (max-width: 425px) {
+            z-index: 300;
+            color: teal;
+        } 
         i.icon.arrow.right{
             padding-left: inherit;
             padding-top: 5px;
@@ -43,6 +62,12 @@
     }
     .top-section-bottom-container{
         margin-left: 56px;
+        @media only screen and (min-width: 1440px) {
+            margin-left: 0;
+        }
+        @media only screen and (max-width: 425px) {
+            margin-left: 0px;
+        }  
     }
     h1{
         font-size: 92px;
@@ -50,6 +75,13 @@
         z-index: 200;
         position: relative;
         color: black;
+        @media only screen and (min-width: 1440px) {
+            max-width: 1440px;
+            font-size: 16rem;
+        }
+        @media only screen and (max-width: 425px) {
+            color: sienna
+        } 
     }
     .ui.primary.button, .ui.primary.buttons .button {
         background-color: #aef0d2;
@@ -60,6 +92,16 @@
         margin-top: 48px;
         margin-left: 126px;
         width: 12rem;
+        @media only screen and (min-width: 1440px) {
+            width: 25rem;
+            height: 6rem;
+            font-size: 2.3rem;
+            margin-left: 0;
+        }
+        @media only screen and (max-width: 425px) {
+            margin-top: 2rem;
+            margin-left: 0;
+        }
         &:hover{
             background: #f9cbd1;
             color: #000;
@@ -69,13 +111,7 @@
         border-radius: none;
     }
 }
-/*
-    .button {
-    margin-top: 48px;
-    padding-left: 126px;
-    width: 59%;
-}
-*/
+
 
 
 .number{
@@ -97,11 +133,21 @@
 .carousel{
     padding: 0px 70px;
     margin-top: -113px;
+    @media only screen and (max-width: 425px) {
+        padding: 0;
+    }
+    @media only screen and (min-width: 1440px) {
+        padding: 0;
+        margin-top: -249px;
+    }
 }
 
 .carousel__container {
 	overflow: hidden;
-	height: 200px;
+    height: 200px;
+    @media only screen and (min-width: 1440px) {
+        height: 450px;
+    }
 }
 .carousel__list{
 	position: relative;
@@ -118,12 +164,26 @@
     width: 350px;
 	background-color: #ccc;
 	text-align: center;
-	line-height: 100px;
+    line-height: 100px;
 }
 
 .title-containter{
     padding: 0px 70px;
     width: 741;
+    @media only screen and (min-width: 1440px) {
+        padding: 0;
+    }
+    @media only screen and (max-width: 425px) {
+        padding: 0;
+    }
+    .titles{
+        @media only screen and (min-width: 1440px) {
+            margin-left: 0px;
+        }
+        @media only screen and (max-width: 425px) {
+            margin-left: 0px;
+        }
+    }
 }
 
 .title-wrapper{
@@ -137,22 +197,30 @@
     display: flex;
     flex-direction: row;
     width: 741;
-    //overflow: hidden;
     margin-left: 57px;
     .general-title{
         flex: 1 0 400px;
         padding-top: 33px;
+        @media only screen and (min-width: 1440px) {
+            flex: 1 0 600px;
+        }
     }
     h4{
         margin-top: 0px;
         font-weight: 100;
+        @media only screen and (min-width: 1440px) {
+            font-size: 3rem;
+        }
     }
     h3{
         font-weight: 10360;
+         @media only screen and (min-width: 1440px) {
+            font-size: 3rem;
+        }
     }
 }
 
-.imageView{
+.imageView{ 
     width: 300px;
     height: 250px;
 }
@@ -161,11 +229,27 @@
 i.icon.arrow.alternate.circle.left.outline:before {
     content: "\f359";
     color: black;
+    &:hover{
+        color: #EB4E7A;
+    }
+    @media only screen and (max-width: 425px) {
+        z-index: 300;
+        color: #000000;
+        font-size: 2rem;
+    } 
 }
 
 i.icon.arrow.alternate.circle.right.outline:before {
     content: "\f35a";
     color: black;
+    &:hover{
+        color: #EB4E7A;
+    }
+    @media only screen and (max-width: 425px) {
+        z-index: 300;
+        color: #000000;
+        font-size: 2rem;
+    } 
 }
 
 .carousel__list {
@@ -183,6 +267,12 @@ i.icon.arrow.alternate.circle.right.outline:before {
         padding: 30px;
         transition: all .3s ease-in-out;
         background-size: contain;
+        width: 400px;
+        height: 350px;
+        @media only screen and (min-width: 1440px) {
+            width: 600px;
+            height: 550px;
+        }
         .grey-bg{
             position: absolute;
             top: 0;
@@ -199,6 +289,9 @@ i.icon.arrow.alternate.circle.right.outline:before {
                 padding-left: 45px;
                 top: 7rem;
                 width: 100%;
+                @media only screen and (min-width: 1440px) {
+                    top: 15rem;
+                }
                 .project-details{
                     position: relative;
                     font-size: 1rem;
@@ -206,6 +299,9 @@ i.icon.arrow.alternate.circle.right.outline:before {
                     margin: 0 0 1rem;
                     transform: translate3d(-400px, 0, 0);
                     transition: all .3s ease-in;
+                    @media only screen and (min-width: 1440px) {
+                        font-size: 3rem;
+                    }
                 }
                 ////animates after 2s
                 .project-title{
@@ -215,6 +311,9 @@ i.icon.arrow.alternate.circle.right.outline:before {
                     transition: all .3s ease-in .1s;
                     transform: translate3d(-100px, 0, 0);
                     opacity: 0;
+                    @media only screen and (min-width: 1440px) {
+                        font-size: 1.7rem;
+                    }
                 }
                 .long {
                     position: absolute;
@@ -244,5 +343,14 @@ i.icon.arrow.alternate.circle.right.outline:before {
                 }
             }
         }
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    #arrow-right-r{
+        font-size: 5rem;
+    }
+    #arrow-left-l {
+        font-size: 5rem;
     }
 }

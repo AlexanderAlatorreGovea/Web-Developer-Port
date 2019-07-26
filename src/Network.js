@@ -4,10 +4,8 @@ import './styles/_item_grid.scss';
 
 import ContactPage from './ContactPage';
 import ProjectsView from './ProjectsView';
-import Home from './Home';
 import { Link, animateScroll as scroll } from "react-scroll";
 import { NavLink } from 'react-router-dom';
-import Preloader from './Preloader';
 import Wrapper from './Wrapper';
 
 
@@ -71,56 +69,56 @@ class Network extends React.Component {
                     </div>
                         <div className="intro-bottom main-container">
                             <div className="intro-bottom-section">
-                                <div className="intro-bottom-section-left animated fadeIn" >
+                                <div id="bg-screen"  className="intro-bottom-section-left animated fadeIn" >
                                 INTRODUCTION
                                 </div>
-                                <div className="intro-bottom-section-rigth animated fadeIn" data-wow-delay="1s">
+                                <div id="bg-screen" className="intro-bottom-section-rigth animated fadeIn" data-wow-delay="1s">
                                     Growing up I always enjoyed working with computers and researching tech related topics. 
                                     I completed my Bachelors in Psychology at UCSB but I quickly re-discovered my love for tech after a few years of working in a Psychology related field.
                                     I am currently working to improve my skills as a front-end developer to soon start working as a back back-end developer. 
                                 </div>
                             </div>
                             <div className="intro-bottom-section">
-                                <div className="intro-bottom-section-left wow fadeInLeft" >
+                                <div id="bg-screen" className="intro-bottom-section-left wow fadeInLeft" >
                                     WHAT'S MY JOURNEY
                                 </div>
                                 <div style={{ width: '500px'}} className="intro-bottom-section-rigth wow fadeInRight">
-                                    <div className="intro-bottom-timeline">
+                                    <div id="bg-screen" className="intro-bottom-timeline">
                                         <span > Front-end developer <br/>  learning the basics — HTML, CSS</span>
                                         <span>January - February 2019</span>
                                     </div>
-                                    <div style={{ paddingTop: '3rem' }} className="intro-bottom-timeline">
-                                        <span>Front-end <br /> Hitting a Wall - learning Javascript </span>
-                                        <span>February - Present </span>
+                                    <div id="bg-screen" style={{ paddingTop: '3rem' }} className="intro-bottom-timeline">
+                                        <span id="bg-screen">Front-end <br /> Hitting a Wall - learning Javascript </span>
+                                        <span id="bg-screen">February - Present </span>
                                     </div>
-                                    <div style={{ paddingTop: '3rem' }}  className="intro-bottom-timeline">
-                                        <span>Front-end developer <br />  Falling In Love - learning React-Redux</span>
-                                        <span> April - Present</span>
+                                    <div id="bg-screen" style={{ paddingTop: '3rem' }}  className="intro-bottom-timeline">
+                                        <span id="bg-screen">Front-end developer <br />  Falling In Love - learning React-Redux</span>
+                                        <span id="bg-screen"> April - Present</span>
                                     </div>
                                 </div>
                             </div>
                             <div className="intro-bottom-section">
-                                <div className="intro-bottom-section-left wow fadeInLeft">
+                                <div id="bg-screen" className="intro-bottom-section-left wow fadeInLeft">
                                 WHAT'S MY MOTIVATION
                                 </div>
-                                < div className="intro-bottom-section-rigth wow fadeInRight">
+                                < div id="bg-screen" className="intro-bottom-section-rigth wow fadeInRight">
                                 I want to make web develoment my career as I can't but to think of coding every single minute of my day. Working in this field is the one thing that motivates me to improve my skills 
                                 </div>
                             </div>
-                            <div className="intro-bottom-section">
-                                <div className="intro-bottom-section-left wow fadeInLeft">
+                            <div id="bg-screen" className="intro-bottom-section">
+                                <div id="bg-screen" className="intro-bottom-section-left wow fadeInLeft">
                                 TECHNOLOGIES I USE
                                 </div>
-                                <div className="intro-bottom-section-rigth wow fadeInRight">
-                                    <h1 style={{ fontWeigth: '900' }} >Languages I speak:</h1>
+                                <div id="bg-screen" className="intro-bottom-section-rigth wow fadeInRight">
+                                    <h1 id="bg-screen" style={{ fontWeigth: '900' }} >Languages I speak:</h1>
                                     React, Redux, Sematic HTML, CSS, SCSS, Javascript 
                                 <br /> 
-                                    <h1  style={{ fontWeigth: '900'  }} >Libraries I use:</h1>   
+                                    <h1 id="bg-screen"  style={{ fontWeigth: '900'  }} >Libraries I use:</h1>   
                                 React-Router, React-Redux, Wow.js, Animate.Scss, Redux-Thunk, Axios
                                 </div>
-                            </div> 
+                            </div>  
                         </div>
-                        <div className="intro-parallax">
+                        <div id="bg-screen" className="intro-parallax">
                             Curious Developer
                         </div>
                         <div className="intro-images-container" style={{ marginBottom: '7rem' }}>
@@ -142,9 +140,9 @@ class Network extends React.Component {
                             <h2 className="line-number-five" id="Network">4</h2>
                         </div>
                         <div className="large social-media-icons">
-                            <i class="large github icon page-four wow fadeInUp " ></i>
-                            <i class="large linkedin in icon page-four wow fadeInUp" data-wow-delay="1s"></i>
-                            <i class="large google plus icon page-four wow fadeInUp " data-wow-delay="2s"></i>
+                            <i id="github" class="large github icon page-four wow fadeInUp" ></i>
+                            <i id="google"  class="large google plus icon page-four wow fadeInUp " data-wow-delay="1s"></i>
+                            <i id="linkedin" class="large linkedin in icon page-four wow fadeInUp" data-wow-delay="2s"></i>
                         </div>
                     </nav>
        
@@ -153,11 +151,11 @@ class Network extends React.Component {
                         <div className="network-boxes-top wow fadeInUp" > 
                             <div className="network-boxes-top-row-one"></div>
                             <div className="network-boxes-top-row-two">
-                                <i class="big arrow alternate circle up outline icon"></i>
-                                <i class="big arrow alternate circle down outline icon"></i>
+                                <i id="arrow-n" class="big arrow alternate circle up outline icon"></i>
+                                <i id="arrow-n" class="big arrow alternate circle down outline icon"></i>
                             </div>
                             <div className="network-boxes-top-row-three"><img className="network-boxes-top-row-three" className="network-boxes-top-row-three" src="https://images.unsplash.com/photo-1475483768296-6163e08872a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" /></div>
-                            <div className="network-boxes-top-row-four"></div>
+                            <div id="bg-dissappear" className="network-boxes-top-row-four"></div>
                             <div className="network-boxes-top-row-five"></div>
                         </div>
 
@@ -166,7 +164,7 @@ class Network extends React.Component {
                             <div className="network-boxes-middle-row-one"></div>
                             <div className="network-boxes-middle-row-two"><img className="network-boxes-middle-row-two" src="https://images.unsplash.com/photo-1489712310660-bbce44cc541d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"/></div>
                             <div className="network-boxes-middle-row-three"></div>
-                            <div className="network-boxes-middle-row-four"><h1 className="network-title wow fadeInLeft" data-wow-delay="2s">network.</h1><img className="network-boxes-middle-row-four" style={{width: '188px', height: '134px'}} src="https://images.unsplash.com/uploads/14115120538776712c565/a699942a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"/></div>
+                            <div id="bg-dissappear" className="network-boxes-middle-row-four"><h1 className="network-title wow fadeInLeft" data-wow-delay="2s">network.</h1><img className="network-boxes-middle-row-four" style={{width: '188px', height: '134px'}} src="https://images.unsplash.com/uploads/14115120538776712c565/a699942a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"/></div>
                             <div className="network-boxes-middle-row-five"><img className="network-boxes-middle-row-five" src="https://images.unsplash.com/photo-1485742032238-7543513eeba6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" /></div>
                         </div>
 
@@ -182,7 +180,6 @@ class Network extends React.Component {
                             <div>
                                 <div className="sideways-nav">
                                     <ul className='navigation'>
-
                                     <NavLink
                                         to="/Home"
                                     >

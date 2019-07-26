@@ -54,17 +54,17 @@ class ContactPage extends React.Component{
                                     <p className="contact-h-middle-discover">browse my platforms</p>
                                 </div>
                                 <div className="get-in-touch-div-middle">
-                                    <div className="get-in-github"><a href="https://github.com/AlexanderAlatorreGovea"><i class="large github icon "></i></a></div>
-                                    <div className="get-in-touch-linkedin get-padding" ><a href="https://www.linkedin.com/in/alexander-govea-735774107/"><i class="large linkedin in icon"></i></a></div>
-                                    <div className="get-in-touch-google get-padding"><a className="get-in-touch" href="mailto:alexander_alatorre1993@hotmail.com"><i class="large google plus icon "></i></a></div>
+                                    <div id="github-g" className="get-in-github"><a href="https://github.com/AlexanderAlatorreGovea"><i class="large github icon "></i></a></div>
+                                    <div id="linkedin-g" className="get-in-touch-linkedin get-padding" ><a href="https://www.linkedin.com/in/alexander-govea-735774107/"><i class="large linkedin in icon"></i></a></div>
+                                    <div id="google-g" className="get-in-touch-google get-padding"><a className="get-in-touch" href="mailto:alexander_alatorre1993@hotmail.com"><i class="large google plus icon "></i></a></div>
                                 </div>
                                 <div className="sign-up"> 
-                                    <p classNam="download">download my resume</p>
-                                    <i class="long arrow alternate right icon"></i>
+                                    <p id="download" classNam="download">download my resume</p>
+                                    <i id="download"  class="long arrow alternate right icon"></i>
                                     <span className="botton-span"></span>
                                 </div>
                                 <div>
-                                <p className="copyright wow fadeIn" style={{color: 'white'}}>&copy; 2010 AlexanderGovea.com</p>
+                                <p id="download"  className="copyright wow fadeIn" style={{color: 'white'}}>&copy; 2010 AlexanderGovea.com</p>
                                 </div>
                             </div>
                         </section> 

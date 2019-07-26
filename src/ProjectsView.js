@@ -198,8 +198,8 @@ class ProjectsView extends React.Component {
           <h2 className="number-2">2</h2>
             <h1>projects.</h1>
               <div className="arrow">
-                <i onClick={this.prevBtn} class="green big arrow alternate circle left outline icon"></i>
-                <i onClick={this.nextBtn.bind(null, this.state.index)} class="green big arrow alternate circle right outline icon"></i>
+                <i id="arrow-left-l" style={{ color: 'black'}} onClick={this.prevBtn} class="green big arrow alternate circle left outline icon"></i>
+                <i id="arrow-right-r" style={{ color: 'black'}}  onClick={this.nextBtn.bind(null, this.state.index)} class="green big arrow alternate circle right outline icon"></i>
               </div>
 
               
@@ -218,7 +218,7 @@ class ProjectsView extends React.Component {
                       return(
                       <div className="slide">
                         <div className="project-section" >
-                          <div className="project-box" key={index} style={{background: `url("${info.img}") no-repeat`, width: '400px', height: '350px', backgroundSize: 'contain'}} >
+                          <div className="project-box" key={index} style={{background: `url("${info.img}") no-repeat`, backgroundSize: 'contain'}} >
                             <div className="grey-bg">
                               <div className="project-info">
                                 <div className="project-details">

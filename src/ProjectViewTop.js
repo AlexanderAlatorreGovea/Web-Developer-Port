@@ -15,7 +15,7 @@ class ProjectViewTop extends React.Component {
                     </div>
                     <div className="description" >
                         <h1 className="title-one">what I learned</h1>
-                        <div style={{width: '31rem'}} className="paragraph wow fadeInUp">
+                        <div className="paragraph wow fadeInUp">
                         The goal of working on these projects was to continously learn different techonologies and dive into various aspects of front-end development. After completing them, I feel completely confident that I can deliver value to any company that decides to give me an opportunity to demonstrate my skills. 
                         I hope you Enjoy my projects, as I had a lot of fun making them. 
                         </div>      

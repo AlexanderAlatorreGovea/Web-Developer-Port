@@ -30,74 +30,72 @@ class LandingPage extends React.Component{
 
     render() {
         return(
-        <div >
              <div className="LandingPage">
                 <section>
-                <div className="LandingPage-title">
-                    <h1 className="presentation-name">hi, my name is </h1>
-                    <br />
-                    <div class="typewriter">
-                        <span  className="presentation-landing-page typewriter-text">alexander.</span>
-                    </div>
-                    {/*Begining of description */}
-                    <h2 className="description-landing">
-                        and I am a 
-                        <div class="words">
-                            <span>creative</span>
-                            <span>hard working</span>
-                            <span>reliable</span>
-                            <span>web dev</span>
-                            <span>creative</span>
-                            <span>hard working</span>
-                            <span>reliable</span>
-                            <span>web dev</span>
-                            <span>creative</span>
-                            <span>hard working</span>
-                            <span>reliable</span>
-                            <span>web dev</span>
-                            <span>creative</span>
-                            <span>hard working</span>
-                            <span>reliable</span>
-                            <span>web dev</span>
-                            <span>creative</span>
-                            <span>hard working</span>
-                            <span>reliable</span>
-                            <span>web dev</span>
-                            <span>creative</span>
-                            <span>hard working</span>
-                            <span>reliable</span>
-                            <span>web dev</span>
+                    <div className="LandingPage-title">
+                        <h1 className="presentation-name">hi, my name is </h1>
+                        <br />
+                        <div class="typewriter">
+                            <span  className="presentation-landing-page typewriter-text">alexander.</span>
                         </div>
-                    </h2>
-                    {/*End of description */}
-                <div className="sideways-nav-landing" >
-                    <ul className="navigation-landing">
-                        <Link className="navigation-link" to="/Home" >
-                            <li className="navigation-home-landing">home</li>
-                        </Link>
-                        <Link className="navigation-link" to="/Projects" >
-                            <li className="navigation-home-landing">all projects</li>
-                        </Link>
-                        <Link className="navigation-link" to="/Network">
-                            <li className="navigation-home-landing">discover more</li> 
-                        </Link>
-                        <Link className="navigation-link" to="/Network">
-                            <li className="navigation-home-landing">contact</li> 
-                        </Link>
-                    </ul>  
-                </div>
+                        {/*Begining of description */}
+                        <h2 className="description-landing">
+                            and I am a 
+                            <div class="words">
+                                <span>creative</span>
+                                <span>hard working</span>
+                                <span>reliable</span>
+                                <span>web dev</span>
+                                <span>creative</span>
+                                <span>hard working</span>
+                                <span>reliable</span>
+                                <span>web dev</span>
+                                <span>creative</span>
+                                <span>hard working</span>
+                                <span>reliable</span>
+                                <span>web dev</span>
+                                <span>creative</span>
+                                <span>hard working</span>
+                                <span>reliable</span>
+                                <span>web dev</span>
+                                <span>creative</span>
+                                <span>hard working</span>
+                                <span>reliable</span>
+                                <span>web dev</span>
+                                <span>creative</span>
+                                <span>hard working</span>
+                                <span>reliable</span>
+                                <span>web dev</span>
+                            </div>
+                        </h2>
+                        {/*End of description */}
+                    <div className="sideways-nav-landing" > 
+                        <ul className="navigation-landing">
+                            <Link className="navigation-link" to="/Home" >
+                                <li className="navigation-home-landing">home</li>
+                            </Link>
+                            <Link className="navigation-link" to="/Projects" >
+                                <li className="navigation-home-landing">all projects</li>
+                            </Link>
+                            <Link className="navigation-link" to="/Network">
+                                <li className="navigation-home-landing">discover more</li> 
+                            </Link>
+                            <Link className="navigation-link" to="/Network">
+                                <li className="navigation-home-landing">contact</li> 
+                            </Link>
+                        </ul>  
+                    </div>
 
-                </div>             
+                    </div>             
                 </section>
-                <Link to="/Network">
+                <Link style={{ cursor: 'pointer' }} to="/Network">
                 <div className="scroll-down">
                     <i class="animated infinite fadeInDown long arrow alternate down icon"></i>
                     <div style={{ color: 'white' }} className="scroll-title">scroll down</div>
                 </div>
                 </Link>
             </div>
-        </div>
-    )
+        )
     }
 }
 

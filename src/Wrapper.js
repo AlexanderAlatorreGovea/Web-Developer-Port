@@ -38,7 +38,7 @@ class Wrapper extends Component {
             <SideDrawer visibleMenu={this.state.visibleMenu} />
             <div className="wrapper-container-menu">
                 <div className="logo">
-                    <h2 style={{ zIndex: '1000' }} className="wrapper-title"><Link  to="/Network" style={{ color: 'black', textTransform: 'lowercase' }}>govea.</Link></h2>
+                    <h2 id="wrapper-title" style={{ zIndex: '1000' }} className="wrapper-title"><Link  to="/Network" style={{ color: 'black', textTransform: 'lowercase' }}>govea.</Link></h2>
                     <h4 className="wrapper-subtitle-">built / designed by alexander govea</h4>
                 </div>
                 <ul className="wrapper-menu">

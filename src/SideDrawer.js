@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/SideDrawer.scss';
 
-const SideDrawer = (props) => {
+const SideDrawer = (props) => { 
     return (
         <div className="SideDrawer">
              <div className="navigation" id={`${props.visibleMenu ? 'active-menu' : ''}`}>
