@@ -82,14 +82,14 @@ class Projects extends Component {
                         <div style={{ background: '#845007', alignSelf: 'center'}} className="top-tertiary-line"></div> 
                         <div className="top-separator-title">
                             latest work.
-                        </div> 
+                        </div>  
                     </div>
 
                         <div style={{ height: '.5px', width: '100%', background: '#bbb', display: 'none', marginBottom: '3rem', height: '1px'}} className="secondary-bottom-line"></div>
                         <div className="items">
-                        <div class="item" style={{ boxShadow:' 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4)', width: '286px', height: '198px'}} >
+                        <div id="item" class="item" style={{ boxShadow:' 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4)'}} >
                                 <div>
-                                    <img src={ emailtwo } style={{ width: '286px', height: '198px' }}  alt="" />
+                                    <img src={ emailtwo } id="item-image"  alt="" />
                                 </div>
                                 <div class="item-text">
                                     <div class="item-text-wrap">
@@ -106,9 +106,9 @@ class Projects extends Component {
                                     </div>
                                 </div>
                              </div>
-                             <div class="item" style={{ width: '286px', height: '198px' }} >
+                             <div id="item" class="item" >
                                 <div>
-                                    <img src={movies3} style={{ width: '286px', height: '198px' }} alt="" />
+                                    <img id="item-image" src={ movies3 } id="item-image" alt="" />
                                 </div>
                                 <div class="item-text">
                                     <div class="item-text-wrap">
@@ -125,9 +125,9 @@ class Projects extends Component {
                                     </div>
                                 </div>
                              </div>
-                             <div class="item" style={{ width: '286px', height: '198px' }} >
+                             <div id="item" class="item"  >
                                 <div>
-                                    <img src={ dagency } style={{ width: '286px', height: '198px' }} alt="" />
+                                    <img src={ dagency } id="item-image" alt="" />
                                 </div>
                                 <div class="item-text">
                                     <div class="item-text-wrap">
@@ -144,9 +144,9 @@ class Projects extends Component {
                                     </div>
                                 </div>
                              </div>
-                             <div class="item" style={{ width: '286px', height: '198px' }} >
+                             <div id="item" class="item"  >
                                 <div>
-                                    <img src={menu} style={{ width: '286px', height: '198px' }} alt="" />
+                                    <img src={menu} id="item-image" alt="" />
                                 </div>
                                 <div class="item-text">
                                     <div class="item-text-wrap">
@@ -163,9 +163,9 @@ class Projects extends Component {
                                     </div>
                                 </div>
                              </div>
-                             <div class="item" style={{ width: '286px', height: '198px' }} >
+                             <div id="item" class="item" >
                                 <div>
-                                    <img src={ listings } style={{ width: '286px', height: '198px' }} alt="" />
+                                    <img src={ listings } id="item-image" alt="" />
                                 </div>
                                 <div class="item-text">
                                     <div class="item-text-wrap">
@@ -182,9 +182,9 @@ class Projects extends Component {
                                     </div>
                                 </div>
                              </div>
-                             <div class="item" style={{ width: '286px', height: '198px' }} >
+                             <div id="item" class="item"  >
                                 <div>
-                                    <img src={restaurantfront} style={{ width: '286px', height: '198px' }} alt="" />
+                                    <img src={restaurantfront} id="item-image" alt="" />
                                 </div>
                                 <div class="item-text">
                                     <div class="item-text-wrap">

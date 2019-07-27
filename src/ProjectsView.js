@@ -193,14 +193,13 @@ class ProjectsView extends React.Component {
       <ProjectViewTop />
 
         <div className="bottom-container">
-          <div 
-          className="top-section-bottom-container" id="projects">
-          <h2 className="number-2">2</h2>
-            <h1>projects.</h1>
-              <div className="arrow">
-                <i id="arrow-left-l" style={{ color: 'black'}} onClick={this.prevBtn} class="green big arrow alternate circle left outline icon"></i>
-                <i id="arrow-right-r" style={{ color: 'black'}}  onClick={this.nextBtn.bind(null, this.state.index)} class="green big arrow alternate circle right outline icon"></i>
-              </div>
+          <div className="top-section-bottom-container" id="projects">
+            <h2 className="number-2">2</h2>
+              <h1>projects.</h1>
+                <div className="arrow">
+                  <i id="arrow-left-l" style={{ color: 'black'}} onClick={this.prevBtn} class="green big arrow alternate circle left outline icon"></i>
+                  <i id="arrow-right-r" style={{ color: 'black'}}  onClick={this.nextBtn.bind(null, this.state.index)} class="green big arrow alternate circle right outline icon"></i>
+                </div>
 
               
               <div class="carousel js-carousel">

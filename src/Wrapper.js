@@ -72,7 +72,7 @@ class Wrapper extends Component {
                 <section className="sideways-left-nav-wrapper">
                     <ul className="navigation-left-wrapper">
                         <Link style={{ transform: 'rotate(-90deg)' }}  className="navigation-link-left" to="/Projects" >
-                            <li className="navigation-list-left"><i style={{ color: '#000000', transform: 'rotate(-90deg)', fontSize: '1.4rem' }} className="arrow up icon"></i></li>
+                            <li className="navigation-list-left"><i id="arrow__nav" style={{ color: '#000000', transform: 'rotate(-90deg)' }} className="arrow up icon"></i></li>
                         </Link>
                         <Link 
                             activeClass="active"
@@ -82,7 +82,7 @@ class Wrapper extends Component {
                             offset={-70}
                             duration= {500}
                             style={{ transform: 'rotate(-90deg)' }}  className="navigation-link-left" to="/Network">
-                            <li className="navigation-list-left"><i style={{ color: '#000000', transform: 'rotate(-90deg)', fontSize: '1.4rem' }} className="arrow down icon"></i></li> 
+                            <li className="navigation-list-left"><i id="arrow__nav" style={{ color: '#000000', transform: 'rotate(-90deg)' }} className="arrow down icon"></i></li> 
                         </Link>
                         <Link className="navigation-link-left" to="/Network" >
                             <li className="navigation-list-left">connect</li>

@@ -38,6 +38,7 @@
     @media only screen and (min-width: 1440px) {
         max-width: 1440px;
         padding-left: 4rem;
+        height: 39vh;
     }
     @media only screen and (max-width: 425px) {
         padding: 0;
@@ -352,5 +353,8 @@ i.icon.arrow.alternate.circle.right.outline:before {
     }
     #arrow-left-l {
         font-size: 5rem;
+    }
+    .ProjectViewTop .top-container {
+        height: 26vh;
     }
 }

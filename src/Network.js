@@ -82,7 +82,7 @@ class Network extends React.Component {
                                 <div id="bg-screen" className="intro-bottom-section-left wow fadeInLeft" >
                                     WHAT'S MY JOURNEY
                                 </div>
-                                <div style={{ width: '500px'}} className="intro-bottom-section-rigth wow fadeInRight">
+                                <div className="intro-bottom-section-rigth wow fadeInRight">
                                     <div id="bg-screen" className="intro-bottom-timeline">
                                         <span > Front-end developer <br/>  learning the basics — HTML, CSS</span>
                                         <span>January - February 2019</span>
@@ -132,7 +132,7 @@ class Network extends React.Component {
                 {/* Ends top document section */}
                 <ProjectsView/>
                 <div className="Network">
-                <section style={{ maxWidth: '1280px', padding: '0 1.5rem', margin: 'auto', overflow: 'hidden' }}>
+                <section className="network-bottom" >
                 <section>
                     <nav className="static-nav">
                         <div className="number">
