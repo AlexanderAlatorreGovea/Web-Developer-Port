@@ -90,7 +90,7 @@ class LandingPage extends React.Component{
                 </section>
                 <Link style={{ cursor: 'pointer' }} to="/Network">
                 <div className="scroll-down">
-                    <i class="animated infinite fadeInDown long arrow alternate down icon"></i>
+                    <i id="down" class="animated infinite fadeInDown long arrow alternate down icon"></i>
                     <div style={{ color: 'white' }} className="scroll-title">scroll down</div>
                 </div>
                 </Link>

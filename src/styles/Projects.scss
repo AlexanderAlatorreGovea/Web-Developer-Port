@@ -74,7 +74,7 @@
     height: .5px;
     width: 100%;
     background: #bbb;;
-    display: block;
+    display: block; 
     margin: 0 auto 1rem auto;
     margin-bottom: 3rem;
     height: 1px;
@@ -85,6 +85,9 @@
 .individual-project{
     .individual-project-container{
         padding-top: 3rem;
+        @media only screen and (min-width: 1800px) {
+            padding-top: 12rem;
+        } 
         .individual-project-top{
             display: flex;
             flex-direction:row;
@@ -93,7 +96,7 @@
             padding-right: 2rem;
             @media only screen and (max-width: 880px) {
                 flex-direction: column;
-             } 
+            } 
         .individual-project-info{
             display: flex;
             flex-direction: column;
@@ -274,7 +277,7 @@
         text-transform: capitalize;
         text-align: center;
     }
-    h1{
+    h1{ 
         font-size: 3rem;
         max-width: 850px;
         margin: 0 auto 50px;
@@ -286,6 +289,19 @@
         display: block;
         color: #e0bd44;
     }
+    }
 }
-}
+
+///////////MEDIA QUERIES/////////////////////////
+
+@media only screen and (min-width: 1800px) {
+    .year {
+    font-size: 3rem;
+    }
+    .discover{
+        font-size: 2rem;
+        left: 73%;
+    }
+} 
+
 
