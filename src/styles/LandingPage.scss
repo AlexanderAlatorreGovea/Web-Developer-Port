@@ -26,19 +26,21 @@
     top: 32em;
     justify-content: center;
     align-items: center;
+    display: none;
     @media only screen and (max-width: 425px) {
         display: none;
     } 
     @media only screen and (min-width: 769px) {
         top: 42em;
+        right: 0rem;    
     }
     @media only screen and (min-width: 1025px) {
-        right: -22rem;
-        top: 55rem;
+        right: -7rem;
+        top: 47rem;    
     } 
     @media only screen and (min-width: 1920px) {
         top: 84.2rem;
-        right: -37rem;
+        right: -9rem;
     } 
     .navigation-landing{
         list-style-type: none;
@@ -72,7 +74,7 @@
                     cursor: pointer;
                     color: #46e0b4;
                 }
-            }
+            } 
         }
     }
 }
@@ -144,9 +146,6 @@
         @media only screen and (min-width: 1920px) {
             font-size: 3rem;
         } 
-        @media only screen and (min-width: 1920px) {
-            font-size: 3rem;
-        } 
     }
     
     .scroll-title{
@@ -154,7 +153,7 @@
         margin-top: 0;
         padding-left: 3px;
         @media only screen and (min-width: 1025px) {
-            font-size: 3rem;
+            font-size: 2rem;
         } 
         @media only screen and (min-width: 1920px) {
             font-size: 3rem;
@@ -303,7 +302,7 @@ $totalWords: 24;
     animation-iteration-count: infinite;
     @media only screen and (min-width: 1025px) {
         font-size: 2rem;
-     } 
+    } 
 }
 
 /////////////////////MEDIA QUERIES////////////////////////////
