@@ -2,28 +2,28 @@
 
 ///TOP MENU 
 .wrapper-container-menu{
-    @media only screen and (max-width: 1439px) {
+        @media only screen and (max-width: 1440px) {
         display: flex;
         justify-content: space-between;
-        max-width: 1000px;
+        max-width: 1100px;
         padding: 0 1.5rem;
         margin: auto;
         padding-top: 6rem;
         padding-bottom: 2rem;
         overflow: hidden;
         height: 57px;
-      }
+        }
       @media only screen and (min-width: 1440px) {
         display: flex;
         justify-content: space-between;
-        max-width: 1440px;
+        max-width: 1100px;
         padding: 0 1.5rem;
         margin: auto;
-        padding-top: 11rem;
+        padding-top: 6rem;
         padding-bottom: 2rem;
         overflow: hidden;
         height: 57px;
-        font-size: 2rem;
+        font-size: 1.3rem;
       }
 
     .logo{
@@ -71,14 +71,13 @@
     transform: rotate(-90deg);
     height: 2rem;
     position: fixed;
-    right: -10rem;
+    right: -14rem;
     color: #000;
     top: 31.2rem;
     justify-content: center;
     align-items: center;
-    @media only screen and (min-width: 1440px) {
-        top: 63.2rem;
-        right: -38rem;
+    @media only screen and (min-width: 1441px) {
+        right: -18rem;
     }
     @media screen and (max-width: 850px) {
         display: none;
@@ -91,21 +90,21 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 24rem;
+        width: 30rem;
         @media only screen and (min-width: 1440px) {
-            width: 87rem;
+            width: 40rem;
         }
         .navigation-link-right {
             color: #000;
             .navigation-list-right {
                 font-weight: 1000;
                 letter-spacing: 2px;
-                font-size: 1rem;
+                font-size: 1.3rem;
                 color: #000;
                 font-family: $headerFont;
                 color: #000;
                 @media only screen and (min-width: 1440px) {
-                    font-size: 4rem;
+                    font-size: 1.8rem;
                 }
                 &:hover{
                     cursor: pointer;
@@ -128,9 +127,8 @@
     top: 28.2rem;
     justify-content: center;
     align-items: center;
-    @media only screen and (min-width: 1440px) {
-        top: 63.2rem;
-        left: -31rem;
+    @media only screen and (min-width: 1441px) {
+        //display: none;
     }
     @media screen and (max-width: 850px) {
         display: none;
@@ -140,21 +138,21 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 24rem;
+        width: 24rem;/*
         @media only screen and (min-width: 1440px) {
-            width: 66rem;
-        }
+            font-size: 1.8rem;
+        }*/
         .navigation-link-left {
             color: #000;
             .navigation-list-left {
                 font-weight: 1000;
                 letter-spacing: 2px;
-                font-size: 1rem;
+                font-size: 1.3rem;
                 color: #000;
                 font-family: $headerFont;
                 color: #000;
                 @media only screen and (min-width: 1440px) {
-                    font-size: 4rem;
+                    font-size: 1.8rem;
                 }
                 &:hover{
                     cursor: pointer;
@@ -177,17 +175,17 @@
     } 
 }
 
-#wrapper-title {
+#wrapper-title {/*
     @media only screen and (min-width: 1440px) {
         font-size: 3rem;
         top: 4.4rem;
-    }
+    }*/
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1440px) {/*
     #arrow__nav .arrow {
         font-size: 3rem;
-    }
+    }*/
 }
 
 

@@ -56,9 +56,10 @@
         line-height: 1.20455em;
         letter-spacing: -.03409em;
         font-weight: 900;
+        /*
         @media only screen and (min-width: 1440px) {
             font-size: 10.5rem;
-        }
+        }*/
     }
 }
 .get-in-touch-div{
@@ -83,13 +84,14 @@
             background: white;
             color: #1C262B;
         }
+        /*
         @media only screen and (min-width: 1440px) {
             padding: 4rem;
             font-size: 4rem;
             display: flex;
             align-items: center;
             justify-content: center;
-        }
+        }*/
     }
     .get-in-touch-phone {
         background: #aef0d2;
@@ -100,7 +102,7 @@
         padding-left: 5px;
         .phone .icon{
             background: #aef0d2;
-        }
+        }/*
         @media only screen and (min-width: 1440px) {
             font-size: 4rem;
             display: flex;
@@ -110,7 +112,7 @@
             padding-right: 5rem;
             padding-top: 1rem;
             padding-bottom: 1rem;
-        }
+        }*/
     }
     .get-in-touch-map {
         background: #aef0d2;
@@ -121,7 +123,7 @@
         padding-left: 5px;
         align-items: center;
         align-content: center;
-        justify-content: center;
+        justify-content: center;/*
         @media only screen and (min-width: 1440px) {
             font-size: 4rem;
             display: flex;
@@ -131,7 +133,7 @@
             padding-right: 5rem;
             padding-top: 1rem;
             padding-bottom: 1rem;
-        }
+        }*/
     }
 }
     
@@ -140,11 +142,11 @@
 .get-in-touch-paragraph{
     .contact-info{
         color: #fff;
-        padding-top: 20px;
+        padding-top: 20px;/*
         @media only screen and (min-width: 1440px) {
             font-size: 3rem;
             padding-top: 3.5rem;
-        }
+        }*/
     }
 }
    
@@ -167,11 +169,11 @@
     }
 }
 
-.contact-top-middle{
+.contact-top-middle{/*
     @media only screen and (min-width: 1440px) {
         font-size: 3rem;
         width: 100rem;
-    }
+    }*/
 }
 .contact-h-middle{
     color: white;
@@ -208,10 +210,10 @@
     border-bottom: 1px solid white;
     padding-top: 30px;
     border-bottom-width: 1px;
-    width: 238px;
+    width: 238px;/*
     @media only screen and (min-width: 1440px) {
         width: 700px;
-    }
+    }*/
 }
 
 i.icon.github:before {
@@ -231,6 +233,7 @@ i.icon.github:before {
 }
 
 ////////////////////MEDIA///////////////////////@debug
+/*
 @media only screen and (min-width: 1440px) {
     #github-g, #linkedin-g, #google-g {
         font-size: 3rem;
@@ -239,6 +242,6 @@ i.icon.github:before {
         font-size: 3rem;
         width: 100rem;
     }
-}
+}*/
 
   

@@ -3,28 +3,28 @@
 
 #item {
     width: 286px;
-    height: 198px; 
+    height: 198px; /*
     @media only screen and (min-width: 1440px) {
         width: 600px;
         height: 430px;
-    }
+    }*/
     #item-image {
         width: 286px;
-        height: 198px; 
+        height: 198px; /*
         @media only screen and (min-width: 1440px) {
             width: 600px;
             height: 430px;
-        }
+        }*/
     }
-    .item-text-category {
+    .item-text-category {/*
         @media only screen and (min-width: 1440px) {
             font-size: 4rem;
-        }
+        }*/
     }
-    .item-text-title {
+    .item-text-title {/*
         @media only screen and (min-width: 1440px) {
             font-size: 3rem;
-        }
+        }*/
     }
 }
 
@@ -85,8 +85,8 @@
 .individual-project{
     .individual-project-container{
         padding-top: 3rem;
-        @media only screen and (min-width: 1800px) {
-            padding-top: 12rem;
+        @media only screen and (min-width: 1440px) {
+            padding-bottom: 5rem;
         } 
         .individual-project-top{
             display: flex;
@@ -113,10 +113,10 @@
                 text-align: start;
                 font-weight: 900;
                 text-transform: uppercase;
-                font-family: "Roboto", sans-serif;
+                font-family: "Roboto", sans-serif;/*
                 @media only screen and (min-width: 1440px) {
                     font-size: 4rem;
-                }
+                }*/
             }
             .individual-project-description{
                 text-align: -webkit-auto;
@@ -124,29 +124,29 @@
                 color: #80828a;
                 padding-top: 2rem;
                 padding-bottom: 3rem;
-                line-height: 1.5;
+                line-height: 1.5;/*
                 @media only screen and (min-width: 1440px) {
                     font-size: 2.5rem;
                     max-width: 85%;
-                }
+                }*/
             }
             .individual-project-icon{
                 display: flex;
                 .individual-project-link {
                     font-weight: 900;
-                    padding-bottom: 1rem;
+                    padding-bottom: 1rem;/*
                     @media only screen and (min-width: 1440px) {
                         font-size: 4rem;
-                    }
+                    }*/
                 }
                 .long{
                     font-size: 1.5rem;
                     margin-top: -5px;
                     margin-left: 1rem;
-                    color: $main-color;
+                    color: $main-color;/*
                     @media only screen and (min-width: 1440px) {
                         font-size: 5rem;
-                    }
+                    }*/
                     &:hover{
                         color: $black;
                         cursor: pointer;
@@ -162,12 +162,12 @@
     .individual-project-date-info{
         text-align: -webkit-auto;
         line-height: 1.6;
-        font-family: $primary-font;
+        font-family: $primary-font;/*
         @media only screen and (min-width: 1440px) {
             font-size: 2rem;
             width: 715px;
             letter-spacing: 5px;
-        }
+        }*/
         @media only screen and (max-width: 880px) {
             order: 1;
          } 
@@ -216,10 +216,10 @@
     text-align: start;
     margin-bottom: 7rem;
     margin-top: 1.7rem;
-    justify-content: center;
+    justify-content: center;/*
     @media only screen and (min-width: 1440px) {
         justify-content: start;
-    }
+    }*/
     .top-tertiary-line{
         align-self: center;
         background: rgb(0, 0, 0);
@@ -232,10 +232,10 @@
         z-index: 200;
         color: #202020;
         font-family: $rozhaFont;
-        font-weight: 100;
+        font-weight: 100;/*
         @media only screen and (min-width: 1440px) {
             font-size: 123px;
-        }
+        }*/
     }
 }
 
@@ -259,10 +259,10 @@
     .separator-title{
         font-size: 92px;
         z-index: 200;
-        color: #202020;
+        color: #202020;/*
         @media only screen and (min-width: 1440px) {
             font-size: 125px;
-        }
+        }*/
     }
 }
 
@@ -293,7 +293,7 @@
 }
 
 ///////////MEDIA QUERIES/////////////////////////
-
+/*
 @media only screen and (min-width: 1800px) {
     .year {
     font-size: 3rem;
@@ -302,6 +302,6 @@
         font-size: 2rem;
         left: 73%;
     }
-} 
+} */
 
 

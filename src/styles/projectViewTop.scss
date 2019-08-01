@@ -12,10 +12,10 @@
     }
     @media only screen and (max-width: 768px) {
         padding-top: 0rem;
-    }
+    }/*
     @media only screen and (min-width: 1440px) {
         max-width: 1440px;
-    }
+    }*/
  
     .top-container{
         width: 100%;
@@ -36,18 +36,18 @@
             line-height: 1.5rem;
             font-size: .9rem;
             font-family: $primary-font;
-            width: 31rem;
+            width: 31rem;/*
             @media only screen and (min-width: 1440px) {
                 line-height: 2.5rem;
                 width: 55rem;
                 font-size: 2.5rem;
-            }
+            }*/
         }
         .title-one {
-            font-size: 3rem;
+            font-size: 3rem;/*
             @media only screen and (min-width: 1440px) {
                 font-size: 6rem;
-            }
+            }*/
         }
         .secondary-line{
             border: .5px solid black;
@@ -59,7 +59,7 @@
 
 
 /////////////////////////Media Queries////////////////////////////////
-
+/*
 
 @media only screen and (min-width: 1440px) {
     .number h2 {
@@ -68,7 +68,7 @@
     .number-2  {
         font-size: 3rem;
     }
-}
+}*/
 
 
 

@@ -34,23 +34,23 @@
     max-width: 1000px;
     padding: 0 1.5rem;
     margin: auto;
-    overflow: hidden;
+    overflow: hidden;/*
     @media only screen and (min-width: 1440px) {
         max-width: 1440px;
         padding-left: 4rem;
         height: 39vh;
-    }
+    }*/
     @media only screen and (max-width: 425px) {
         padding: 0;
     }
     .arrow{
         display: flex;
         flex-direction: column;
-        cursor: pointer;
+        cursor: pointer;/*
         @media only screen and (min-width: 1440px) {
             z-index: 300;
             color: teal;
-        }
+        }*/
         @media only screen and (max-width: 425px) {
             z-index: 300;
             color: teal;
@@ -62,10 +62,10 @@
 
     }
     .top-section-bottom-container{
-        margin-left: 56px;
+        margin-left: 56px;/*
         @media only screen and (min-width: 1440px) {
             margin-left: 0;
-        }
+        }*/
         @media only screen and (max-width: 425px) {
             margin-left: 0px;
         }  
@@ -75,11 +75,11 @@
         margin-top: -34px;
         z-index: 200;
         position: relative;
-        color: black;
+        color: black;/*
         @media only screen and (min-width: 1440px) {
             max-width: 1440px;
             font-size: 16rem;
-        }
+        }*/
         @media only screen and (max-width: 425px) {
             color: sienna
         } 
@@ -92,13 +92,13 @@
         transition: all .2s ease-in .1s;
         margin-top: 48px;
         margin-left: 126px;
-        width: 12rem;
+        width: 12rem;/*
         @media only screen and (min-width: 1440px) {
             width: 25rem;
             height: 6rem;
             font-size: 2.3rem;
             margin-left: 0;
-        }
+        }*/
         @media only screen and (max-width: 425px) {
             margin-top: 2rem;
             margin-left: 0;
@@ -136,19 +136,19 @@
     margin-top: -113px;
     @media only screen and (max-width: 425px) {
         padding: 0;
-    }
+    }/*
     @media only screen and (min-width: 1440px) {
         padding: 0;
         margin-top: -249px;
-    }
+    }*/
 }
 
 .carousel__container {
 	overflow: hidden;
-    height: 200px;
+    height: 200px;/*
     @media only screen and (min-width: 1440px) {
         height: 450px;
-    }
+    }*/
 }
 .carousel__list{
 	position: relative;
@@ -170,17 +170,17 @@
 
 .title-containter{
     padding: 0px 70px;
-    width: 741;
+    width: 741;/*
     @media only screen and (min-width: 1440px) {
         padding: 0;
-    }
+    }*/
     @media only screen and (max-width: 425px) {
         padding: 0;
     }
-    .titles{
+    .titles{/*
         @media only screen and (min-width: 1440px) {
             margin-left: 0px;
-        }
+        }*/
         @media only screen and (max-width: 425px) {
             margin-left: 0px;
         }
@@ -201,23 +201,23 @@
     margin-left: 57px;
     .general-title{
         flex: 1 0 400px;
-        padding-top: 33px;
+        padding-top: 33px;/*
         @media only screen and (min-width: 1440px) {
             flex: 1 0 600px;
-        }
+        }*/
     }
     h4{
         margin-top: 0px;
-        font-weight: 100;
+        font-weight: 100;/*
         @media only screen and (min-width: 1440px) {
             font-size: 3rem;
-        }
+        }*/
     }
     h3{
-        font-weight: 10360;
+        font-weight: 10360;/*
          @media only screen and (min-width: 1440px) {
             font-size: 3rem;
-        }
+        }*/
     }
 }
 
@@ -269,11 +269,11 @@ i.icon.arrow.alternate.circle.right.outline:before {
         transition: all .3s ease-in-out;
         background-size: contain;
         width: 400px;
-        height: 350px;
+        height: 350px;/*
         @media only screen and (min-width: 1440px) {
             width: 600px;
             height: 550px;
-        }
+        }*/
         .grey-bg{
             position: absolute;
             top: 0;
@@ -289,20 +289,20 @@ i.icon.arrow.alternate.circle.right.outline:before {
                 padding: 18px;
                 padding-left: 45px;
                 top: 7rem;
-                width: 100%;
+                width: 100%;/*
                 @media only screen and (min-width: 1440px) {
                     top: 15rem;
-                }
+                }*/
                 .project-details{
                     position: relative;
                     font-size: 1rem;
                     text-transform: capitalize;
                     margin: 0 0 1rem;
                     transform: translate3d(-400px, 0, 0);
-                    transition: all .3s ease-in;
+                    transition: all .3s ease-in;/*
                     @media only screen and (min-width: 1440px) {
                         font-size: 3rem;
-                    }
+                    }*/
                 }
                 ////animates after 2s
                 .project-title{
@@ -311,10 +311,10 @@ i.icon.arrow.alternate.circle.right.outline:before {
                     font-weight: 800;
                     transition: all .3s ease-in .1s;
                     transform: translate3d(-100px, 0, 0);
-                    opacity: 0;
+                    opacity: 0;/*
                     @media only screen and (min-width: 1440px) {
                         font-size: 1.7rem;
-                    }
+                    }*/
                 }
                 .long {
                     position: absolute;
@@ -346,7 +346,7 @@ i.icon.arrow.alternate.circle.right.outline:before {
         }
     }
 }
-
+/*
 @media only screen and (min-width: 1440px) {
     #arrow-right-r{
         font-size: 5rem;
@@ -357,4 +357,4 @@ i.icon.arrow.alternate.circle.right.outline:before {
     .ProjectViewTop .top-container {
         height: 26vh;
     }
-}
+}*/
