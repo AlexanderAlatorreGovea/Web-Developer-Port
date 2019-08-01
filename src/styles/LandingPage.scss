@@ -23,38 +23,38 @@
     right: -11rem;
     background: #000;
     color: white;
-    top: 32em;
+    top: 36em;
     justify-content: center;
     align-items: center;
-    display: none;
+    //display: none;
     @media only screen and (max-width: 425px) {
         display: none;
     } 
     @media only screen and (min-width: 769px) {
-        top: 42em;
-        right: 0rem;    
+        top: 37em;  
     }
-    @media only screen and (min-width: 1025px) {
-        right: -7rem;
-        top: 47rem;    
-    } /*
+    @media only screen and (min-width: 1440px) {
+        top: 37em;
+        right: -15rem;
+        //right: -7rem;
+        //top: 47rem;    
+    } 
     @media only screen and (min-width: 1920px) {
-        top: 84.2rem;
-        right: -9rem;
-    } */
+        //top: 84.2rem;
+        //right: -9rem;
+    } 
     .navigation-landing{
         list-style-type: none;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         width: 24rem;
-        /*
         @media only screen and (min-width: 1440px) {
-            width: 48rem;
-        }*//*
+            width: 33rem;
+        }
         @media only screen and (min-width: 1920px) {
-            width: 80rem;
-        } */
+            //width: 80rem;
+        } 
         .navigation-link{
             color: white;
             li{
@@ -63,14 +63,14 @@
                 font-size: 1rem;
                 color: white;
                 font-family: $headerFont;
-                color: white;/*
+                color: white;
                 @media only screen and (min-width: 1440px) {
-                    font-size: 2rem;
+                    font-size: 1.3rem;
                 }
                 @media only screen and (min-width: 1920px) {
-                    font-size: 3rem;
-                    overflow: visible;
-                } */
+                    //font-size: 3rem;
+                    //overflow: visible;
+                } 
                 &:hover{
                     cursor: pointer;
                     color: #46e0b4;
@@ -103,10 +103,10 @@
         @media only screen and (max-width: 425px) {
            padding-bottom: 0;
            font-size: 1rem;
-        } /*
+        } 
         @media only screen and (min-width: 1920px) {
-           font-size: 7.8rem;
-         } */
+           //font-size: 7.8rem;
+         } 
     }
     .presentation-landing-page{
         max-width: 31.27273rem;
@@ -119,11 +119,11 @@
             padding-right: 0;
             font-size: 3rem;
             height: 3.63636rem;
-         } /*
+         } 
         @media only screen and (min-width: 1920px) {
-            font-size: 7.8rem;
-            overflow: visible;
-        } */
+            //font-size: 7.8rem;
+            //overflow: visible;
+        } 
     }
 }
 
@@ -140,25 +140,25 @@
     justify-content: center;
     position: absolute;
     top: 89%;
-    left: 12%;
+    left: 11%;
     color: white;
     .alternate {
-        align-self: flex-end;/*
+        align-self: flex-end;
         @media only screen and (min-width: 1920px) {
-            font-size: 3rem;
-        } */
+            //font-size: 3rem;
+        } 
     }
     
     .scroll-title{
         margin-bottom: 0;
         margin-top: 0;
-        padding-left: 3px;
+        //padding-left: 3px;
         @media only screen and (min-width: 1025px) {
             font-size: 1.2rem;
-        } /*
+        } 
         @media only screen and (min-width: 1920px) {
-            font-size: 3rem;
-        } */
+            //font-size: 3rem;
+        } 
     }
 }
 
@@ -172,11 +172,11 @@
         white-space: nowrap;
         font-weight: 700;
         border-right: 4px solid #fff;
-        box-sizing: border-box;/*
+        box-sizing: border-box;
         @media only screen and (min-width: 1920px) {
             overflow: visible;
             animation: none;
-        } */
+        } 
     }
 }
 
@@ -192,22 +192,23 @@
     @media only screen and (max-width: 425px) {
         font-size: 1.5rem;  
         padding-top: 0;
-    } /*
+    } 
     @media only screen and (min-width: 1920px) {
-        font-size: 4rem;
-        margin-top: 1rem;
-    } */
+        //font-size: 4rem;
+        //margin-top: 1rem;
+    } 
     .words{
         display: inline;
-        text-indent: 20px;/*
+        text-indent: 20px;
+        /*
         @media only screen and (min-width: 1920px) {
             font-size: 4rem;
             margin-top: 1rem;
         } */
-        span {/*
+        span {
             @media only screen and (max-width: 425px) {
                 width: 218px;  
-            } */
+            } 
         }
     }
 }
@@ -310,12 +311,12 @@ $totalWords: 24;
 
 
 
-/*
+
 @media only screen and (min-width: 1920px) {
     .down .icon {
         font-size: 3rem;
     }
- } */
+ } 
 
 
 

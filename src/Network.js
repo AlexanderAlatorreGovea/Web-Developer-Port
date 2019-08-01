@@ -69,7 +69,7 @@ class Network extends React.Component {
                     </div>
                         <div className="intro-bottom main-container">
                             <div className="intro-bottom-section">
-                                <div id="bg-screen"  className="intro-bottom-section-left animated fadeIn" >
+                                <div id="bg-screen"   className="intro-bottom-section-left animated fadeIn" >
                                 INTRODUCTION
                                 </div>
                                 <div id="bg-screen" className="intro-bottom-section-rigth animated fadeIn" data-wow-delay="1s">
