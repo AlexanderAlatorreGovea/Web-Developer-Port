@@ -27,7 +27,7 @@ class App extends React.Component {
         setTimeout(() => {
             cursor.classList.remove("expand"); 
         }, 500)
-    })
+    }) 
   }
 
   render() {
