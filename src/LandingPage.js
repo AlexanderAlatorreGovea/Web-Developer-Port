@@ -31,7 +31,7 @@ class LandingPage extends React.Component{
     render() {
         return(
              <div className="LandingPage">
-                <section>
+                <section id="landing-page-section">
                     <div className="LandingPage-title">
                         <h1 className="presentation-name">hi, my name is </h1>
                         <br />
@@ -91,7 +91,7 @@ class LandingPage extends React.Component{
                 <Link style={{ cursor: 'pointer' }} to="/Network">
                 <div className="scroll-down">
                     <i id="down" class="animated infinite fadeInDown long arrow alternate down icon"></i>
-                    <div style={{ color: 'white' }} className="scroll-title">scroll down</div>
+                    <div style={{ color: 'white' }} className="scroll-title">click me</div>
                 </div>
                 </Link>
             </div>

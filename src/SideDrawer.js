@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles/SideDrawer.scss';
+import { Link } from 'react-router-dom'; 
 
 const SideDrawer = (props) => { 
     return (
@@ -8,10 +9,10 @@ const SideDrawer = (props) => {
                 <div className="navigation__background">&nbsp;</div>
                 <nav className="navigation__nav">
                     <ul className="navigation__list">
-                        <li className="navigation__item"><a href="#" className="navigation__link"><span>01</span>Home</a></li>
-                        <li className="navigation__item"><a href="#" className="navigation__link"><span>02</span>Projects</a></li>
-                        <li className="navigation__item"><a href="#" className="navigation__link"><span>03</span>Contact</a></li>
-                        <li className="navigation__item"><a href="#" className="navigation__link"><span>03</span>Discover</a></li>
+                        <li className="navigation__item"><Link to="/"   className="navigation__link"><span>01</span>Home</Link></li>
+                        <li className="navigation__item"><Link to="/Projects"  className="navigation__link"><span>02</span>Projects</Link></li>
+                        <li className="navigation__item"><Link to="/Network" className="navigation__link"><span>03</span>Contact</Link></li>
+                        <li className="navigation__item"><Link to="/Network" className="navigation__link"><span>03</span>Discover</Link></li>
                         </ul>
                 </nav>
             </div>

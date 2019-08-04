@@ -26,7 +26,9 @@ class ProjectsView extends React.Component {
           year: '2019',
           img: listings,
           client: 'private',
-          technologies: 'react/sass'
+          technologies: 'react/sass',
+          link: 'https://affectionate-hermann-7b18dd.netlify.com/',
+          codelink: 'https://github.com/AlexanderAlatorreGovea/Real-state-website'
        },
        { 
         title: 'The Movie Bonanza',
@@ -34,7 +36,9 @@ class ProjectsView extends React.Component {
         year: '2019',
         img: movie2,
         client: 'private',
-        technologies: 'react/redux'
+        technologies: 'react/redux',
+        link: 'https://moviebonanzadb.com',
+        codelink: 'https://github.com/AlexanderAlatorreGovea/MovieTheaterProject'
       },
        { 
           title: 'The Steak House',
@@ -42,7 +46,9 @@ class ProjectsView extends React.Component {
           year: '2019',
           img: restaurantfront,
           client: 'private',
-          technologies: 'react'
+          technologies: 'react',
+          link: 'https://steakhouserestaurant.net',
+          codelink: 'https://github.com/AlexanderAlatorreGovea/MovieTheaterProject'
         },
         { 
           title: 'Hero Lets You',
@@ -50,7 +56,9 @@ class ProjectsView extends React.Component {
           year: '2019',
           img: emailtwo,
           client: 'private',
-          technologies: 'HTML email'
+          technologies: 'HTML email',
+          link: 'https://alexanderalatorregovea.github.io/Email.html/',
+          codelink: 'https://github.com/AlexanderAlatorreGovea/Email.html'
        },
        { 
         title: 'D Agency',
@@ -58,47 +66,69 @@ class ProjectsView extends React.Component {
         year: '2019',
         img: dagency,
         client: 'private',
-        technologies: 'HTML Bootsrap'
+        technologies: 'HTML Bootsrap',
+        link: 'https://alexanderalatorregovea.github.io/Digital-agency-m/',
+        codelink: 'https://github.com/AlexanderAlatorreGovea/Digital-agency-m'
        },
        { 
-        title: 'The Movie Bonanza',
-        type: 'Movie Theater',
+        title: 'Nexter',
+        type: 'Real Estate',
         year: '2019',
-        img: movie2,
+        img: listings,
         client: 'private',
-        technologies: 'react/redux'
+        technologies: 'react/sass',
+        link: 'https://affectionate-hermann-7b18dd.netlify.com/',
+        codelink: 'https://github.com/AlexanderAlatorreGovea/Real-state-website'
      },
      { 
-       title: 'Nexter',
-       type: 'Real Estate',
-       year: '2019',
-       img: listings,
-       client: 'private',
-       technologies: 'react/sass'
+      title: 'The Movie Bonanza',
+      type: 'Movie Theater',
+      year: '2019',
+      img: movie2,
+      client: 'private',
+      technologies: 'react/redux',
+      link: 'https://moviebonanzadb.com',
+      codelink: 'https://github.com/AlexanderAlatorreGovea/MovieTheaterProject'
     },
-    { 
-       title: 'The Steak House',
-       type: 'Restaurant',
-       year: '2019',
-       img: restaurantfront,
-       client: 'private',
-       technologies: 'react'
+     { 
+        title: 'The Steak House',
+        type: 'Restaurant',
+        year: '2019',
+        img: restaurantfront,
+        client: 'private',
+        technologies: 'react',
+        link: 'https://steakhouserestaurant.net',
+        codelink: 'https://github.com/AlexanderAlatorreGovea/MovieTheaterProject'
+      },
+      { 
+        title: 'Hero Lets You',
+        type: 'Email',
+        year: '2019',
+        img: emailtwo,
+        client: 'private',
+        technologies: 'HTML email',
+        link: 'https://alexanderalatorregovea.github.io/Email.html/',
+        codelink: 'https://github.com/AlexanderAlatorreGovea/Email.html'
      },
      { 
-       title: 'Hero Lets You',
-       type: 'Email',
-       year: '2019',
-       img: emailtwo,
-       client: 'private',
-       technologies: 'HTML email'
-    },
-    { 
+      title: 'D Agency',
+      type: 'Digital Agency',
+      year: '2019',
+      img: dagency,
+      client: 'private',
+      technologies: 'HTML Bootsrap',
+      link: 'https://alexanderalatorregovea.github.io/Digital-agency-m/',
+      codelink: 'https://github.com/AlexanderAlatorreGovea/Digital-agency-m'
+     },
+     { 
       title: 'Nexter',
       type: 'Real Estate',
       year: '2019',
       img: listings,
       client: 'private',
-      technologies: 'react/sass'
+      technologies: 'react/sass',
+      link: 'https://affectionate-hermann-7b18dd.netlify.com/',
+      codelink: 'https://github.com/AlexanderAlatorreGovea/Real-state-website'
    },
    { 
     title: 'The Movie Bonanza',
@@ -106,7 +136,9 @@ class ProjectsView extends React.Component {
     year: '2019',
     img: movie2,
     client: 'private',
-    technologies: 'react/redux'
+    technologies: 'react/redux',
+    link: 'https://moviebonanzadb.com',
+    codelink: 'https://github.com/AlexanderAlatorreGovea/MovieTheaterProject'
   },
    { 
       title: 'The Steak House',
@@ -114,7 +146,9 @@ class ProjectsView extends React.Component {
       year: '2019',
       img: restaurantfront,
       client: 'private',
-      technologies: 'react'
+      technologies: 'react',
+      link: 'https://steakhouserestaurant.net',
+      codelink: 'https://github.com/AlexanderAlatorreGovea/MovieTheaterProject'
     },
     { 
       title: 'Hero Lets You',
@@ -122,7 +156,9 @@ class ProjectsView extends React.Component {
       year: '2019',
       img: emailtwo,
       client: 'private',
-      technologies: 'HTML email'
+      technologies: 'HTML email',
+      link: 'https://alexanderalatorregovea.github.io/Email.html/',
+      codelink: 'https://github.com/AlexanderAlatorreGovea/Email.html'
    },
    { 
     title: 'D Agency',
@@ -130,8 +166,10 @@ class ProjectsView extends React.Component {
     year: '2019',
     img: dagency,
     client: 'private',
-    technologies: 'HTML Bootsrap'
-   },
+    technologies: 'HTML Bootsrap',
+    link: 'https://alexanderalatorregovea.github.io/Digital-agency-m/',
+    codelink: 'https://github.com/AlexanderAlatorreGovea/Digital-agency-m'
+    },
     ],
       revealImage: false,
       translateValue: 0,
@@ -188,86 +226,80 @@ class ProjectsView extends React.Component {
   render() {
   return (
       <div style={{background: 'white', marginBottom: '40px'}}> 
-      <div className="main-container">
-
-      <ProjectViewTop />
-
-        <div className="bottom-container">
-          <div className="top-section-bottom-container" id="projects">
-            <h2 className="number-2">2</h2>
-              <h1>projects.</h1>
-                <div className="arrow">
-                  <i id="arrow-left-l" style={{ color: 'black'}} onClick={this.prevBtn} class="green big arrow alternate circle left outline icon"></i>
-                  <i id="arrow-right-r" style={{ color: 'black'}}  onClick={this.nextBtn.bind(null, this.state.index)} class="green big arrow alternate circle right outline icon"></i>
-                </div>
-
-              
-              <div class="carousel js-carousel">
-                <div class="carousel__container js-carousel-container animated fadeInRight "
-                  >
-                  <div class="carousel__list js-carousel-list"
-                    style={{
-                      transform: `translateX(${this.state.translateValue}px)`,
-                      transition: 'transform ease-out 0.45s'
-                    }}>
-
-                     {/*item 4*/}
-
-                    {this.state.allImgs.map((info, index) => {
-                      return(
-                      <div className="slide">
-                        <div className="project-section" >
-                          <div className="project-box" key={index} style={{background: `url("${info.img}") no-repeat`, backgroundSize: 'contain'}} >
-                            <div className="grey-bg">
-                              <div className="project-info">
-                                <div className="project-details">
-                                  Client: {info.client} Year: {info.year} Type: {info.type}
-                                </div>
-                                <div className="project-title">
-                                  {info.title}
-                                </div>
-                                <div><i class="long arrow alternate right icon"></i></div>
-                              </div>
-                            </div>
-                          </div>
-                      </div>
+        <div className="main-container">
+          <ProjectViewTop />
+            <div className="bottom-container">
+              <div className="top-section-bottom-container" id="projects">
+                <h2 className="number-2">2</h2>
+                  <h1>projects.</h1>
+                    <div className="arrow">
+                      <i id="arrow-left-l" style={{ color: 'black'}} onClick={this.prevBtn} class="green big arrow alternate circle left outline icon"></i>
+                      <i id="arrow-right-r" style={{ color: 'black'}}  onClick={this.nextBtn.bind(null, this.state.index)} class="green big arrow alternate circle right outline icon"></i>
                     </div>
-                    )
-                    })}                  
-                     </div>
-                      </div>
-                      </div>
+                  <div class="carousel js-carousel">
+                    <div class="carousel__container js-carousel-container animated fadeInRight "
+                      >
+                      <div class="carousel__list js-carousel-list"
+                        style={{
+                          transform: `translateX(${this.state.translateValue}px)`,
+                          transition: 'transform ease-out 0.45s'
+                        }}>
+
+                        {/*item 4*/}
+
+                        {this.state.allImgs.map((info, index) => {
+                          return(
+                          <div className="slide">
+                            <div className="project-section" >
+                              <div className="project-box" key={index} style={{background: `url("${info.img}") no-repeat`, backgroundSize: 'contain'}} >
+                                <div className="grey-bg">
+                                  <div className="project-info">
+                                    <div className="project-details">
+                                      for more info click the arrow / Type: {info.type}
+                                    </div>
+                                    <div className="project-title">
+                                      {info.title}
+                                    </div>
+                                    <div><Link to="/Projects" ><i class="long arrow alternate right icon"></i></Link></div>
+                                  </div>
+                                </div>
+                              </div> 
+                          </div>
+                        </div>
+                        )
+                        })}                  
+                        </div> 
+                          </div> 
+                        </div>
                       </div>
 
                       <div className="title-containter">
-                      <div className="title-wrapper"
-                      >
-                      <div className="titles"
-                          style={{
-                            transform: `translateX(${this.state.translateValue}px)`,
-                            transition: 'transform ease-out 0.45s'
-                            }}
-                        >
-                          {this.state.allImgs.map((info, index) => {
-                          return(
-                            <div className="project-title-one general-title">
-                              <h3 className="header-description">{info.title}</h3>
-                              <h4 className="header-description">{info.technologies}</h4>
-                            </div>
-                          )
-                          })} 
-                      </div>
-                      </div>
-
+                        <div className="title-wrapper">
+                          <div className="titles"
+                              style={{
+                                transform: `translateX(${this.state.translateValue}px)`,
+                                transition: 'transform ease-out 0.45s'
+                                }}
+                              >
+                              {this.state.allImgs.map((info, index) => {
+                              return(
+                                <div className="project-title-one general-title">
+                                  <h3 className="header-description"> <a href={info.link} target="_blank"> {info.title} / Jump to the website</a></h3>
+                                  <h4 className="header-description"><a href={info.codelink} target="_blank"> see the code </a></h4>
+                                </div>
+                              )
+                              })} 
+                          </div>
+                        </div>
                       </div>
  
                 <div className="button">
                   <Link to="/Projects" >
                     <button class="ui primary button wow fadeInLeft">view all projects</button>
                   </Link>
-                </div>
-        </div>
-      </div>
+              </div>
+            </div>
+          </div>
       </div>
   )
 }

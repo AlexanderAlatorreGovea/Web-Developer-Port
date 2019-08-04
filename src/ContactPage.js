@@ -17,7 +17,7 @@ class ContactPage extends React.Component{
 
 
     render() {
-        return(
+        return( 
         <div id="contact">
                     <section className="bottom-section-parallax main-container" >      
                         <div className="bottom-parallax-nav">   

@@ -64,7 +64,7 @@ class Network extends React.Component {
                             </div>
                         </div>
                         <div onScroll={this.scrollApear} className="intro-paragraph">
-                            Hi there, my name is Alexander Govea, a curious front-end development looking for an opportunity to provide value to an awesome company. Currently based in California but willing to re-locate for an amazing opportunity.
+                            Hi there, my name is Alexander Govea and I am a front-end developer looking for an opportunity to provide value to your company. Currently based in California but willing to re-locate for an amazing opportunity.
                         </div>
                     </div>
                         <div className="intro-bottom main-container">
@@ -74,8 +74,8 @@ class Network extends React.Component {
                                 </div>
                                 <div id="bg-screen" className="intro-bottom-section-rigth animated fadeIn" data-wow-delay="1s">
                                     Growing up I always enjoyed working with computers and researching tech related topics. 
-                                    I completed my Bachelors in Psychology at UCSB but I quickly re-discovered my love for tech after a few years of working in a Psychology related field.
-                                    I am currently working to improve my skills as a front-end developer to soon start working as a back back-end developer. 
+                                    I completed my Bachelors in Psychology at UCSB but re-discovered my passion for technology after watching videos about software / web development.
+                                    I am currently learning back-end technologies in order to expand my knowledge base and become an overall better developer.
                                 </div>
                             </div>
                             <div className="intro-bottom-section">
@@ -84,7 +84,7 @@ class Network extends React.Component {
                                 </div>
                                 <div className="intro-bottom-section-rigth wow fadeInRight">
                                     <div id="bg-screen" className="intro-bottom-timeline">
-                                        <span > Front-end developer <br/>  learning the basics — HTML, CSS</span>
+                                        <span > Front-end <br/>  learning the basics — HTML, CSS, Boostrap</span>
                                         <span>January - February 2019</span>
                                     </div>
                                     <div id="bg-screen" style={{ paddingTop: '3rem' }} className="intro-bottom-timeline">
@@ -92,8 +92,12 @@ class Network extends React.Component {
                                         <span id="bg-screen">February - Present </span>
                                     </div>
                                     <div id="bg-screen" style={{ paddingTop: '3rem' }}  className="intro-bottom-timeline">
-                                        <span id="bg-screen">Front-end developer <br />  Falling In Love - learning React-Redux</span>
+                                        <span id="bg-screen">Front-end <br />  Falling In Love - learning React / Redux / React-Router</span>
                                         <span id="bg-screen"> April - Present</span>
+                                    </div>
+                                    <div id="bg-screen" style={{ paddingTop: '3rem' }}  className="intro-bottom-timeline">
+                                        <span id="bg-screen">Back-end <br />  Growing my skills - currently learning Nodejs / MongoDB / GraphQL</span>
+                                        <span id="bg-screen"> July - Present</span>
                                     </div>
                                 </div>
                             </div>
@@ -102,7 +106,7 @@ class Network extends React.Component {
                                 WHAT'S MY MOTIVATION
                                 </div>
                                 < div id="bg-screen" className="intro-bottom-section-rigth wow fadeInRight">
-                                I want to make web develoment my career as I can't but to think of coding every single minute of my day. Working in this field is the one thing that motivates me to improve my skills 
+                                I want to make web develoment my long term career, as I can't but to think about code every single minute of my day. Working in this field is the one thing that motivates me to improve my skills. 
                                 </div>
                             </div>
                             <div id="bg-screen" className="intro-bottom-section">
@@ -111,10 +115,12 @@ class Network extends React.Component {
                                 </div>
                                 <div id="bg-screen" className="intro-bottom-section-rigth wow fadeInRight">
                                     <h1 id="bg-screen" style={{ fontWeigth: '900' }} >Languages I speak:</h1>
-                                    React, Redux, Sematic HTML, CSS, SCSS, Javascript 
+                                    React, Redux, Sematic HTML, CSS, SCSS, Javascript, Boostrap 
                                 <br /> 
                                     <h1 id="bg-screen"  style={{ fontWeigth: '900'  }} >Libraries I use:</h1>   
-                                React-Router, React-Redux, Wow.js, Animate.Scss, Redux-Thunk, Axios
+                                    React-Router, React-Redux, Wow.js, Animate.Scss, Redux-Thunk, Axios
+                                    <h1 id="bg-screen"  style={{ fontWeigth: '900'  }} >Currently Learning:</h1>   
+                                    GraphQL, MongoDB, Apollo, Nodejs, Express
                                 </div>
                             </div>  
                         </div>

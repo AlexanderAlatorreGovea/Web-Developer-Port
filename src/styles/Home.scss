@@ -134,35 +134,6 @@ li{
 
 
 
-/*
-.title {
-    font-size: 72px;
-    font-family: "charm";
-    line-height: 1;
-    color: #EBD6A3;
-    z-index: 100;
-    top: 12%;
-    left: 71%;
-    position: absolute;
-    transform: translate3d(0, 0, 0);
-    ::after{
-        content: '';
-        top: 0;
-        left: 0;
-        width: 0%;
-        height: 100%;
-        background: #EBD6A3;
-        position: absolute;
-        animation: reveal-animation 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-        animation-delay: 1.4s;
-    }
-    .hide-text {
-        opacity: 0;
-        animation: reveal-text .0001s linear forwards;
-        animation-delay: 2s;
-    }
-}
-*/
 
 .title-return {
     font-size: 72px;
@@ -346,35 +317,6 @@ i #arrow-right .arrow .right:hover {
 
 
 
-/*
-.discover {
-    position: absolute;
-    color: $black;
-    left: 84%;
-    &:hover{
-        color: #46e0b4;
-        cursor: pointer;
-        transform: scale(1.02);
-    }
-    ::after{
-        content: '';
-        top: 0;
-        left: 0;
-        width: 0%;
-        height: 100%;
-        background: #e06246;
-        position: absolute;
-        animation: reveal-animation 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-        animation-delay: 1.6s;
-    }
-    div {
-        opacity: 0;
-        animation: reveal-text .0001s linear forwards;
-        animation-delay: 2.2s;
-    }
-}
-*/
-
 .connect {
     padding: 10px 30px;
     position: fixed;
@@ -392,62 +334,3 @@ i #arrow-right .arrow .right:hover {
         }
     }
 }
-
-/*
-.year {
-    position: fixed;
-    color: $black;
-    right: 80%;
-    top: 80%;
-}
-*/
-
-
-
-
-//////ANIMATIONS////////////////////////////////////
-///////////////////////////////////////////////////
-
-/*
-
-@keyframes reveal-animation {
-    0%{
-        left: 0%;
-        widows: 0%;
-    }
-
-    50%{
-        left: 0%;
-        width: 100%;
-    }
-    100%{
-        left: 100%;
-        width: 0%;
-    }
-}
-
-@keyframes reveal-text{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
-@keyframes reveal-image {
-    0% {
-        left: 0%;
-        width: 0%;
-    }
-    50% {
-        left: 0%;
-        width: 46%;
-    }
-    100% {
-        left: 46%;
-        width: 0%;
-    }
-}
-
-*/

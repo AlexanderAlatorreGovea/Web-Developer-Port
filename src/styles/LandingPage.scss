@@ -10,14 +10,11 @@
     background-color: #000;
     color: #fff; 
     position: absolute;
-    @media only screen and (max-width: 425px) {
-        //width: 100vw;
-        //height: 100vh;  
-    } 
 }
 
 
-.sideways-nav-landing{
+
+.sideways-nav-landing{ 
     transform: rotate(-90deg);
     height: 2rem;
     position: fixed;
@@ -27,22 +24,15 @@
     top: 36rem;
     justify-content: center;
     align-items: center;
-    //display: none;
     @media only screen and (max-width: 425px) {
         display: none;
     } 
     @media only screen and (min-width: 769px) {
-        top: 37rem;  
+        top: 36rem;  
     }
     @media only screen and (min-width: 1440px) {
-        top: 37rem;
-        right: -15rem;
-        //right: -7rem;
-        //top: 47rem;    
-    } 
-    @media only screen and (min-width: 1920px) {
-        //top: 84.2rem;
-        //right: -9rem;
+        top: 36rem;
+        right: -15rem;  
     } 
     .navigation-landing{
         list-style-type: none;
@@ -53,9 +43,6 @@
         @media only screen and (min-width: 1440px) {
             width: 33rem;
         }
-        @media only screen and (min-width: 1920px) {
-            //width: 80rem;
-        } 
         .navigation-link{
             color: white;
             li{
@@ -68,10 +55,6 @@
                 @media only screen and (min-width: 1440px) {
                     font-size: 1.3rem;
                 }
-                @media only screen and (min-width: 1920px) {
-                    //font-size: 3rem;
-                    //overflow: visible;
-                } 
                 &:hover{
                     cursor: pointer;
                     color: #46e0b4;
@@ -88,7 +71,7 @@
     @media only screen and (max-width: 425px) {
         margin: 0 auto;
         display: block;
-        padding-left: 3rem;
+        padding-left: 0rem;
      } 
     .presentation-name{
         font-size: 1.8rem;
@@ -120,11 +103,7 @@
             padding-right: 0;
             font-size: 3rem;
             height: 3.63636rem;
-         } 
-        @media only screen and (min-width: 1920px) {
-            //font-size: 7.8rem;
-            //overflow: visible;
-        } 
+         }
     }
 }
 
@@ -143,6 +122,9 @@
     top: 89%;
     left: 11%;
     color: white;
+    @media only screen and (max-width: 425px) {
+        padding-left: 0rem;
+     } 
     .alternate {
         align-self: flex-end;
         @media only screen and (min-width: 1920px) {
@@ -153,12 +135,8 @@
     .scroll-title{
         margin-bottom: 0;
         margin-top: 0;
-        //padding-left: 3px;
         @media only screen and (min-width: 1025px) {
             font-size: 1.2rem;
-        } 
-        @media only screen and (min-width: 1920px) {
-            //font-size: 3rem;
         } 
     }
 }
@@ -194,21 +172,12 @@
         font-size: 1.5rem;  
         padding-top: 0;
     } 
-    @media only screen and (min-width: 1920px) {
-        //font-size: 4rem;
-        //margin-top: 1rem;
-    } 
     .words{
         display: inline;
         text-indent: 20px;
-        /*
-        @media only screen and (min-width: 1920px) {
-            font-size: 4rem;
-            margin-top: 1rem;
-        } */
         span {
             @media only screen and (max-width: 425px) {
-                width: 218px;  
+                width: 170px;  
             } 
         }
     }
@@ -216,12 +185,10 @@
 
 
 
-/////////ANIMATIONS///////////////////////////////
-//////////////////////////////////////////////////
+/////////////////////ANIMATIONS///////////////////////////////
 
 
-
-//Rotating Words
+///////Rotating Words//////
 
 $totalWords: 24;
 
@@ -310,6 +277,23 @@ $totalWords: 24;
 
 /////////////////////MEDIA QUERIES////////////////////////////
 
+@media only screen and (max-width: 425px) {
+    .presentation-name {
+        width: 250px;
+    }
+    .typewriter {
+        width: 250px;
+    }
+    .description-landing {
+        width: 250px;
+    }
+    #landing-page-section {
+        display: flex;
+    }
+    .words span {
+        width: 50px;
+    }
+} 
 
 
 

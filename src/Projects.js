@@ -24,38 +24,48 @@ class Projects extends Component {
             globalState : [
                 { 
                    title: 'The Movie Bonanza',
-                   description: 'This project was made with the purpose of utilizing cutting edge techonologies while utilizing best practices, and getting comfortable with utilizing rest APIs. I decided to make The Movie Bonanza to allow people to search for their favorite movies and get a feel for the movie they decide to watch. This website will allow you to: search your favorite movies, link you to the newest and upcoming movies and provide you with a unique user experience. Make sure you sign up to discover more features :).  As a side Note I would like to thank The Movie DB for providing the data via their Unique Api.',
+                   description: 'This project was made with the purpose of utilizing cutting edge techonologies while implementing best practices, and getting comfortable with using rest APIs. I decided to make The Movie Bonanza to allow people to search for their favorite movies and get a feel for the movie they decide to watch. This website will allow you to: search your favorite movies,  link you to the newest and upcoming movies and provide you with a unique user experience. Make sure you sign up to discover more features :).   As a side Note I would like to thank The Movie DB for providing the data via their Unique Api.',
                    date: 'June-July 2019',
                    img: movie2 ,
-                   tech: 'React, Redux, Javascript, Scss, React Router, wowjs'
+                   tech: 'React, Redux, Javascript, Scss, React Router, wowjs',
+                   link: 'https://moviebonanzadb.com',
+                   codelink: 'https://github.com/AlexanderAlatorreGovea/MovieTheaterProject'
                 },
                 { 
                    title: 'Nexter',
-                   description: 'This project was made to practice HOC as they were utilized throughtout this application in order to simulate real time sorting of data that is made with with web applications such as Craigslist, Google, ect... I decided to utilize local data for this project, all the mock data can be found inside the global state. With this project you will be able to find a house in Ventura County and sort out the houses based on Prices, location etc... You will also be able to sign up in order to request quotes. Give this project a try you may find out that it scalable as well :).',
+                   description: 'This project was made to practice HOC in order to simulate real time sorting of data. I decided to utilize local data for this project, all the mock data can be found inside the global state. With this project you will be able to find a house in Ventura County and sort out the houses based on Prices, location, add ons etc... You will also be able to sign up in order to book an appointment with a realtor. Give this project a try you may find out that it is scalable as well :).',
                    img: listings,
                    date: 'April-May 2019',
-                   tech: 'React, Javascript, React Router, Scss'
+                   tech: 'React, Javascript, React Router, Scss',
+                   link: 'https://affectionate-hermann-7b18dd.netlify.com/',
+                   codelink: 'https://github.com/AlexanderAlatorreGovea/Real-state-website'
                 },
                 {  
                     title: 'Digital Agency',
-                    description: 'This is layout designed with bootstrap designed to be used by clients for a digital agency in order to gain exposure and display the services that can be provided.',
+                    description: 'This layout was designed with bootstrap to be used by any digital agency that may want to gain exposure and display their services.',
                     img: dagency,
                     date: 'July 2019',
-                    tech: 'HTML, Bootstrap, CSS'
-                 },
+                    tech: 'HTML, Bootstrap, CSS',
+                    link: 'https://alexanderalatorregovea.github.io/Digital-agency-m/',
+                    codelink: 'https://github.com/AlexanderAlatorreGovea/Digital-agency-m'
+                 }, 
                 { 
                    title: 'The Steak House',
-                   description: 'Enjoy your favorite meals at your local Restaurant. This is a single page web application that I made using React. The purpose of this project was to create an aesthetically pleasing website that can be used by any local restaurant. This project is easily scaled and  a lot of detail was put into every single component.',
+                   description: 'Enjoy your favorite meals at your local Restaurant. This is a single page web application that I made using React. The purpose of this project was to create an aesthetically pleasing website that can be used by any local restaurant. This project is easily scalable  and  a lot of detail was put into every single component.',
                    img: menu,
                    date: 'April 2019',
-                   tech: 'React, CSS, Javascript'
+                   tech: 'React, CSS, Javascript',
+                   link: 'https://steakhouserestaurant.net',
+                   codelink: 'https://github.com/AlexanderAlatorreGovea/MovieTheaterProject'
                 },
                 { 
                    title: 'Hero Lets you',
-                   description: 'It is a reality that companies need email lists in order to increase their revenue. This project is an HTML email that is that is cross email compatible. Tested with Litmus, this email provides a personal touch to the daily outreach that companies can make to their consumers/ potential costumers',
+                   description: 'It is a reality that companies need email lists in order to increase their revenue. This project is an HTML email that is cross email compatible. Tested with Litmus, this email provides a personal touch to the daily outreach that companies can make to their consumers/ potential costumers',
                    img: email,
                    date: 'February 2019',
-                   tech: 'HTML, Tested with Litmus (Cross Browser/ Cross Email compatible)'
+                   tech: 'HTML, Tested with Litmus (Cross Browser/ Cross Email compatible)',
+                   link: 'https://alexanderalatorregovea.github.io/Email.html/',
+                   codelink: 'https://github.com/AlexanderAlatorreGovea/Email.html'
                 }
             ]
         }
@@ -206,7 +216,7 @@ class Projects extends Component {
                                 <div style={{ background: '#845007', alignSelf: 'center'}} className="tertiary-line"></div> 
                                 <div className="separator-title wow fadeInUp">
                                     projects.
-                                </div> 
+                                </div>  
                             </div>
                              <section className="individual-project">
                              {this.state.globalState.map((info, index) => {
@@ -218,14 +228,14 @@ class Projects extends Component {
                                             <p className="individual-project-description">{info.description}</p>
                                             <div className="individual-project-icon">
                                                 <span className="individual-project-link">Project's code</span>
-                                                <i class="long arrow alternate right icon"></i>
+                                                <a href={info.codelink} target="_blank"><i class="long arrow alternate right icon"></i></a>
                                            </div>
                                         </div>
                                         <div className="individual-project-date-info wow fadeInRight">
                                             <div >
                                                 <span className="individual-project-date">Date</span><br/>
                                                 <span className="individual-project-year">{info.date}</span>
-                                            </div>
+                                            </div> 
                                             <div className="individual-project-tech">
                                                 <span className="individual-project-tech-title">Technologies</span><br/>
                                                 <span className="individual-project-technologies">{info.tech}</span>
@@ -233,7 +243,9 @@ class Projects extends Component {
                                         </div>
                                     </div>
                                     <div className="individual-project-image wow fadeIn" data-wow-delay="1s">
-                                        <img style={{ width: '100%' }} className="individual-project-img" src={`${info.img}`} />
+                                        <a href={info.link} target="_blank"> 
+                                            <img style={{ width: '100%' }} className="individual-project-img" src={`${info.img}`} />
+                                        </a>
                                     </div>
                                 </div>
                                 )
