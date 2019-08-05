@@ -56,7 +56,7 @@
         font-family: $primary-font;
         &:hover{
             cursor: pointer;
-            color: $red;
+            color: #E3545f;
         }
       }
     }
@@ -136,8 +136,10 @@
         flex-direction: row;
         justify-content: space-between;
         width: 24rem;
+        cursor: default;
         .navigation-link-left {
             color: #000;
+            cursor: default;
             .navigation-list-left {
                 font-weight: 1000;
                 letter-spacing: 2px;
@@ -145,11 +147,9 @@
                 color: #000;
                 font-family: $headerFont;
                 color: #000;
+                cursor: default;
                 @media only screen and (min-width: 1440px) {
                     font-size: 1.8rem;
-                }
-                &:hover{
-                    color: #46e0b4;
                 }
             }
         }

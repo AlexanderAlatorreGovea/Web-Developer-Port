@@ -258,7 +258,7 @@ class ProjectsView extends React.Component {
                                       for more info click the arrow / Type: {info.type}
                                     </div>
                                     <div className="project-title">
-                                      {info.title}
+                                      {info.title} 
                                     </div>
                                     <div><Link to="/Projects" ><i class="long arrow alternate right icon"></i></Link></div>
                                   </div>

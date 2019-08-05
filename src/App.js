@@ -35,7 +35,6 @@ class App extends React.Component {
       <div>
         <BrowserRouter>
           <ScrollToTop>
-            <Route path="/Home" exact component={ Home } />
             <Route path="/" exact component={ LandingPage } />
             <Route path="/Network" exact component={ Network }/>
             <Route path="/Projects" exact component={ Projects }/>

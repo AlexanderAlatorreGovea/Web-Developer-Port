@@ -44,7 +44,7 @@ class Network extends React.Component {
             <div  className='Network' style={{background: 'white'}}>   
                 <Wrapper />
                 {/* Starts top document section */}
-                <section className="intro"> 
+                <section id="intro" className="intro"> 
                     <div className="main-profile-container main-container" style={{  margin: '0 auto', display: 'flex', justifyContent: 'space-between'}} >
                         <div className="profile-container">
                                 <div className="profile-container-image">
@@ -143,7 +143,7 @@ class Network extends React.Component {
                     <nav className="static-nav">
                         <div className="number">
                             <span className="line wow fadeInLeft"></span>
-                            <h2 className="line-number-five" id="Network">4</h2>
+                            <h2 className="line-number-five" id="Network">3</h2>
                         </div>
                         <div className="large social-media-icons">
                             <i id="github" class="large github icon page-four wow fadeInUp" ></i>
@@ -157,8 +157,24 @@ class Network extends React.Component {
                         <div className="network-boxes-top wow fadeInUp" > 
                             <div className="network-boxes-top-row-one"></div>
                             <div className="network-boxes-top-row-two">
-                                <i id="arrow-n" class="big arrow alternate circle up outline icon"></i>
-                                <i id="arrow-n" class="big arrow alternate circle down outline icon"></i>
+                                <Link
+                                    to="intro"
+                                    spy={true}
+                                    smooth={true}
+                                    duration={500}      
+                                    style={{ color: 'black'}}                        
+                                    >
+                                    <i id="arrow-n arow-color-up" class="big arrow alternate circle up outline icon"></i>
+                                </Link>
+                                <Link
+                                    to="contact"
+                                    spy={true}
+                                    smooth={true}
+                                    duration={500}   
+                                    style={{ color: '#E3545f'}}                
+                                    >
+                                    <i id="arrow-n arrow-color-down" class="big arrow alternate circle down outline icon"></i>
+                                </Link>
                             </div>
                             <div className="network-boxes-top-row-three"><img className="network-boxes-top-row-three" className="network-boxes-top-row-three" src="https://images.unsplash.com/photo-1475483768296-6163e08872a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" /></div>
                             <div id="bg-dissappear" className="network-boxes-top-row-four"></div>

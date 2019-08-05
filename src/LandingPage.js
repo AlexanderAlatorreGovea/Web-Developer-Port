@@ -68,10 +68,10 @@ class LandingPage extends React.Component{
                                 <span>web dev</span>
                             </div>
                         </h2>
-                        {/*End of description */}
+                        {/*End of description */} 
                     <div className="sideways-nav-landing" > 
                         <ul className="navigation-landing">
-                            <Link className="navigation-link" to="/Home" >
+                            <Link className="navigation-link" to="/" >
                                 <li className="navigation-home-landing">home</li>
                             </Link>
                             <Link className="navigation-link" to="/Projects" >

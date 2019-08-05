@@ -21,17 +21,17 @@
     right: -11rem;
     background: #000;
     color: white;
-    top: 36rem;
+    top: 60vh;
     justify-content: center;
     align-items: center;
     @media only screen and (max-width: 425px) {
         display: none;
     } 
     @media only screen and (min-width: 769px) {
-        top: 36rem;  
+        top: 60vh;  
     }
     @media only screen and (min-width: 1440px) {
-        top: 36rem;
+        top: 60vh;
         right: -15rem;  
     } 
     .navigation-landing{

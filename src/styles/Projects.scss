@@ -157,6 +157,12 @@
         }
         .individual-project-technologies{
             color: #80828a;
+            a {
+                color: #80828a;
+                &:hover {
+                    color: #EB4E7A;
+                }
+            }
         }
     }
     .individual-project-image{

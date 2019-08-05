@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import SideDrawer from './SideDrawer';
 
-import Logo from './assets/logo_transparent.png';
 import { Link } from "react-router-dom";
 
 import './styles/Wrapper.scss';
@@ -31,7 +30,6 @@ class Wrapper extends Component {
 
     toggleMenu = () => { this.setState({ visibleMenu: !this.state.visibleMenu})}
 
-    
     render() {
         return (
             <div className="Wrapper" style={{ background: '#f9f9f9' }}>
@@ -55,7 +53,7 @@ class Wrapper extends Component {
 
             <section className="sideways-right-nav-wrapper animated fadeIn" >
                     <ul className="navigation-right-wrapper">
-                        <Link className="navigation-link-right" to="/Home" >
+                        <Link className="navigation-link-right" to="/" >
                             <li className="navigation-list-right">home</li>
                         </Link>
                         <Link className="navigation-link-right"  to="/Projects" >
@@ -67,11 +65,11 @@ class Wrapper extends Component {
                         <Link className="navigation-link-right"  to="/Network">
                             <li className="navigation-list-right">contact</li> 
                         </Link>
-                    </ul>   
+                    </ul>    
                 </section>
                 <section className="sideways-left-nav-wrapper">
                     <ul className="navigation-left-wrapper">
-                        <Link style={{ transform: 'rotate(-90deg)' }}  className="navigation-link-left" to="/Projects" >
+                        <Link  style={{ cursor: 'default', transform: 'rotate(-90deg)' }}  className="navigation-link-left" to="/Projects" >
                             <li className="navigation-list-left"><i id="arrow__nav" style={{ color: '#000000', transform: 'rotate(-90deg)' }} className="arrow up icon"></i></li>
                         </Link>
                         <Link 
@@ -81,18 +79,17 @@ class Wrapper extends Component {
                             smooth={true}
                             offset={-70}
                             duration= {500}
-                            style={{ transform: 'rotate(-90deg)' }}  className="navigation-link-left" to="/Network">
+                            style={{ cursor: 'default', transform: 'rotate(-90deg)' }}  className="navigation-link-left" to="/Network">
                             <li className="navigation-list-left"><i id="arrow__nav" style={{ color: '#000000', transform: 'rotate(-90deg)' }} className="arrow down icon"></i></li> 
                         </Link>
-                        <Link className="navigation-link-left" to="/Network" >
+                        <Link style={{ cursor: 'default', color: 'black' }} className="navigation-link-left" to="/Network" >
                             <li className="navigation-list-left">connect</li>
                         </Link>
-                        <Link className="navigation-link-left" to="/Network">
+                        <Link style={{ cursor: 'default', color: 'black' }} className="navigation-link-left" to="/Network">
                             <li className="navigation-list-left">contact</li> 
                         </Link>
                     </ul>  
                 </section>
-            
             </div>
         );
     }

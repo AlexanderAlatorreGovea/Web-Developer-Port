@@ -225,7 +225,7 @@ class Projects extends Component {
                                     <div className="individual-project-top">
                                         <div className="individual-project-info wow fadeInLeft" data-wow-delay="1s">
                                             <h1 className="individual-project-title">{info.title}</h1>
-                                            <p className="individual-project-description">{info.description}</p>
+                                            <p className="individual-project-description">{info.description}</p> 
                                             <div className="individual-project-icon">
                                                 <span className="individual-project-link">Project's code</span>
                                                 <a href={info.codelink} target="_blank"><i class="long arrow alternate right icon"></i></a>
@@ -239,6 +239,10 @@ class Projects extends Component {
                                             <div className="individual-project-tech">
                                                 <span className="individual-project-tech-title">Technologies</span><br/>
                                                 <span className="individual-project-technologies">{info.tech}</span>
+                                            </div>
+                                            <div className="individual-project-tech">
+                                                <span className="individual-project-tech-title">Website</span><br/>
+                                                <span className="individual-project-technologies"><a id="website-link" href={info.link} target="_blank" >Click me to view the website</a></span>
                                             </div>
                                         </div>
                                     </div>
