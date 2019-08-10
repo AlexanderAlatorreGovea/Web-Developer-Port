@@ -27,7 +27,7 @@ class ProjectsView extends React.Component {
           img: listings,
           client: 'private',
           technologies: 'react/sass',
-          link: 'https://affectionate-hermann-7b18dd.netlify.com/',
+          link: 'http://realestatenexter.com',
           codelink: 'https://github.com/AlexanderAlatorreGovea/Real-state-website'
        },
        { 
@@ -77,7 +77,7 @@ class ProjectsView extends React.Component {
         img: listings,
         client: 'private',
         technologies: 'react/sass',
-        link: 'https://affectionate-hermann-7b18dd.netlify.com/',
+        link: 'http://realestatenexter.com',
         codelink: 'https://github.com/AlexanderAlatorreGovea/Real-state-website'
      },
      { 
@@ -127,7 +127,7 @@ class ProjectsView extends React.Component {
       img: listings,
       client: 'private',
       technologies: 'react/sass',
-      link: 'https://affectionate-hermann-7b18dd.netlify.com/',
+      link: 'http://realestatenexter.com',
       codelink: 'https://github.com/AlexanderAlatorreGovea/Real-state-website'
    },
    { 

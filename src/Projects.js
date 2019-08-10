@@ -37,7 +37,7 @@ class Projects extends Component {
                    img: listings,
                    date: 'April-May 2019',
                    tech: 'React, Javascript, React Router, Scss',
-                   link: 'https://affectionate-hermann-7b18dd.netlify.com/',
+                   link: 'http://realestatenexter.com',
                    codelink: 'https://github.com/AlexanderAlatorreGovea/Real-state-website'
                 },
                 {  
