@@ -222,7 +222,7 @@ class ProjectsView extends React.Component {
 }
 
   
-
+ 
   render() {
   return (
       <div style={{background: 'white', marginBottom: '40px'}}> 
@@ -233,8 +233,8 @@ class ProjectsView extends React.Component {
                 <h2 className="number-2">2</h2>
                   <h1>projects.</h1>
                     <div className="arrow">
-                      <i id="arrow-left-l" style={{ color: 'black'}} onClick={this.prevBtn} class="green big arrow alternate circle left outline icon"></i>
-                      <i id="arrow-right-r" style={{ color: 'black'}}  onClick={this.nextBtn.bind(null, this.state.index)} class="green big arrow alternate circle right outline icon"></i>
+                      <i id="arrow-left-l"  onClick={this.prevBtn} class="big arrow alternate circle left outline icon"></i>
+                      <i id="arrow-right-r"   onClick={this.nextBtn.bind(null, this.state.index)} class="big arrow alternate circle right outline icon"></i>
                     </div>
                   <div class="carousel js-carousel">
                     <div class="carousel__container js-carousel-container animated fadeInRight "
@@ -293,7 +293,7 @@ class ProjectsView extends React.Component {
                         </div>
                       </div>
  
-                <div className="button">
+                <div id="button">
                   <Link to="/Projects" >
                     <button class="ui primary button wow fadeInLeft">view all projects</button>
                   </Link>

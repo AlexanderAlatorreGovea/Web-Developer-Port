@@ -2,7 +2,7 @@
 
 ///TOP MENU 
 .wrapper-container-menu{
-        @media only screen and (max-width: 1440px) {
+        @media only screen and (max-width: 1700px) {
         display: flex;
         justify-content: space-between;
         max-width: 1100px;
@@ -13,7 +13,7 @@
         overflow: hidden;
         height: 57px;
         }
-      @media only screen and (min-width: 1440px) {
+      @media only screen and (min-width: 1700px) {
         display: flex;
         justify-content: space-between;
         max-width: 1100px;
@@ -76,7 +76,7 @@
     top: 31.2rem;
     justify-content: center;
     align-items: center;
-    @media only screen and (min-width: 1441px) {
+    @media only screen and (min-width: 1700px) {
         right: -18rem;
     }
     @media screen and (max-width: 850px) {
@@ -91,7 +91,7 @@
         flex-direction: row;
         justify-content: space-between;
         width: 30rem;
-        @media only screen and (min-width: 1440px) {
+        @media only screen and (min-width: 1700px) {
             width: 40rem;
         }
         .navigation-link-right {
@@ -103,7 +103,7 @@
                 color: #000;
                 font-family: $headerFont;
                 color: #000;
-                @media only screen and (min-width: 1440px) {
+                @media only screen and (min-width: 1700px) {
                     font-size: 1.8rem;
                 }
                 &:hover{
@@ -148,7 +148,7 @@
                 font-family: $headerFont;
                 color: #000;
                 cursor: default;
-                @media only screen and (min-width: 1440px) {
+                @media only screen and (min-width: 1700px) {
                     font-size: 1.8rem;
                 }
             }

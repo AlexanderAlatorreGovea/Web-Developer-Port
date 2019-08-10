@@ -51,7 +51,7 @@
             padding-top: 5px;
         }
 
-    }
+    } 
     .top-section-bottom-container{
         margin-left: 56px;
         @media only screen and (max-width: 425px) {
@@ -80,6 +80,7 @@
         @media only screen and (max-width: 425px) {
             margin-top: 2rem;
             margin-left: 0;
+            display: block;
         }
         &:hover{
             background: #f9cbd1;
@@ -178,7 +179,7 @@
     .header-description {
         a {
             color: black;
-            transition: all .3s ease-in-out;
+            transition: all .12s ease-in-out;
             font-weight: 900;
             &:hover {
                 color: #46e0b4;
@@ -193,8 +194,7 @@
 }
 
 
-i.icon.arrow.alternate.circle.left.outline:before {
-    content: "\f359";
+#arrow-left-l {
     color: black;
     &:hover{
         color: #EB4E7A;
@@ -206,8 +206,7 @@ i.icon.arrow.alternate.circle.left.outline:before {
     } 
 }
 
-i.icon.arrow.alternate.circle.right.outline:before {
-    content: "\f35a";
+#arrow-right-r {
     color: black;
     &:hover{
         color: #EB4E7A;

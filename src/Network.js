@@ -7,6 +7,7 @@ import ProjectsView from './ProjectsView';
 import { Link, animateScroll as scroll } from "react-scroll";
 import { NavLink } from 'react-router-dom';
 import Wrapper from './Wrapper';
+import headshot from './assets/altImage.jpg';
 
 
 
@@ -49,7 +50,7 @@ class Network extends React.Component {
                         <div className="profile-container">
                                 <div className="profile-container-image">
                                     <img id="img" className="image" alt="Jordy Baan by Michael Epps." 
-                                    src="https://i.pinimg.com/564x/67/97/6f/67976fe1b5958701f09ed747c158b19a.jpg"/>
+                                    src={headshot}/>
                                 <div className="discover">
                                     <div  className="profile-container-discover">
                                         <h2 className="profile-container-title">Discover More</h2>
@@ -82,7 +83,7 @@ class Network extends React.Component {
                                 <div id="bg-screen" className="intro-bottom-section-left wow fadeInLeft" >
                                     WHAT'S MY JOURNEY
                                 </div>
-                                <div className="intro-bottom-section-rigth wow fadeInRight">
+                                <div style={{ width: '100%'}} className="intro-bottom-section-rigth wow fadeInRight">
                                     <div id="bg-screen" className="intro-bottom-timeline">
                                         <span > Front-end <br/>  learning the basics — HTML, CSS, Boostrap</span>
                                         <span>January - February 2019</span>
@@ -113,7 +114,7 @@ class Network extends React.Component {
                                 <div id="bg-screen" className="intro-bottom-section-left wow fadeInLeft">
                                 TECHNOLOGIES I USE
                                 </div>
-                                <div id="bg-screen" className="intro-bottom-section-rigth wow fadeInRight">
+                                <div id="bg-screen" style={{ lineHeight: '2.2'}} className="intro-bottom-section-rigth wow fadeInRight">
                                     <h1 id="bg-screen" style={{ fontWeigth: '900' }} >Languages I speak:</h1>
                                     React, Redux, Sematic HTML, CSS, SCSS, Javascript, Boostrap 
                                 <br /> 
@@ -121,6 +122,13 @@ class Network extends React.Component {
                                     React-Router, React-Redux, Wow.js, Animate.Scss, Redux-Thunk, Axios
                                     <h1 id="bg-screen"  style={{ fontWeigth: '900'  }} >Currently Learning:</h1>   
                                     GraphQL, MongoDB, Apollo, Nodejs, Express
+                                    <h1 id="bg-screen"  style={{ fontWeigth: '900'  }} >Please Note:</h1>   
+                                    I am currently learning backend technologies and will be creating an online clothing store to expand my knowledge. 
+                                    I will be utilizing the MERN stack for this project and will be adding things as I learn.
+                                    As of today I have added user authentication and some routes. 
+                                    I will provide a link to the website, but please note that this is not to be considered a completed project. 
+                                    My full list of projects are on display either through the carousel below or by clicking on the top menu.
+                                    This is the link to the website if you would like to see it : <a href="https://objective-hermann-bea7bf.netlify.com"  target="_blank">clothing store. </a>
                                 </div>
                             </div>  
                         </div>

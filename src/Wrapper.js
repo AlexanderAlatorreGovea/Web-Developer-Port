@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import SideDrawer from './SideDrawer';
 
 import { Link } from "react-router-dom";
+import Resume from './assets/resume.pdf';
 
 import './styles/Wrapper.scss';
 
@@ -32,7 +33,7 @@ class Wrapper extends Component {
 
     render() {
         return (
-            <div className="Wrapper" style={{ background: '#f9f9f9' }}>
+            <div className="Wrapper" style={{ background: '#f9f9f9' }}> 
             <SideDrawer visibleMenu={this.state.visibleMenu} />
             <div className="wrapper-container-menu">
                 <div className="logo">
@@ -42,7 +43,7 @@ class Wrapper extends Component {
                 <ul className="wrapper-menu">
                     <Link  to="/" style={{color: 'black', textTransform: 'lowercase' }}><li className="wrapper-menu-item">Home</li></Link>
                     <Link  to="/Projects" style={{color: 'black', textTransform: 'lowercase' }}><li className="wrapper-menu-item">Work</li></Link>
-                    <Link  to="/Network" style={{color: 'black', textTransform: 'lowercase' }}><li className="wrapper-menu-item">Discover More.</li></Link>
+                    <a href={Resume} target="_blank" style={{color: 'black', textTransform: 'lowercase' }}><li className="wrapper-menu-item">download resume.</li></a>
                 </ul>
                 <button onClick={this.toggleMenu} style={{ marginBottom: '5rem', zIndex: '10000000'}} className={`main-nav-toggle-button hamburger hamburger--elastic${this.state.visibleMenu ? ' is-active' : ''}`} type="button">
                     <span className="hamburger-box">
