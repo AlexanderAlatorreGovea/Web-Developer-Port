@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import SideDrawer from './SideDrawer';
 
 import { Link } from "react-router-dom";
-import Resume from './assets/resume.pdf';
-
+import Resume from './assets/resume1.pdf';
 import './styles/Wrapper.scss';
 
 class Wrapper extends Component {
@@ -39,9 +38,9 @@ class Wrapper extends Component {
                 <div className="logo">
                     <h2 id="wrapper-title" style={{ zIndex: '1000' }} className="wrapper-title"><Link  to="/Network" style={{ color: 'black', textTransform: 'lowercase' }}>govea.</Link></h2>
                     <h4 className="wrapper-subtitle-">built / designed by alexander govea</h4>
-                </div>
+                </div> 
                 <ul className="wrapper-menu">
-                    <Link  to="/" style={{color: 'black', textTransform: 'lowercase' }}><li className="wrapper-menu-item">Home</li></Link>
+                    <Link  to="/Network" style={{color: 'black', textTransform: 'lowercase' }}><li className="wrapper-menu-item">Home</li></Link>
                     <Link  to="/Projects" style={{color: 'black', textTransform: 'lowercase' }}><li className="wrapper-menu-item">Work</li></Link>
                     <a href={Resume} target="_blank" style={{color: 'black', textTransform: 'lowercase' }}><li className="wrapper-menu-item">download resume.</li></a>
                 </ul>

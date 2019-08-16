@@ -2,8 +2,6 @@
     margin-left: 10%;
 }
 
-
-
 .top-container{
     width: 100%;
     height: 40vh;
@@ -34,9 +32,9 @@
     max-width: 1000px;
     padding: 0 1.5rem;
     margin: auto;
-    overflow: hidden;
     @media only screen and (max-width: 425px) {
         padding: 0;
+        height: 60vh;
     }
     .arrow{
         display: flex;
@@ -78,6 +76,12 @@
         margin-left: 126px;
         width: 12rem;
         @media only screen and (max-width: 425px) {
+            background-color: #aef0d2;
+            color: black;
+            text-shadow: none;
+            background-image: none;
+            transition: all .2s ease-in .1s;
+            width: 12rem;
             margin-top: 2rem;
             margin-left: 0;
             display: block;

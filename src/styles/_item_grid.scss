@@ -10,8 +10,8 @@
 .item {
   position: relative;
   background: #efefef;
-  overflow: hidden;
   box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  overflow: hidden;
   &::after {
     content: '';
     position: absolute;

@@ -60,7 +60,7 @@ class Projects extends Component {
                 },
                 { 
                    title: 'Hero Lets you',
-                   description: 'It is a reality that companies need email lists in order to increase their revenue. This project is an HTML email that is cross email compatible. Tested with Litmus, this email provides a personal touch to the daily outreach that companies can make to their consumers/ potential costumers',
+                   description: 'It is a reality that companies need email lists in order to increase their revenue. This project is an HTML email that is cross email compatible. Tested with Litmus, this email provides a personal touch to the daily outreach that companies can make to their consumers/ potential costumers.',
                    img: email,
                    date: 'February 2019',
                    tech: 'HTML, Tested with Litmus (Cross Browser/ Cross Email compatible)',
@@ -97,26 +97,8 @@ class Projects extends Component {
 
                         <div style={{ height: '.5px', width: '100%', background: '#bbb', display: 'none', marginBottom: '3rem', height: '1px'}} className="secondary-bottom-line"></div>
                         <div className="items">
-                        <div id="item" class="item" style={{ boxShadow:' 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4)'}} >
-                                <div>
-                                    <img src={ emailtwo } id="item-image"  alt="" />
-                                </div>
-                                <div class="item-text">
-                                    <div class="item-text-wrap">
-                                        <Link style={{ color: 'black' }}
-                                            activeClass="active"
-                                            to="Hero Lets you"
-                                            spy={true}
-                                            smooth={true}
-                                            offset={-70} 
-                                            duration= {500}>
-                                            <p class="item-text-category">Micro Services</p>
-                                            <h2 class="item-text-title"> Email</h2>
-                                        </Link>
-                                    </div>
-                                </div>
-                             </div>
-                             <div id="item" class="item" >
+                            {/* Bottom section after gallery */}
+                            <div id="item" class="item" >
                                 <div>
                                     <img id="item-image" src={ movies3 } id="item-image" alt="" />
                                 </div>
@@ -131,6 +113,64 @@ class Projects extends Component {
                                             duration= {500}>
                                             <p class="item-text-category">Movie Theater</p>
                                             <h2 class="item-text-title">The Movie Bonanza</h2>
+                                        </Link>
+                                    </div>
+                                </div>
+                             </div>
+                            {/* Bottom section after gallery */}
+                            <div id="item" class="item" >
+                                <div>
+                                    <img src={ listings } id="item-image" alt="" />
+                                </div>
+                                <div class="item-text">
+                                    <div class="item-text-wrap">
+                                    <Link style={{ color: 'black' }}
+                                        activeClass="active"
+                                        to="Nexter"
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-70}
+                                        duration= {500}>
+                                        <p class="item-text-category">Real State</p>
+                                        <h2 class="item-text-title">Nexter</h2>
+                                    </Link>
+                                    </div>
+                                </div>
+                             </div>
+                             <div id="item" class="item">
+                                <div>
+                                    <img src={menu} id="item-image" alt="" />
+                                </div>
+                                <div class="item-text">
+                                    <div class="item-text-wrap">
+                                        <Link style={{ color: 'black' }}
+                                            activeClass="active"
+                                            to="The Steak House"
+                                            spy={true}
+                                            smooth={true}
+                                            offset={-70}
+                                            duration= {500}>
+                                            <p class="item-text-category">Restaurant</p>
+                                            <h2 class="item-text-title">Steak House</h2>
+                                        </Link>
+                                    </div>
+                                </div>
+                             </div>
+                             <div id="item" class="item" style={{ boxShadow:' 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4)'}} >
+                                <div>
+                                    <img src={ emailtwo } id="item-image"  alt="" />
+                                </div>
+                                <div class="item-text">
+                                    <div class="item-text-wrap">
+                                        <Link style={{ color: 'black' }}
+                                            activeClass="active"
+                                            to="Hero Lets you"
+                                            spy={true}
+                                            smooth={true}
+                                            offset={-70} 
+                                            duration= {500}>
+                                            <p class="item-text-category">Micro Services</p>
+                                            <h2 class="item-text-title"> Email</h2>
                                         </Link>
                                     </div>
                                 </div>
@@ -151,44 +191,6 @@ class Projects extends Component {
                                             <p class="item-text-category">Digital Agency</p>
                                             <h2 class="item-text-title">Dagency</h2>
                                         </Link>
-                                    </div>
-                                </div>
-                             </div>
-                             <div id="item" class="item"  >
-                                <div>
-                                    <img src={menu} id="item-image" alt="" />
-                                </div>
-                                <div class="item-text">
-                                    <div class="item-text-wrap">
-                                        <Link style={{ color: 'black' }}
-                                            activeClass="active"
-                                            to="The Steak House"
-                                            spy={true}
-                                            smooth={true}
-                                            offset={-70}
-                                            duration= {500}>
-                                            <p class="item-text-category">Restaurant</p>
-                                            <h2 class="item-text-title">Steak House</h2>
-                                        </Link>
-                                    </div>
-                                </div>
-                             </div>
-                             <div id="item" class="item" >
-                                <div>
-                                    <img src={ listings } id="item-image" alt="" />
-                                </div>
-                                <div class="item-text">
-                                    <div class="item-text-wrap">
-                                    <Link style={{ color: 'black' }}
-                                        activeClass="active"
-                                        to="Nexter"
-                                        spy={true}
-                                        smooth={true}
-                                        offset={-70}
-                                        duration= {500}>
-                                        <p class="item-text-category">Real State</p>
-                                        <h2 class="item-text-title">Nexter</h2>
-                                    </Link>
                                     </div>
                                 </div>
                              </div>

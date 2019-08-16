@@ -2,7 +2,7 @@ import React from 'react';
 import '/Users/test/test/src/styles/ContactPage.scss';
 import './styles/_item_grid.scss';
 import WOW from "wowjs";
-import Resume from './assets/resume.pdf';
+import Resume from './assets/resume1.pdf';
 
 class ContactPage extends React.Component{
     constructor(props) {

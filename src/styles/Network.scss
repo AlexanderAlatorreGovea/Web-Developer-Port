@@ -334,7 +334,7 @@ i.big.arrow.alternate.circle.up.outline.icon {
             padding-bottom: 5rem;
             h1 {
                 line-height: 2;
-                font-weight: 900;
+                font-weight: 900; 
                 font-size: 20px;
             }
             .intro-bottom-section-left{
@@ -344,9 +344,17 @@ i.big.arrow.alternate.circle.up.outline.icon {
                     min-width: 338px;
                 }
             }
+            #optional-website {
+                color: #46e0b4;
+                font-weight: 900;
+                &:hover{
+                    color: #E3545f;
+                }
+            }
             .intro-bottom-section-rigtht {
                 padding: 0 1.5rem;
                 width: 500px;
+                
             }
         }
     }

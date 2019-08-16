@@ -123,12 +123,12 @@ class Network extends React.Component {
                                     <h1 id="bg-screen"  style={{ fontWeigth: '900'  }} >Currently Learning:</h1>   
                                     GraphQL, MongoDB, Apollo, Nodejs, Express
                                     <h1 id="bg-screen"  style={{ fontWeigth: '900'  }} >Please Note:</h1>   
-                                    I am currently learning backend technologies and will be creating an online clothing store to expand my knowledge. 
-                                    I will be utilizing the MERN stack for this project and will be adding things as I learn.
-                                    As of today I have added user authentication and some routes. 
+                                    I am currently learning backend technologies and will be creating an online clothing store to expand my knowledge on them. 
+                                    I will be utilizing the MERN stack for this project and will be adding features as I learn.
+                                    As of today I have added user authentication, the ability to add and remove items from the cart, and some basic routing. 
                                     I will provide a link to the website, but please note that this is not to be considered a completed project. 
                                     My full list of projects are on display either through the carousel below or by clicking on the top menu.
-                                    This is the link to the website if you would like to see it : <a href="https://objective-hermann-bea7bf.netlify.com"  target="_blank">clothing store. </a>
+                                    This is the link to the website if you would like to see it : <a href="https://objective-hermann-bea7bf.netlify.com" id="optional-website" target="_blank">clothing store. </a>
                                 </div>
                             </div>  
                         </div>

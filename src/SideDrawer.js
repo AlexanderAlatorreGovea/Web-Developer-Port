@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/SideDrawer.scss';
 import { Link } from 'react-router-dom'; 
-import Resume from './assets/resume.pdf';
+import Resume from './assets/resume1.pdf';
 
 const SideDrawer = (props) => {  
     return (
