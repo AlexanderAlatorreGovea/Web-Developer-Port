@@ -44,7 +44,6 @@ class Network extends React.Component {
         return (
             <div  className='Network' style={{background: 'white'}}>   
                 <Wrapper />
-                {/* Starts top document section */}
                 <section id="intro" className="intro"> 
                     <div className="main-profile-container main-container" style={{  margin: '0 auto', display: 'flex', justifyContent: 'space-between'}} >
                         <div className="profile-container">
@@ -60,7 +59,11 @@ class Network extends React.Component {
                                     <span>2019</span>
                                 </div>
                                 <div className="title">
-                                    <div className="hide-text"><span className="mid">Ale</span>xander <br/><span className="last-name"><span className="mid">G</span>ovea</span></div>
+                                    <div className="hide-text">
+                                        <div style={{ display: 'flex', flexDirection: 'row' }}>
+                                            <span className="mid">Ale</span><span style={{ color: 'rgb(227, 84, 95)' }}>xander</span> 
+                                        </div>
+                                        <span className="last-name"><span className="mid">G</span>ovea</span></div>
                                 </div>
                             </div>
                         </div>
@@ -119,20 +122,21 @@ class Network extends React.Component {
                                     React, Redux, Sematic HTML, CSS, SCSS, Javascript, Boostrap 
                                 <br /> 
                                     <h1 id="bg-screen"  style={{ fontWeigth: '900'  }} >Libraries I use:</h1>   
-                                    React-Router, React-Redux, Wow.js, Animate.Scss, Redux-Thunk, Axios
+                                    React-Router, React-Redux, Wow.js, Animate.css, Redux-Thunk, Axios
                                     <h1 id="bg-screen"  style={{ fontWeigth: '900'  }} >Currently Learning:</h1>   
                                     GraphQL, MongoDB, Apollo, Nodejs, Express
                                     <h1 id="bg-screen"  style={{ fontWeigth: '900'  }} >Please Note:</h1>   
                                     I am currently learning backend technologies and will be creating an online clothing store to expand my knowledge on them. 
                                     I will be utilizing the MERN stack for this project and will be adding features as I learn.
-                                    As of today I have added user authentication, the ability to add and remove items from the cart, and some basic routing. 
+                                    As of today I have added user authentication, the ability to add and remove items from the cart, routing, sign in/ sign up/ sign out functionality, and payment processing.
+                                    Feel free to utilize the fake credit card number to check the functionality. 
                                     I will provide a link to the website, but please note that this is not to be considered a completed project. 
                                     My full list of projects are on display either through the carousel below or by clicking on the top menu.
-                                    This is the link to the website if you would like to see it : <a href="https://objective-hermann-bea7bf.netlify.com" id="optional-website" target="_blank">clothing store. </a>
+                                    This is the link to the website if you would like to see it : <a href="https://stoic-jepsen-a066f4.netlify.com/" id="optional-website" target="_blank">clothing store. </a>
                                 </div>
                             </div>  
                         </div>
-                        <div id="bg-screen" className="intro-parallax">
+                        <div style={{ display: 'none' }} id="bg-screen" className="intro-parallax">
                             Curious Developer
                         </div>
                         <div className="intro-images-container" style={{ marginBottom: '7rem' }}>

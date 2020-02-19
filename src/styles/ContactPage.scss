@@ -1,7 +1,10 @@
 .bottom-parallax-nav{
     margin-left: 100px;
-     @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
         margin-left: 0;
+    }
+    @media only screen and (max-width: 694px) {
+        margin: 0 auto;
     }
 } 
 
@@ -17,9 +20,19 @@
     margin: 0; 
     width: 100%;
     overflow: hidden;
-    padding-top: 3rem;
     bottom: 0;
-    padding-bottom: 6rem;
+    padding-bottom: 6rem !important;
+    padding-top: 4rem !important;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    @media only screen and (max-width: 768px) {
+        width: 90%;
+    }
+    @media only screen and (max-width: 694px) {
+        flex-direction: column;
+        width: 100%;
+    }
 }
 
 .number-five{
@@ -114,6 +127,7 @@
     .contact-info{
         color: #fff;
         padding-top: 20px;
+        font-size: 15px;
     }
 }
    
@@ -130,15 +144,26 @@
      @media only screen and (max-width: 768px) {
         margin-left: 3.5rem;
     }
-    @media only screen and (max-width: 425px) {
-        margin-left: 0;
+    @media only screen and (max-width: 694px) {
+        margin: 0 auto;
+        padding-top: 2rem;
+        padding-left: 20px;
     }
+    @media only screen and (max-width: 425px) {
+        margin: 0 auto;
+        padding-left: 0;
+    }
+}
+
+.contact-top-middle {
+    font-size: 15px;
 }
 
 .contact-h-middle{
     color: white;
     padding-bottom: 9px;
 }
+
 .contact-h-middle-discover {
     color: white;
     margin-top: -11px;
@@ -171,6 +196,9 @@
     padding-top: 30px;
     border-bottom-width: 1px;
     width: 238px;
+    .download {
+        font-size: 15px;
+    }
 }
 
 i.icon.github:before {
@@ -180,7 +208,7 @@ i.icon.github:before {
                                 
 .copyright {
     color: white;
-    font-size: 10px;
+    font-size: 15px;
     padding-top: 3rem;
     margin-bottom: 3rem;
 }

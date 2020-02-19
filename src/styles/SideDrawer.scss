@@ -2,7 +2,7 @@
 
 
 .navigation {
-    transform: translateX(200vw);
+    transform: translateX(-100vw);
     transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
     top: 0;
     left: 0;
@@ -39,7 +39,6 @@
         text-align: center;
         width: 100%;
     }
-
     &__item {
         margin: 1rem;
     }
@@ -75,4 +74,5 @@
 
 #active-menu {
     transform: translateX(0vw);
+    display: block;
 }

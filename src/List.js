@@ -2,10 +2,6 @@ import React from 'react';
 
 
 class List extends React.Component{
-    constructor(props) {
-        super(props)
-
-    }
     render() {
         return(
         <div>
@@ -25,4 +21,4 @@ class List extends React.Component{
     }
 }
 
-export default List 
+export default List;

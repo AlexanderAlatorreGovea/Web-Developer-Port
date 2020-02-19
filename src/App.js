@@ -1,14 +1,12 @@
 import React from 'react';
-import Home from './Home';
 import LandingPage from './LandingPage';
 import Network from './Network';
 import Projects from './Projects';
-import Wrapper from './Wrapper';
-import SideDrawer from './SideDrawer';
 import ScrollToTop from './ScrollToTop';
+import MainPage from './MainPage';
 
 import './styles/_index.scss';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 
 
@@ -38,6 +36,7 @@ class App extends React.Component {
             <Route path="/" exact component={ LandingPage } />
             <Route path="/Network" exact component={ Network }/>
             <Route path="/Projects" exact component={ Projects }/>
+            <Route path="/MainPage" exact component={ MainPage } />
           </ScrollToTop>
         </BrowserRouter>
         <div class="cursor"><span className="cursor--small"></span></div>

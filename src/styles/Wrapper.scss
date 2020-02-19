@@ -3,15 +3,15 @@
 ///TOP MENU 
 .wrapper-container-menu{
         @media only screen and (max-width: 1900px) {
-        display: flex;
-        justify-content: space-between;
-        max-width: 1100px;
-        padding: 0 1.5rem;
-        margin: auto;
-        padding-top: 6rem;
-        padding-bottom: 2rem;
-        overflow: hidden;
-        height: 57px;
+            display: flex;
+            justify-content: space-between;
+            max-width: 1100px;
+            padding: 0 1.5rem;
+            margin: auto;
+            padding-top: 6rem;
+            padding-bottom: 2rem;
+            overflow: hidden;
+            height: 57px;
         }
       @media only screen and (min-width: 1900px) {
         display: flex;
@@ -36,6 +36,9 @@
       font-family: $primary-font;
       position: fixed;
       top: 2.4rem;
+      @media only screen and (max-width: 320px) {
+        top: 28px;
+      }
     }
     .wrapper-subtitle-{
         color: #e0bd44;
@@ -71,13 +74,17 @@
     transform: rotate(-90deg);
     height: 2rem;
     position: fixed;
-    right: -15rem;
+    right: -16rem;
+    width: 35rem;
     color: #000;
     top: 31.2rem;
     justify-content: center;
     align-items: center;
     @media only screen and (min-width: 1900px) {
-        right: -18rem;
+        right: -15rem;
+    }
+    @media screen and (max-width: 1400px) {
+        top: 25.2rem;
     }
     @media screen and (max-width: 850px) {
         display: none;
@@ -90,7 +97,6 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 33rem;
         @media only screen and (min-width: 1900px) {
             width: 40rem;
         }
@@ -123,6 +129,9 @@
     top: 28.2rem;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: 1400px) {
+        top: 22.2rem;
+    }
     @media screen and (max-width: 850px) {
         display: none;
     }
@@ -153,17 +162,17 @@
 }
 
 ////////MEDIA QUERIES///////////////////////
-
-.main-nav-toggle-button {
-    @media only screen and (max-width: 700px) {
-        display: flex;
-        align-self: center;
-    } 
-    @media only screen and (min-width: 700px) {
-        display: none;
-    } 
+.Wrapper {
+    button {
+            @media only screen and (max-width: 700px) {
+                display: flex;
+                align-self: center;
+            } 
+            @media only screen and (min-width: 700px) {
+                display: none;
+            } 
+        }
 }
-
 
 
 #arrow__nav .arrow {

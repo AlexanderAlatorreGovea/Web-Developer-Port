@@ -1,7 +1,6 @@
  @import './variables.scss';
  
 ///////////////////////////////TOP IMAGE///////////////////////////////////////////////
-
 .profile-container{
     position: relative;
     .main-profile-container{
@@ -52,9 +51,9 @@
         font-family: "charm";
         line-height: 1;
         color: #EBD6A3;
-        z-index: 100;
+        z-index: 100; 
         top: 12%;
-        left: 75%;
+        left: 79%;
         position: absolute;
         transform: translate3d(0, 0, 0);
         ::after{
@@ -106,7 +105,7 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    align-content: space-between;
+    align-content: space-between; 
     .line{
         border: .5px solid black;
         width: 40px;
@@ -123,6 +122,9 @@
     padding: 0 1.5rem;
     margin: auto;
     overflow: hidden;
+    @media only screen and (max-width: 767px) {
+        display: none;
+    }
     .static-nav{
         display: flex;
         align-items: center;
@@ -187,6 +189,10 @@
 
 .network-boxes-middle {
     display: flex;
+    @media only screen and (max-width: 768px) {
+        width: 90%;
+        margin: 0 auto;
+    }
     .network-boxes-middle-row-one{
         width: 205px;
         height: 205px;
@@ -194,11 +200,17 @@
     .network-boxes-middle-row-two{
         width: 205px;
         height: 205px;
+        @media only screen and (max-width: 768px) {
+            width: 211px;
+        }
     }
     .network-boxes-middle-row-three{
         width: 205px;
         height: 205px;
         background-color: #f9cbd1;
+        @media only screen and (max-width: 768px) {
+            display: none;
+        }
     }
     .network-boxes-middle-row-four{
         width: 205px;
@@ -215,6 +227,10 @@
 
 .network-boxes-bottom {
     display: flex;
+    @media only screen and (max-width: 768px) {
+        width: 90%;
+        margin: 0 auto;
+    }
     .network-boxes-bottom-row-one{
         width: 205px;
         height: 205px;
@@ -223,10 +239,17 @@
     .network-boxes-bottom-row-two{
         width: 205px;
         height: 205px;
+        @media only screen and (max-width: 768px) {
+            display: none;
+        }
     }
     .network-boxes-bottom-row-three{
         width: 205px;
         height: 205px;
+        @media only screen and (max-width: 768px) {
+            display: none;
+        }
+
     }
     .network-boxes-bottom-row-four{
         width: 205px;
@@ -318,6 +341,9 @@ i.big.arrow.alternate.circle.up.outline.icon {
     }
     .intro-bottom-section-left {
         font-weight: 900;
+        @media only screen and (max-width: 768px) {
+            margin: 0 auto;
+        }
     }
     .intro-bottom{
         padding: 0 1.5rem;
@@ -342,6 +368,10 @@ i.big.arrow.alternate.circle.up.outline.icon {
                 margin-right: 3rem;
                 @media only screen and (min-width: 1440px) {
                     min-width: 338px;
+                }
+                @media only screen and (min-width: 768px) {
+                    margin-right: 0;
+                    margin: 0 auto;
                 }
             }
             #optional-website {
@@ -480,6 +510,7 @@ i.big.arrow.alternate.circle.up.outline.icon {
         }
         .intro-bottom-section-left{
             font-weight: 900;
+            margin-left: 0;
         }
         .intro-bottom-timeline{
             flex-direction: column;

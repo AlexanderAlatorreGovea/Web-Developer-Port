@@ -4,7 +4,8 @@ import SideDrawer from './SideDrawer';
 import { Link } from "react-router-dom";
 import Resume from './assets/resume1.pdf';
 import './styles/Wrapper.scss';
-
+import './styles/_hamburgerButton.scss';
+ 
 class Wrapper extends Component {
     constructor(props) {
         super(props);
@@ -49,7 +50,7 @@ class Wrapper extends Component {
                     <span className="hamburger-inner"></span>
                     </span>
                 </button>
-            </div>
+            </div> 
 
             <section className="sideways-right-nav-wrapper animated fadeIn" >
                     <ul className="navigation-right-wrapper">
