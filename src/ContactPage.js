@@ -5,16 +5,10 @@ import WOW from "wowjs";
 import Resume from './assets/resume1.pdf';
 
 class ContactPage extends React.Component{
-    constructor(props) {
-        super(props)
-
-    }
-
     componentDidMount() {
         const wow = new WOW.WOW();
         wow.init();
-      }
-
+    }
 
     render() {
         return( 
@@ -37,10 +31,10 @@ class ContactPage extends React.Component{
                         </div>
                         <div className="get-in-touch-paragraph">
                             <p className="contact-info">
-                            5145 ‌Perkins Road<br />
-                            93033 Oxnard California <br />
+                            <br />
+                            Oxnard California <br />
 
-                            T +805 ‌758  5058<br />
+                            T +805 ‌222  2222<br />
                             F +352 ‌44 ‌66 ‌82 <br />
                             E alexander_alatorre1993@hotmail.com <br />
                             </p>

@@ -15,7 +15,8 @@ class Network extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            img: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80'
+            img: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80',
+            removeSideBar: false
         }  
     }
 
@@ -27,32 +28,46 @@ class Network extends React.Component {
             introText.classList.add('scroll')
         }
     }
-    
-    componentDidMount() {
-        document.querySelector('.year').classList.add('animated', 'fadeIn', 'delay-3s')
-        window.addEventListener('scroll', this.scrollApear)
-      }
+     
+    removeSideBar = () => {
+        const mainContainer = document.querySelector('.static-nav');
+        const introPosition = mainContainer.getBoundingClientRect().top;
+        const screenPostition = window.innerHeight / 1.3;
+        if (introPosition < screenPostition) {
+            this.setState({ 
+                removeSideBar: true
+            })
+        }
+    }
 
+    componentDidMount() {
+        document.querySelector('.year').classList.add('animated', 'fadeIn', 'delay-3s');
+        window.addEventListener('scroll', this.scrollApear);
+        window.addEventListener('scroll', this.removeSideBar);
+    }
 
     componentWillUnmount() {
-        document.querySelector('.year').classList.remove('animated', 'fadeIn', 'delay-3s')
+        document.querySelector('.year').classList.remove('animated', 'fadeIn', 'delay-3s');
         window.removeEventListener('scroll', this.scrollApear);
-    }
+        window.removeEventListener('scroll', this.removeSideBar);
+    } 
  
- 
-    render() {
+    render() { 
+        const { removeSideBar } = this.state;
         return (
             <div  className='Network' style={{background: 'white'}}>   
-                <Wrapper />
+                <Wrapper 
+                    removeSideBar={removeSideBar}
+                />
                 <section id="intro" className="intro"> 
                     <div className="main-profile-container main-container" style={{  margin: '0 auto', display: 'flex', justifyContent: 'space-between'}} >
                         <div className="profile-container">
                                 <div className="profile-container-image">
                                     <img id="img" className="image" alt="Jordy Baan by Michael Epps." 
                                     src={headshot}/>
-                                <div className="discover">
-                                    <div  className="profile-container-discover">
-                                        <h2 className="profile-container-title">Discover More</h2>
+                                <div className="discover" style={{ color: 'black', pointer: 'default' }}>
+                                    <div style={{ color: 'black', pointer: 'default' }}  className="profile-container-discover">
+                                        <h2 className="profile-container-title" style={{color: 'black', pointer: 'default'}}>Discover More</h2>
                                     </div> 
                                 </div> 
                                 <div className="year">
@@ -68,7 +83,7 @@ class Network extends React.Component {
                             </div>
                         </div>
                         <div onScroll={this.scrollApear} className="intro-paragraph">
-                            Hi there, my name is Alexander Govea and I am a front-end developer looking for an opportunity to provide value to your company. Currently based in California but willing to re-locate for an amazing opportunity.
+                            Hi there, my name is Alexander Govea and I am a front-end developer looking for an opportunity to provide value to your company. Currently based in California but willing to re-locate.
                         </div>
                     </div>
                         <div className="intro-bottom main-container">
@@ -89,18 +104,14 @@ class Network extends React.Component {
                                 <div style={{ width: '100%'}} className="intro-bottom-section-rigth wow fadeInRight">
                                     <div id="bg-screen" className="intro-bottom-timeline">
                                         <span > Front-end <br/>  learning the basics — HTML, CSS, Boostrap</span>
-                                        <span>January - February 2019</span>
-                                    </div>
-                                    <div id="bg-screen" style={{ paddingTop: '3rem' }} className="intro-bottom-timeline">
-                                        <span id="bg-screen">Front-end <br /> Hitting a Wall - learning Javascript </span>
-                                        <span id="bg-screen">February - Present </span>
+                                        <span>January - March 2019</span>
                                     </div>
                                     <div id="bg-screen" style={{ paddingTop: '3rem' }}  className="intro-bottom-timeline">
-                                        <span id="bg-screen">Front-end <br />  Falling In Love - learning React / Redux / React-Router</span>
-                                        <span id="bg-screen"> April - Present</span>
-                                    </div>
+                                        <span id="bg-screen">Front-end <br />  Hitting a Wall - learning Javascript / React / Redux / React-Router</span>
+                                            <span id="bg-screen"> April - Present</span>
+                                        </div>
                                     <div id="bg-screen" style={{ paddingTop: '3rem' }}  className="intro-bottom-timeline">
-                                        <span id="bg-screen">Back-end <br />  Growing my skills - currently learning Nodejs / MongoDB / GraphQL</span>
+                                        <span id="bg-screen">Back-end <br />  Growing my skills - currently learning Nodejs / MongoDB </span>
                                         <span id="bg-screen"> July - Present</span>
                                     </div>
                                 </div>
@@ -118,21 +129,15 @@ class Network extends React.Component {
                                 TECHNOLOGIES I USE
                                 </div>
                                 <div id="bg-screen" style={{ lineHeight: '2.2'}} className="intro-bottom-section-rigth wow fadeInRight">
-                                    <h1 id="bg-screen" style={{ fontWeigth: '900' }} >Languages I speak:</h1>
+                                    <h1 id="bg-screen" style={{ fontWeigth: '900' }} >Daily tech:</h1>
                                     React, Redux, Sematic HTML, CSS, SCSS, Javascript, Boostrap 
                                 <br /> 
                                     <h1 id="bg-screen"  style={{ fontWeigth: '900'  }} >Libraries I use:</h1>   
                                     React-Router, React-Redux, Wow.js, Animate.css, Redux-Thunk, Axios
-                                    <h1 id="bg-screen"  style={{ fontWeigth: '900'  }} >Currently Learning:</h1>   
-                                    GraphQL, MongoDB, Apollo, Nodejs, Express
+                                    <h1 id="bg-screen"  style={{ fontWeigth: '900'  }} >Recently Learned:</h1>   
+                                    Nodejs, Express
                                     <h1 id="bg-screen"  style={{ fontWeigth: '900'  }} >Please Note:</h1>   
-                                    I am currently learning backend technologies and will be creating an online clothing store to expand my knowledge on them. 
-                                    I will be utilizing the MERN stack for this project and will be adding features as I learn.
-                                    As of today I have added user authentication, the ability to add and remove items from the cart, routing, sign in/ sign up/ sign out functionality, and payment processing.
-                                    Feel free to utilize the fake credit card number to check the functionality. 
-                                    I will provide a link to the website, but please note that this is not to be considered a completed project. 
-                                    My full list of projects are on display either through the carousel below or by clicking on the top menu.
-                                    This is the link to the website if you would like to see it : <a href="https://stoic-jepsen-a066f4.netlify.com/" id="optional-website" target="_blank">clothing store. </a>
+                                Over the past few months I was able to learn Node and Express and completed my first full stack application which can be found here: <a href="https://freshgearapp.herokuapp.com/" id="optional-website" target="_blank">E-commerce </a>
                                 </div>
                             </div>  
                         </div>

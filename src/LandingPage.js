@@ -4,29 +4,22 @@ import { Link } from 'react-router-dom';
 import Preloader from './Preloader';
 
 class LandingPage extends React.Component{
-    constructor(props) {
-        super(props)
-
-    }
-
 
     componentDidMount() {
         document.querySelector('.presentation-landing-page').classList.add('animated', 'fadeInUpBig', 'delay-1s');
-        document.querySelector('.presentation-name').classList.add('animated', 'fadeInUp')
-        document.querySelector('.scroll-down').classList.add('animated', 'fadeInUp', 'delay-5s')
-        document.querySelector('.sideways-nav-landing').classList.add('animated', 'fadeIn', 'delay-5s')
+        document.querySelector('.presentation-name').classList.add('animated', 'fadeInUp');
+        document.querySelector('.scroll-down').classList.add('animated', 'fadeInUp', 'delay-2s');
+        document.querySelector('.sideways-nav-landing').classList.add('animated', 'fadeIn', 'delay-2s');
         document.querySelector('.description-landing').classList.add('animated', 'fadeIn', 'delay-2s');
-
     }
 
-      componentWillUnmount() {
-        document.querySelector('.presentation-landing-page').classList.remove('animated', 'fadeInUpBig', 'delay-1s')
-        document.querySelector('.presentation-name').classList.remove('animated', 'fadeInUp')
-        document.querySelector('.scroll-down').classList.remove('animated', 'fadeInUp', 'delay-5s')
-        document.querySelector('.sideways-nav-landing').classList.remove('animated', 'fadeIn', 'delay-5s')
+    componentWillUnmount() {
+        document.querySelector('.presentation-landing-page').classList.remove('animated', 'fadeInUpBig', 'delay-1s');
+        document.querySelector('.presentation-name').classList.remove('animated', 'fadeInUp');
+        document.querySelector('.scroll-down').classList.remove('animated', 'fadeInUp', 'delay-2s');
+        document.querySelector('.sideways-nav-landing').classList.remove('animated', 'fadeIn', 'delay-2s');
         document.querySelector('.description-landing').classList.remove('animated', 'fadeIn', 'delay-2s');
     }
- 
 
     render() {
         return(
@@ -69,23 +62,22 @@ class LandingPage extends React.Component{
                             </div>
                         </h2>
                         {/*End of description */} 
-                    <div className="sideways-nav-landing" > 
-                        <ul className="navigation-landing">
-                            <Link className="navigation-link" to="/" >
-                                <li className="navigation-home-landing">home</li>
-                            </Link>
-                            <Link className="navigation-link" to="/Projects" >
-                                <li className="navigation-home-landing">all projects</li>
-                            </Link>
-                            <Link className="navigation-link" to="/Network">
-                                <li className="navigation-home-landing">discover more</li> 
-                            </Link>
-                            <Link className="navigation-link" to="/Network">
-                                <li className="navigation-home-landing">contact</li> 
-                            </Link>
-                        </ul>  
-                    </div>
-
+                        <div className="sideways-nav-landing" > 
+                            <ul className="navigation-landing">
+                                <Link className="navigation-link" to="/" >
+                                    <li className="navigation-home-landing">home</li>
+                                </Link>
+                                <Link className="navigation-link" to="/Projects" >
+                                    <li className="navigation-home-landing">all projects</li>
+                                </Link>
+                                <Link className="navigation-link" to="/Network">
+                                    <li className="navigation-home-landing">discover more</li> 
+                                </Link>
+                                <Link className="navigation-link" to="/Network">
+                                    <li className="navigation-home-landing">contact</li> 
+                                </Link>
+                            </ul>  
+                        </div>
                     </div>             
                 </section>
                 <Link style={{ cursor: 'pointer' }} to="/Network">

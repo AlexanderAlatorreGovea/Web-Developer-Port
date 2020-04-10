@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import SideDrawer from './SideDrawer';
 
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Resume from './assets/resume1.pdf';
 import './styles/Wrapper.scss';
 import './styles/_hamburgerButton.scss';
@@ -12,9 +12,8 @@ class Wrapper extends Component {
         this.state = {
             visibleMenu: false
         }
-      }
+    }
  
-
     componentDidMount() {
         document.querySelector('.wrapper-title').classList.add('animated', 'fadeInUp')
         document.querySelector('.wrapper-menu').classList.add('animated', 'fadeIn' )
@@ -22,16 +21,25 @@ class Wrapper extends Component {
         document.querySelector('.down').classList.add('animated', 'fadeInDown', 'delay-1s')
     }  
 
-      componentWillUnmount() {
+    componentWillUnmount() {
         document.querySelector('.wrapper-title').classList.remove('animated', 'fadeInUp')
         document.querySelector('.wrapper-menu').classList.remove('animated', 'fadeIn')
         document.querySelector('.up').classList.remove('animated', 'fadeInUp', 'delay-1s')
         document.querySelector('.down').classList.remove('animated', 'fadeInDown', 'delay-1s')
     }
 
+    componentWillReceiveProps(prevState, prevProps) {
+        if (this.props.removeSideBar !== prevProps.removeSideBar) {
+            document.querySelector('.sideways-right-nav-wrapper').classList.add('m-fadeOut')
+            document.querySelector('.sideways-left-nav-wrapper').classList.add('m-fadeOut')
+        }
+    }
+
+
     toggleMenu = () => { this.setState({ visibleMenu: !this.state.visibleMenu})}
 
     render() {
+        console.log(this.props)
         return (
             <div className="Wrapper" style={{ background: '#f9f9f9' }}> 
             <SideDrawer visibleMenu={this.state.visibleMenu} />
@@ -41,8 +49,8 @@ class Wrapper extends Component {
                     <h4 className="wrapper-subtitle-">built / designed by alexander govea</h4>
                 </div> 
                 <ul className="wrapper-menu">
-                    <Link  to="/Network" style={{color: 'black', textTransform: 'lowercase' }}><li className="wrapper-menu-item">Home</li></Link>
-                    <Link  to="/Projects" style={{color: 'black', textTransform: 'lowercase' }}><li className="wrapper-menu-item">Work</li></Link>
+                        <NavLink to="/Projects" activeStyle={{ color: '#e3545f' }} style={{ color: 'black', textTransform: 'lowercase' }}><li className="wrapper-menu-item">Work</li></NavLink>
+                        <NavLink to="/Network" activeStyle={{ color: '#e3545f' }} style={{color: 'black', textTransform: 'lowercase' }}><li className="wrapper-menu-item">About</li></NavLink>
                     <a href={Resume} target="_blank" style={{color: 'black', textTransform: 'lowercase' }}><li className="wrapper-menu-item">download resume.</li></a>
                 </ul>
                 <button onClick={this.toggleMenu} style={{ marginBottom: '5rem', zIndex: '10000000'}} className={`main-nav-toggle-button hamburger hamburger--elastic${this.state.visibleMenu ? ' is-active' : ''}`} type="button">
@@ -50,20 +58,27 @@ class Wrapper extends Component {
                     <span className="hamburger-inner"></span>
                     </span>
                 </button>
-            </div> 
+            </div>  
 
             <section className="sideways-right-nav-wrapper animated fadeIn" >
-                    <ul className="navigation-right-wrapper">
-                        <Link className="navigation-link-right" to="/" >
+                    <ul className="navigation-right-wrapper" style={{cursor: 'default'}}>
+                        <Link className="navigation-link-right" style={{
+                            cursor: 'default'
+                        }} to="/Network" >
                             <li className="navigation-list-right">home</li>
                         </Link>
-                        <Link className="navigation-link-right"  to="/Projects" >
+                        <Link className="navigation-link-right" style={{
+                            cursor: 'default'
+                        }} to="/Network" >
                             <li className="navigation-list-right">all projects</li>
                         </Link>
-                        <Link className="navigation-link-right"  to="/Network">
+                        <Link className="navigation-link-right" style={{
+                            cursor: 'default'
+                        }}  to="/Network">
                             <li className="navigation-list-right">discover more</li> 
                         </Link>
-                        <Link className="navigation-link-right"  to="/Network">
+                        <Link className="navigation-link-right" style={{
+                            cursor: 'default'}}  to="/Network">
                             <li className="navigation-list-right">contact</li> 
                         </Link>
                     </ul>    
@@ -75,7 +90,7 @@ class Wrapper extends Component {
                         </Link>
                         <Link 
                             activeClass="active"
-                            to="contact"
+                            to="/Network"
                             spy={true}
                             smooth={true}
                             offset={-70}

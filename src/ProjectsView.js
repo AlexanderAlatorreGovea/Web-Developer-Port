@@ -6,13 +6,12 @@ import './styles/_item_grid.scss';
 
 import { Link } from 'react-router-dom';
 
-
-
 import listings from './assets/listings.jpg';
 import restaurantfront from  './assets/restaurantfront.jpg';
 import movie2 from './assets/movie2.jpg';
 import emailtwo from './assets/emailtwo.jpg';
 import dagency from './assets/dagency.png';
+import shoes from './assets/shoes.png';
 
  
 class ProjectsView extends React.Component {
@@ -20,6 +19,16 @@ class ProjectsView extends React.Component {
     super(props);
     this.state = {
       allImgs : [
+        {
+          title: 'FreshGear',
+          type: 'E-commerce',
+          year: '2020',
+          img: shoes,
+          client: 'private',
+          technologies: 'Nodejs/ Express',
+          link: 'https://freshgearapp.herokuapp.com/',
+          codelink: 'https://github.com/AlexanderAlatorreGovea/shoe-store'
+        },
         { 
           title: 'Nexter',
           type: 'Real Estate',
@@ -219,10 +228,8 @@ class ProjectsView extends React.Component {
 
   componentWillUnmount() {
     document.querySelector('.number-2').classList.remove('animated', 'fadeInUp', 'delay-3s');
-}
+  }
 
-  
- 
   render() {
   return (
       <div style={{background: 'white', marginBottom: '40px'}}> 
@@ -249,24 +256,24 @@ class ProjectsView extends React.Component {
 
                         {this.state.allImgs.map((info, index) => {
                           return(
-                          <div className="slide">
-                            <div className="project-section" >
-                              <div className="project-box" key={index} style={{background: `url("${info.img}") no-repeat`, backgroundSize: 'contain'}} >
-                                <div className="grey-bg">
-                                  <div className="project-info">
-                                    <div className="project-details">
-                                      for more info click the arrow / Type: {info.type}
+                            <div className="slide">
+                              <div className="project-section" >
+                                <div className="project-box" key={index} style={{background: `url("${info.img}") no-repeat`, backgroundSize: 'contain'}} >
+                                  <div className="grey-bg">
+                                    <div className="project-info">
+                                      <div className="project-details">
+                                        for more info click the arrow / Type: {info.type}
+                                      </div>
+                                      <div className="project-title">
+                                        {info.title} 
+                                      </div>
+                                      <div><Link to="/Projects" ><i class="long arrow alternate right icon"></i></Link></div>
                                     </div>
-                                    <div className="project-title">
-                                      {info.title} 
-                                    </div>
-                                    <div><Link to="/Projects" ><i class="long arrow alternate right icon"></i></Link></div>
                                   </div>
-                                </div>
-                              </div> 
+                                </div> 
+                            </div>
                           </div>
-                        </div>
-                        )
+                          )
                         })}                  
                         </div> 
                           </div> 
@@ -282,17 +289,17 @@ class ProjectsView extends React.Component {
                                 }}
                               >
                               {this.state.allImgs.map((info, index) => {
-                              return(
-                                <div className="project-title-one general-title">
-                                  <h3 className="header-description"> <a href={info.link} target="_blank"> {info.title} / Jump to the website</a></h3>
-                                  <h4 className="header-description"><a href={info.codelink} target="_blank"> see the code </a></h4>
-                                </div>
-                              )
+                                return(
+                                  <div className="project-title-one general-title">
+                                    <h3 className="header-description"> <a href={info.link} target="_blank"> {info.title} / Jump to the website</a></h3>
+                                    <h4 className="header-description"><a href={info.codelink} target="_blank"> See the code </a></h4>
+                                  </div>
+                                )
                               })} 
                           </div>
                         </div>
                       </div>
- 
+
                 <div id="button">
                   <Link to="/Projects" >
                     <button class="ui primary button wow fadeInLeft">view all projects</button>
