@@ -80,6 +80,8 @@
     top: 31.2rem;
     justify-content: center;
     align-items: center;
+    display: none;
+
     @media only screen and (min-width: 1900px) {
         right: -15rem;
     }
@@ -129,6 +131,7 @@
     top: 28.2rem;
     justify-content: center;
     align-items: center;
+    display: none;
     @media screen and (max-width: 1400px) {
         top: 22.2rem;
     }

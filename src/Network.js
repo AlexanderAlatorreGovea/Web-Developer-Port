@@ -137,7 +137,7 @@ class Network extends React.Component {
                                     <h1 id="bg-screen"  style={{ fontWeigth: '900'  }} >Recently Learned:</h1>   
                                     Nodejs, Express
                                     <h1 id="bg-screen"  style={{ fontWeigth: '900'  }} >Please Note:</h1>   
-                                Over the past few months I was able to learn Node and Express and completed my first full stack application which can be found here: <a href="https://freshgearapp.herokuapp.com/" id="optional-website" target="_blank">E-commerce </a>
+                                Over the past few months I was able to learn Node and Express and completed my first full stack application which can be found here: <a href="https://freshgearapp.herokuapp.com/" id="optional-website" target="_blank">E-commerce</a>
                                 </div>
                             </div>  
                         </div>

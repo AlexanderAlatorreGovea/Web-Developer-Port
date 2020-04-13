@@ -49,8 +49,8 @@ class Wrapper extends Component {
                     <h4 className="wrapper-subtitle-">built / designed by alexander govea</h4>
                 </div> 
                 <ul className="wrapper-menu">
-                        <NavLink to="/Projects" activeStyle={{ color: '#e3545f' }} style={{ color: 'black', textTransform: 'lowercase' }}><li className="wrapper-menu-item">Work</li></NavLink>
-                        <NavLink to="/Network" activeStyle={{ color: '#e3545f' }} style={{color: 'black', textTransform: 'lowercase' }}><li className="wrapper-menu-item">About</li></NavLink>
+                    <NavLink to="/Network" activeStyle={{ color: '#e3545f' }} style={{color: 'black', textTransform: 'lowercase' }}><li className="wrapper-menu-item">About</li></NavLink>
+                    <NavLink to="/Projects" activeStyle={{ color: '#e3545f' }} style={{ color: 'black', textTransform: 'lowercase' }}><li className="wrapper-menu-item">Work</li></NavLink>
                     <a href={Resume} target="_blank" style={{color: 'black', textTransform: 'lowercase' }}><li className="wrapper-menu-item">download resume.</li></a>
                 </ul>
                 <button onClick={this.toggleMenu} style={{ marginBottom: '5rem', zIndex: '10000000'}} className={`main-nav-toggle-button hamburger hamburger--elastic${this.state.visibleMenu ? ' is-active' : ''}`} type="button">

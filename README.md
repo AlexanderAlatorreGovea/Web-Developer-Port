@@ -1,3 +1,8 @@
+Although I do not possess 6 years of experience, I am fully capable of producing professional code at a significantly lower salary range than a senior developer.
+
+Assisted clients with both technology usage related to to the in-house application, along with troubleshooting.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
